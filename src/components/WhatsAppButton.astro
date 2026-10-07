@@ -1,5 +1,14 @@
+---
+import { siteConfig } from "../data/site";
+
+const whatsappUrl =
+  `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(
+    siteConfig.whatsappMessage
+  )}`;
+---
+
 <a
-  href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20pembuatan%20mesin%20custom."
+  href={whatsappUrl}
   class="floating-whatsapp"
   target="_blank"
   rel="noopener noreferrer"
@@ -26,6 +35,7 @@
     font-size: 14px;
     font-weight: 700;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease;
   }
 
   .floating-whatsapp:hover {
