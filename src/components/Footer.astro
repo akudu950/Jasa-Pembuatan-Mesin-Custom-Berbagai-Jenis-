@@ -1,40 +1,81 @@
+---
+import { siteConfig } from "../data/site";
+
+const whatsappUrl =
+  `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(
+    siteConfig.whatsappMessage
+  )}`;
+---
+
 <footer class="site-footer">
   <div class="container footer-grid">
+
     <div>
-      <h2>Jasa Pembuatan Mesin Custom</h2>
+      <h2>{siteConfig.name}</h2>
+
       <p>
-        Solusi pembuatan mesin custom untuk kebutuhan industri,
-        produksi, manufaktur, makanan dan minuman, pertanian,
-        packaging, conveyor, dan otomatisasi.
+        {siteConfig.description}
       </p>
     </div>
+
 
     <div>
       <h3>Layanan</h3>
-      <a href="/jasa/">Jasa Pembuatan Mesin</a>
-      <a href="/mesin/">Katalog Mesin</a>
-      <a href="/portfolio/">Portfolio</a>
-      <a href="/artikel/">Artikel</a>
+
+      <a href="/jasa/">
+        Jasa Pembuatan Mesin
+      </a>
+
+      <a href="/mesin/">
+        Katalog Mesin
+      </a>
+
+      <a href="/portfolio/">
+        Portfolio
+      </a>
+
+      <a href="/artikel/">
+        Artikel
+      </a>
     </div>
+
 
     <div>
       <h3>Kontak</h3>
-      <a href="https://wa.me/6281234567890">
+
+      <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         WhatsApp
       </a>
-      <a href="/kontak/">Halaman Kontak</a>
+
+      <a href={`mailto:${siteConfig.email}`}>
+        {siteConfig.email}
+      </a>
+
+      <a href="/kontak/">
+        Halaman Kontak
+      </a>
     </div>
+
   </div>
+
 
   <div class="footer-bottom">
     <div class="container">
+
       <p>
-        © {new Date().getFullYear()} Jasa Pembuatan Mesin Custom.
+        © {new Date().getFullYear()}
+        {siteConfig.name}.
         Semua hak dilindungi.
       </p>
+
     </div>
   </div>
 </footer>
+
 
 <style>
   .site-footer {
