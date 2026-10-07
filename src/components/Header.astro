@@ -1,16 +1,13 @@
+```astro
 ---
-const menuItems = [
-  { label: "Beranda", href: "/" },
-  { label: "Jasa", href: "/jasa/" },
-  { label: "Mesin", href: "/mesin/" },
-  { label: "Artikel", href: "/artikel/" },
-  { label: "Portfolio", href: "/portfolio/" },
-  { label: "Kontak", href: "/kontak/" },
-];
+import { siteConfig } from "../data/site";
+
+const menuItems = siteConfig.navigation;
 ---
 
 <header class="site-header">
   <div class="container header-inner">
+
     <a href="/" class="logo">
       <span>JASA PEMBUATAN</span>
       <strong>MESIN CUSTOM</strong>
@@ -23,13 +20,14 @@ const menuItems = [
     </nav>
 
     <a
-      href="https://wa.me/6281234567890"
+      href={`https://wa.me/${siteConfig.whatsapp}`}
       class="header-whatsapp"
       target="_blank"
       rel="noopener noreferrer"
     >
       Konsultasi
     </a>
+
   </div>
 </header>
 
@@ -101,6 +99,10 @@ const menuItems = [
     white-space: nowrap;
   }
 
+  .header-whatsapp:hover {
+    background: #115e59;
+  }
+
   @media (max-width: 900px) {
     .main-nav {
       display: none;
@@ -111,3 +113,4 @@ const menuItems = [
     }
   }
 </style>
+```
