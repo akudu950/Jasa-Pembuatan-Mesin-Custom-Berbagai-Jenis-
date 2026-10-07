@@ -1,1 +1,61 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+}
 
+const { title, description, href } = Astro.props;
+---
+
+<article class="machine-card">
+  <div class="machine-icon">
+    ⚙
+  </div>
+
+  <h3>{title}</h3>
+
+  <p>{description}</p>
+
+  <a href={href}>
+    Lihat Detail →
+  </a>
+</article>
+
+<style>
+  .machine-card {
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .machine-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  }
+
+  .machine-icon {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+
+  h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 19px;
+  }
+
+  p {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  a {
+    color: #0f766e;
+    font-weight: 700;
+    text-decoration: none;
+  }
+</style>
