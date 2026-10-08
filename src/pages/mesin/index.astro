@@ -1,0 +1,337 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { machineCategories } from "../../data/site";
+---
+
+<BaseLayout
+  title="Katalog Mesin Custom untuk Berbagai Kebutuhan Industri"
+  description="Katalog mesin custom untuk industri makanan dan minuman, manufaktur, pertanian, pengolahan limbah, packaging, conveyor, dan kebutuhan produksi lainnya."
+>
+
+  <section class="hero">
+    <div class="container">
+
+      <span class="eyebrow">
+        KATALOG MESIN
+      </span>
+
+      <h1>
+        Katalog Mesin Custom
+        untuk Berbagai Kebutuhan Industri
+      </h1>
+
+      <p>
+        Jelajahi berbagai kategori mesin custom yang dapat
+        dikembangkan sesuai kebutuhan proses produksi,
+        kapasitas, material, dan sistem kerja.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section class="catalog">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">
+          KATEGORI MESIN
+        </span>
+
+        <h2>
+          Pilihan Mesin Berdasarkan Kebutuhan
+        </h2>
+
+        <p>
+          Setiap mesin dapat disesuaikan dengan kebutuhan
+          operasional dan karakteristik proses produksi.
+        </p>
+      </div>
+
+
+      <div class="category-grid">
+
+        {
+          machineCategories.map((category) => (
+            <article class="category-card">
+
+              <div class="icon">
+                ⚙
+              </div>
+
+              <h3>
+                {category.title}
+              </h3>
+
+              <p>
+                {category.description}
+              </p>
+
+              <a href={`/mesin/${category.slug}/`}>
+                Lihat Kategori →
+              </a>
+
+            </article>
+          ))
+        }
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="custom">
+    <div class="container custom-grid">
+
+      <div>
+        <span class="eyebrow">
+          MESIN KHUSUS
+        </span>
+
+        <h2>
+          Membutuhkan Mesin di Luar Katalog?
+        </h2>
+
+        <p>
+          Tidak menemukan mesin yang sesuai? Kebutuhan
+          mesin dapat dibahas berdasarkan proses produksi,
+          fungsi, kapasitas, ukuran, material, dan tingkat
+          otomatisasi yang diperlukan.
+        </p>
+
+        <a
+          href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20mengenai%20mesin%20custom."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button"
+        >
+          Konsultasikan Kebutuhan
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="cta">
+    <div class="container">
+
+      <h2>
+        Punya Kebutuhan Mesin Custom?
+      </h2>
+
+      <p>
+        Sampaikan kebutuhan proses produksi dan spesifikasi
+        mesin yang diperlukan untuk mendapatkan pembahasan
+        yang lebih sesuai.
+      </p>
+
+      <a
+        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20mesin%20custom."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button-light"
+      >
+        Konsultasi via WhatsApp
+      </a>
+
+    </div>
+  </section>
+
+</BaseLayout>
+
+
+<style>
+  .hero {
+    padding: 100px 0;
+    background:
+      linear-gradient(
+        135deg,
+        #f0fdfa 0%,
+        #ffffff 55%,
+        #f8fafc 100%
+      );
+  }
+
+  .container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+  }
+
+  h1 {
+    max-width: 850px;
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(38px, 6vw, 62px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+  }
+
+  .hero p {
+    max-width: 760px;
+    margin-top: 24px;
+    color: #475569;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .catalog {
+    padding: 90px 0;
+  }
+
+  .section-heading {
+    max-width: 760px;
+    margin-bottom: 40px;
+  }
+
+  .section-heading h2 {
+    margin: 0 0 16px;
+    color: #0f172a;
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .section-heading p {
+    color: #64748b;
+  }
+
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+
+  .category-card {
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .category-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 15px 35px rgba(15, 23, 42, 0.08);
+  }
+
+  .icon {
+    margin-bottom: 18px;
+    font-size: 34px;
+  }
+
+  .category-card h3 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 19px;
+  }
+
+  .category-card p {
+    min-height: 75px;
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .category-card a {
+    color: #0f766e;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .custom {
+    padding: 80px 0;
+    background: #f8fafc;
+  }
+
+  .custom-grid {
+    max-width: 850px;
+  }
+
+  .custom h2 {
+    margin: 0 0 18px;
+    color: #0f172a;
+    font-size: 34px;
+  }
+
+  .custom p {
+    margin-bottom: 28px;
+    color: #475569;
+    line-height: 1.8;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 14px 22px;
+    background: #0f766e;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .button:hover {
+    background: #115e59;
+  }
+
+  .cta {
+    padding: 80px 0;
+    background: #0f172a;
+    text-align: center;
+  }
+
+  .cta h2 {
+    margin: 0 0 18px;
+    color: #ffffff;
+    font-size: 34px;
+  }
+
+  .cta p {
+    max-width: 680px;
+    margin: 0 auto 28px;
+    color: #cbd5e1;
+    line-height: 1.8;
+  }
+
+  .button-light {
+    display: inline-block;
+    padding: 14px 22px;
+    background: #ffffff;
+    color: #0f172a;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  @media (max-width: 900px) {
+    .category-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero {
+      padding: 70px 0;
+    }
+
+    .catalog {
+      padding: 60px 0;
+    }
+
+    .category-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
