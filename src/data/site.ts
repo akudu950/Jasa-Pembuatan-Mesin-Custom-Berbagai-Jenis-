@@ -114,3 +114,9 @@ export const services = [
     slug: "mesin-packaging",
   },
 ];
+
+  {
+    title: "Mesin Packaging",
+    slug: "mesin-packaging",
+  },
+];
