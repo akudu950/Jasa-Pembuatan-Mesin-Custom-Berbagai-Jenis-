@@ -12,7 +12,7 @@ const whatsappUrl =
   class="floating-whatsapp"
   target="_blank"
   rel="noopener noreferrer"
-  aria-label="Konsultasi melalui WhatsApp"
+  aria-label="Konsultasi pembuatan mesin custom melalui WhatsApp"
 >
   <span>WhatsApp</span>
 </a>
@@ -23,29 +23,47 @@ const whatsappUrl =
     right: 22px;
     bottom: 22px;
     z-index: 9999;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     min-width: 130px;
     padding: 14px 20px;
+
     border-radius: 50px;
+
     background: #16a34a;
     color: #ffffff;
+
     text-decoration: none;
+
     font-size: 14px;
     font-weight: 700;
+
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
-    transition: transform 0.2s ease;
+
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
   .floating-whatsapp:hover {
     transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  }
+
+  .floating-whatsapp:focus-visible {
+    outline: 3px solid #86efac;
+    outline-offset: 4px;
   }
 
   @media (max-width: 600px) {
     .floating-whatsapp {
       right: 15px;
       bottom: 15px;
+      min-width: 120px;
+      padding: 13px 17px;
     }
   }
 </style>
