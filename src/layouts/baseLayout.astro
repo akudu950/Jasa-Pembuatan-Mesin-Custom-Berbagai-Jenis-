@@ -1,5 +1,5 @@
 ---
-mport "../styles/global.css";
+import "../styles/global.css";
 
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -8,12 +8,21 @@ import WhatsAppButton from "../components/WhatsAppButton.astro";
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
+  noindex?: boolean;
 }
 
 const {
   title = "Jasa Pembuatan Mesin Custom",
-  description = "Jasa pembuatan mesin custom untuk kebutuhan industri, produksi, manufaktur, makanan dan minuman, pertanian, packaging, conveyor, dan otomatisasi."
+  description =
+    "Jasa pembuatan mesin custom untuk kebutuhan industri, produksi, manufaktur, makanan dan minuman, pertanian, packaging, conveyor, dan otomatisasi.",
+  image = "/og-image.svg",
+  noindex = false,
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const imageURL = new URL(image, Astro.site);
 ---
 
 <!doctype html>
@@ -33,7 +42,82 @@ const {
 
     <meta
       name="robots"
-      content="index, follow"
+      content={noindex ? "noindex, nofollow" : "index, follow"}
+    />
+
+    <meta
+      name="theme-color"
+      content="#0f766e"
+    />
+
+    <link
+      rel="canonical"
+      href={canonicalURL}
+    />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+
+    <!-- Open Graph -->
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:locale"
+      content="id_ID"
+    />
+
+    <meta
+      property="og:title"
+      content={title}
+    />
+
+    <meta
+      property="og:description"
+      content={description}
+    />
+
+    <meta
+      property="og:url"
+      content={canonicalURL}
+    />
+
+    <meta
+      property="og:site_name"
+      content="Jasa Pembuatan Mesin Custom"
+    />
+
+    <meta
+      property="og:image"
+      content={imageURL}
+    />
+
+    <!-- Twitter Card -->
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content={title}
+    />
+
+    <meta
+      name="twitter:description"
+      content={description}
+    />
+
+    <meta
+      name="twitter:image"
+      content={imageURL}
     />
 
     <title>{title}</title>
