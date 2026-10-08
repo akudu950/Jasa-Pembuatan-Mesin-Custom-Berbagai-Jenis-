@@ -1,57 +1,75 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
   title="Jasa Pembuatan Mesin Packaging Custom untuk Industri"
-  description="Jasa pembuatan mesin packaging custom untuk kebutuhan pengemasan produk, filling, sealing, labeling, counting, sorting, dan otomatisasi proses produksi."
+  description="Jasa pembuatan mesin packaging custom untuk kebutuhan industri, filling, sealing, counting, labeling, pengemasan produk, dan integrasi lini produksi."
 >
 
   <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
 
-      <div>
+      <div class="hero-content">
+
         <span class="eyebrow">
-          JASA MESIN PACKAGING
+          MESIN PACKAGING CUSTOM
         </span>
 
         <h1>
-          Jasa Pembuatan Mesin Packaging Custom untuk Industri
+          Jasa Pembuatan Mesin Packaging Custom untuk Kebutuhan Industri
         </h1>
 
-        <p class="hero-text">
-          Solusi mesin packaging custom untuk membantu proses
-          pengemasan produk menjadi lebih cepat, teratur,
-          konsisten, dan sesuai kebutuhan produksi.
+        <p class="hero-description">
+          Perancangan dan pembuatan mesin packaging sesuai jenis produk,
+          ukuran kemasan, kapasitas produksi, metode pengemasan,
+          serta kebutuhan integrasi dengan proses produksi lainnya.
         </p>
 
         <div class="hero-actions">
+
           <a
-            href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20mesin%20packaging%20custom."
+            href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+              "Halo, saya ingin konsultasi tentang pembuatan mesin packaging custom."
+            )}`}
             class="btn btn-primary"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Konsultasi Mesin Packaging
+            Konsultasi Mesin
           </a>
 
-          <a href="/kontak/" class="btn btn-secondary">
-            Hubungi Kami
+          <a
+            href={`${base}mesin/packaging/`}
+            class="btn btn-secondary"
+          >
+            Lihat Mesin Packaging
           </a>
+
         </div>
+
       </div>
 
-      <div class="hero-card">
-        <div class="hero-icon">⚙</div>
 
-        <h2>Packaging Sesuai Produk</h2>
+      <div class="hero-card">
+
+        <div class="hero-icon">
+          ▣
+        </div>
+
+        <h2>
+          Sistem Packaging Sesuai Produk
+        </h2>
 
         <p>
-          Mesin dapat dirancang berdasarkan jenis produk,
-          bentuk kemasan, ukuran kemasan, kapasitas produksi,
-          metode pengisian, dan proses packaging yang dibutuhkan.
+          Mesin packaging dapat dikembangkan berdasarkan bentuk produk,
+          jenis kemasan, kapasitas, metode pengisian, proses sealing,
+          hingga kebutuhan otomatisasi.
         </p>
+
       </div>
 
     </div>
@@ -60,389 +78,737 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 
   <!-- INTRO -->
   <section class="section">
-    <div class="container content-grid">
 
-      <div>
-        <span class="section-label">
-          MESIN PACKAGING CUSTOM
-        </span>
+    <div class="container narrow">
 
-        <h2>
-          Mesin Packaging untuk Mendukung Efisiensi Produksi
-        </h2>
+      <span class="section-label">
+        SOLUSI PENGEMASAN
+      </span>
 
-        <p>
-          Proses pengemasan merupakan bagian penting dalam kegiatan
-          produksi. Kebutuhan setiap industri dapat berbeda,
-          sehingga mesin packaging standar belum tentu sesuai
-          dengan karakteristik produk maupun alur produksi.
-        </p>
+      <h2>
+        Apa Itu Mesin Packaging Custom?
+      </h2>
 
-        <p>
-          Mesin packaging custom memungkinkan sistem pengemasan
-          dirancang berdasarkan kebutuhan spesifik. Mulai dari
-          proses pengisian produk, penutupan kemasan, pelabelan,
-          penghitung produk hingga pemindahan hasil packaging.
-        </p>
+      <p>
+        Mesin packaging custom merupakan mesin pengemasan yang
+        dirancang berdasarkan kebutuhan produk dan proses produksi
+        tertentu. Desain mesin dapat disesuaikan dengan jenis produk,
+        ukuran kemasan, metode pengisian, dan kapasitas produksi.
+      </p>
 
-        <p>
-          Sistem juga dapat dikembangkan menjadi semi otomatis
-          maupun otomatis dan dapat diintegrasikan dengan conveyor
-          serta mesin produksi lainnya.
-        </p>
-      </div>
+      <p>
+        Kebutuhan setiap industri dapat berbeda. Produk berbentuk
+        cair, bubuk, butiran, padat, maupun produk dengan bentuk
+        tertentu dapat membutuhkan metode pengemasan yang berbeda.
+      </p>
 
-      <aside class="info-card">
-        <h3>Parameter yang Dapat Disesuaikan</h3>
-
-        <ul>
-          <li>Jenis dan karakteristik produk</li>
-          <li>Jenis dan ukuran kemasan</li>
-          <li>Kapasitas produksi</li>
-          <li>Metode pengisian</li>
-          <li>Sistem sealing</li>
-          <li>Kecepatan proses</li>
-          <li>Ukuran mesin</li>
-          <li>Integrasi dengan conveyor</li>
-        </ul>
-      </aside>
+      <p>
+        Karena itu, mesin packaging dapat dirancang sebagai mesin
+        tunggal maupun sebagai bagian dari lini produksi yang
+        terintegrasi dengan filling, conveyor, sealing, labeling,
+        counting, dan sistem otomatisasi lainnya.
+      </p>
 
     </div>
+
   </section>
 
 
-  <!-- JENIS MESIN -->
-  <section class="section section-soft">
+  <!-- TYPES -->
+  <section class="section section-light">
+
     <div class="container">
 
       <div class="section-heading">
+
         <span class="section-label">
           JENIS MESIN
         </span>
 
         <h2>
-          Solusi Mesin Packaging yang Dapat Dikembangkan
+          Jenis Mesin Packaging yang Dapat Dikembangkan
         </h2>
 
         <p>
-          Sistem packaging dapat dirancang untuk satu proses
-          tertentu maupun menjadi bagian dari lini produksi
-          yang terintegrasi.
+          Sistem pengemasan dapat disesuaikan dengan karakteristik
+          produk, jenis kemasan, dan kebutuhan proses produksi.
         </p>
+
       </div>
+
 
       <div class="card-grid">
 
-        <article class="card">
-          <div class="card-icon">01</div>
+        <article class="info-card">
 
-          <h3>Mesin Filling</h3>
+          <div class="card-number">
+            01
+          </div>
+
+          <h3>
+            Mesin Filling
+          </h3>
 
           <p>
-            Mesin untuk membantu proses pengisian produk
-            ke dalam botol, pouch, cup, maupun jenis kemasan lainnya.
+            Sistem pengisian produk ke dalam kemasan dengan
+            kapasitas dan metode kerja yang disesuaikan.
           </p>
+
         </article>
 
-        <article class="card">
-          <div class="card-icon">02</div>
 
-          <h3>Mesin Sealing</h3>
+        <article class="info-card">
+
+          <div class="card-number">
+            02
+          </div>
+
+          <h3>
+            Mesin Sealing
+          </h3>
 
           <p>
-            Sistem untuk proses penutupan atau penyegelan
-            kemasan agar produk lebih terlindungi.
+            Mesin untuk membantu proses penutupan atau penyegelan
+            kemasan sesuai jenis material kemasan.
           </p>
+
         </article>
 
-        <article class="card">
-          <div class="card-icon">03</div>
 
-          <h3>Mesin Labeling</h3>
+        <article class="info-card">
+
+          <div class="card-number">
+            03
+          </div>
+
+          <h3>
+            Mesin Counting
+          </h3>
 
           <p>
-            Membantu proses pemasangan label pada produk
-            dengan posisi dan kecepatan yang lebih konsisten.
+            Sistem penghitung produk untuk membantu proses
+            pengemasan berdasarkan jumlah tertentu.
           </p>
+
         </article>
 
-        <article class="card">
-          <div class="card-icon">04</div>
 
-          <h3>Mesin Counting</h3>
+        <article class="info-card">
+
+          <div class="card-number">
+            04
+          </div>
+
+          <h3>
+            Mesin Labeling
+          </h3>
 
           <p>
-            Digunakan untuk menghitung jumlah produk sebelum
-            masuk ke proses pengemasan.
+            Sistem untuk membantu proses pemasangan label
+            pada kemasan secara lebih teratur.
           </p>
+
         </article>
 
-        <article class="card">
-          <div class="card-icon">05</div>
 
-          <h3>Mesin Sorting</h3>
+        <article class="info-card">
+
+          <div class="card-number">
+            05
+          </div>
+
+          <h3>
+            Conveyor Packaging
+          </h3>
 
           <p>
-            Membantu proses pemilahan produk berdasarkan
-            ukuran, bentuk, berat, atau parameter tertentu.
+            Conveyor untuk membantu memindahkan produk
+            antarproses dalam sistem pengemasan.
           </p>
+
         </article>
 
-        <article class="card">
-          <div class="card-icon">06</div>
 
-          <h3>Packaging Line Custom</h3>
+        <article class="info-card">
+
+          <div class="card-number">
+            06
+          </div>
+
+          <h3>
+            Packaging Line Custom
+          </h3>
 
           <p>
-            Sistem packaging yang menggabungkan beberapa
-            proses menjadi satu alur produksi yang terintegrasi.
+            Integrasi beberapa proses packaging menjadi
+            satu alur kerja sesuai kebutuhan produksi.
           </p>
+
         </article>
 
       </div>
 
     </div>
+
   </section>
 
 
-  <!-- APLIKASI -->
+  <!-- APPLICATIONS -->
   <section class="section">
+
     <div class="container">
 
       <div class="section-heading">
+
         <span class="section-label">
-          APLIKASI
+          PENERAPAN
         </span>
 
         <h2>
-          Mesin Packaging untuk Berbagai Industri
+          Mesin Packaging untuk Berbagai Jenis Produk
         </h2>
+
+        <p>
+          Sistem pengemasan dapat dirancang untuk berbagai
+          karakter produk dan kebutuhan industri.
+        </p>
+
       </div>
+
 
       <div class="application-grid">
 
-        <div>
-          <strong>Makanan & Minuman</strong>
+        <div class="application-item">
 
-          <p>
-            Untuk proses pengisian, penutupan, pelabelan,
-            dan pengemasan berbagai produk makanan dan minuman.
-          </p>
+          <strong>
+            Produk Cair
+          </strong>
+
+          <span>
+            Sistem filling dan packaging untuk berbagai produk
+            cair sesuai karakteristik material.
+          </span>
+
         </div>
 
-        <div>
-          <strong>Manufaktur</strong>
 
-          <p>
-            Membantu proses packaging komponen,
-            produk jadi, dan material manufaktur.
-          </p>
+        <div class="application-item">
+
+          <strong>
+            Produk Bubuk
+          </strong>
+
+          <span>
+            Sistem pengisian dan pengemasan untuk material
+            berbentuk bubuk atau serbuk.
+          </span>
+
         </div>
 
-        <div>
-          <strong>Produk Cair</strong>
 
-          <p>
-            Dapat dikembangkan untuk kebutuhan filling
-            produk cair dengan sistem yang sesuai karakteristik produk.
-          </p>
+        <div class="application-item">
+
+          <strong>
+            Produk Butiran
+          </strong>
+
+          <span>
+            Sistem counting atau filling untuk produk
+            berbentuk butiran dan material sejenis.
+          </span>
+
         </div>
 
-        <div>
-          <strong>Produk Granul & Bubuk</strong>
 
-          <p>
-            Sistem dapat disesuaikan untuk kebutuhan
-            pengisian dan pengemasan material berbentuk bubuk
-            maupun granul.
-          </p>
+        <div class="application-item">
+
+          <strong>
+            Produk Padat
+          </strong>
+
+          <span>
+            Pengemasan produk padat dengan sistem conveyor
+            dan mekanisme packaging yang sesuai.
+          </span>
+
+        </div>
+
+
+        <div class="application-item">
+
+          <strong>
+            Makanan & Minuman
+          </strong>
+
+          <span>
+            Solusi packaging untuk produk makanan,
+            minuman, bahan olahan, dan produk konsumsi.
+          </span>
+
+        </div>
+
+
+        <div class="application-item">
+
+          <strong>
+            Produk Industri
+          </strong>
+
+          <span>
+            Sistem pengemasan untuk berbagai produk industri
+            dan kebutuhan produksi khusus.
+          </span>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
 
-  <!-- KEUNGGULAN -->
-  <section class="section section-soft">
+  <!-- DESIGN FACTORS -->
+  <section class="section section-dark">
+
     <div class="container">
 
-      <div class="section-heading">
+      <div class="section-heading dark">
+
         <span class="section-label">
-          KEUNGGULAN
+          PERANCANGAN
         </span>
 
         <h2>
-          Keunggulan Mesin Packaging Custom
+          Faktor yang Dipertimbangkan dalam Pembuatan Mesin Packaging
         </h2>
+
+        <p>
+          Sistem packaging perlu disesuaikan dengan produk,
+          kemasan, kapasitas, dan kebutuhan proses produksi.
+        </p>
+
       </div>
+
 
       <div class="benefit-grid">
 
-        <div class="benefit">
-          <h3>Sesuai Produk</h3>
+        <div class="benefit-item">
 
-          <p>
-            Sistem dapat dirancang berdasarkan karakteristik,
-            ukuran, dan bentuk produk.
-          </p>
+          <span>01</span>
+
+          <div>
+
+            <h3>
+              Jenis Produk
+            </h3>
+
+            <p>
+              Bentuk, ukuran, berat, tekstur, dan karakter produk
+              menjadi pertimbangan dalam menentukan mekanisme mesin.
+            </p>
+
+          </div>
+
         </div>
 
-        <div class="benefit">
-          <h3>Sesuai Kemasan</h3>
 
-          <p>
-            Mesin dapat disesuaikan dengan jenis dan ukuran
-            kemasan yang digunakan.
-          </p>
+        <div class="benefit-item">
+
+          <span>02</span>
+
+          <div>
+
+            <h3>
+              Jenis Kemasan
+            </h3>
+
+            <p>
+              Bentuk dan material kemasan memengaruhi metode
+              filling, sealing, handling, dan proses packaging.
+            </p>
+
+          </div>
+
         </div>
 
-        <div class="benefit">
-          <h3>Kapasitas Produksi</h3>
 
-          <p>
-            Sistem dapat dirancang berdasarkan target
-            kapasitas produksi yang dibutuhkan.
-          </p>
+        <div class="benefit-item">
+
+          <span>03</span>
+
+          <div>
+
+            <h3>
+              Kapasitas Produksi
+            </h3>
+
+            <p>
+              Target produksi menjadi dasar dalam menentukan
+              kapasitas dan kecepatan sistem pengemasan.
+            </p>
+
+          </div>
+
         </div>
 
-        <div class="benefit">
-          <h3>Dapat Diintegrasikan</h3>
 
-          <p>
-            Mesin dapat dikembangkan bersama conveyor,
-            filling, sorting, labeling, dan sistem otomatisasi.
-          </p>
+        <div class="benefit-item">
+
+          <span>04</span>
+
+          <div>
+
+            <h3>
+              Tingkat Otomatisasi
+            </h3>
+
+            <p>
+              Sistem dapat dirancang manual, semi otomatis,
+              maupun dikembangkan menjadi bagian dari lini otomatis.
+            </p>
+
+          </div>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
 
-  <!-- PROSES -->
+  <!-- PROCESS -->
   <section class="section">
+
     <div class="container">
 
       <div class="section-heading">
+
         <span class="section-label">
-          PROSES PEMBUATAN
+          TAHAPAN PEMBUATAN
         </span>
 
         <h2>
-          Tahapan Pembuatan Mesin Packaging
+          Proses Pembuatan Mesin Packaging Custom
         </h2>
+
       </div>
+
 
       <div class="process-grid">
 
-        <div class="process">
+        <div class="process-card">
+
           <span>01</span>
 
-          <h3>Konsultasi</h3>
+          <h3>
+            Konsultasi
+          </h3>
 
           <p>
-            Membahas produk, kemasan, kapasitas,
-            dan proses packaging yang dibutuhkan.
+            Membahas produk, kemasan, kapasitas produksi,
+            metode pengemasan, dan kebutuhan sistem.
           </p>
+
         </div>
 
-        <div class="process">
+
+        <div class="process-card">
+
           <span>02</span>
 
-          <h3>Perancangan</h3>
+          <h3>
+            Perancangan
+          </h3>
 
           <p>
-            Menentukan konsep mesin, dimensi,
-            komponen, dan sistem kerja.
+            Menentukan konsep mesin, mekanisme filling,
+            sealing, conveyor, dan sistem pendukung.
           </p>
+
         </div>
 
-        <div class="process">
+
+        <div class="process-card">
+
           <span>03</span>
 
-          <h3>Fabrikasi</h3>
+          <h3>
+            Fabrikasi & Assembly
+          </h3>
 
           <p>
-            Proses pembuatan rangka, komponen mekanik,
-            sistem penggerak, dan bagian pendukung lainnya.
+            Pembuatan komponen mesin kemudian dilanjutkan
+            dengan proses perakitan dan penyusunan sistem.
           </p>
+
         </div>
 
-        <div class="process">
+
+        <div class="process-card">
+
           <span>04</span>
 
-          <h3>Assembly & Testing</h3>
+          <h3>
+            Testing
+          </h3>
 
           <p>
-            Mesin dirakit dan diuji untuk memastikan
-            sistem bekerja sesuai rancangan.
+            Pengujian dilakukan menggunakan kondisi proses
+            yang disesuaikan dengan kebutuhan produksi.
           </p>
+
         </div>
 
       </div>
 
     </div>
+
+  </section>
+
+
+  <!-- BENEFITS -->
+  <section class="section section-light">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label">
+          MANFAAT
+        </span>
+
+        <h2>
+          Keuntungan Menggunakan Mesin Packaging Custom
+        </h2>
+
+      </div>
+
+
+      <div class="benefit-light-grid">
+
+        <div class="benefit-light">
+
+          <h3>
+            Sesuai Produk
+          </h3>
+
+          <p>
+            Mekanisme mesin dapat disesuaikan dengan bentuk
+            dan karakteristik produk yang dikemas.
+          </p>
+
+        </div>
+
+
+        <div class="benefit-light">
+
+          <h3>
+            Sesuai Kemasan
+          </h3>
+
+          <p>
+            Sistem dapat dirancang mengikuti ukuran,
+            bentuk, dan jenis material kemasan.
+          </p>
+
+        </div>
+
+
+        <div class="benefit-light">
+
+          <h3>
+            Mendukung Kapasitas Produksi
+          </h3>
+
+          <p>
+            Kapasitas dan kecepatan kerja dapat disesuaikan
+            dengan target proses produksi.
+          </p>
+
+        </div>
+
+
+        <div class="benefit-light">
+
+          <h3>
+            Dapat Diintegrasikan
+          </h3>
+
+          <p>
+            Mesin dapat dihubungkan dengan conveyor,
+            filling, labeling, dan sistem otomatisasi lainnya.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RELATED -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label">
+          LAYANAN TERKAIT
+        </span>
+
+        <h2>
+          Layanan Pendukung Mesin Packaging
+        </h2>
+
+      </div>
+
+
+      <div class="related-grid">
+
+        <a
+          href={`${base}jasa/mesin-custom/`}
+          class="related-card"
+        >
+
+          <strong>
+            Jasa Pembuatan Mesin Custom
+          </strong>
+
+          <span>
+            Pembuatan mesin khusus berdasarkan kebutuhan industri.
+          </span>
+
+        </a>
+
+
+        <a
+          href={`${base}jasa/mesin-produksi-custom/`}
+          class="related-card"
+        >
+
+          <strong>
+            Mesin Produksi Custom
+          </strong>
+
+          <span>
+            Mesin produksi yang dirancang sesuai proses kerja.
+          </span>
+
+        </a>
+
+
+        <a
+          href={`${base}jasa/pembuatan-conveyor/`}
+          class="related-card"
+        >
+
+          <strong>
+            Pembuatan Conveyor
+          </strong>
+
+          <span>
+            Conveyor untuk mendukung pemindahan produk dalam proses packaging.
+          </span>
+
+        </a>
+
+
+        <a
+          href={`${base}jasa/otomatisasi-industri/`}
+          class="related-card"
+        >
+
+          <strong>
+            Otomatisasi Industri
+          </strong>
+
+          <span>
+            Integrasi mesin packaging dengan sistem otomatisasi produksi.
+          </span>
+
+        </a>
+
+      </div>
+
+    </div>
+
   </section>
 
 
   <!-- CTA -->
-  <section class="cta">
+  <section class="cta-section">
+
     <div class="container cta-inner">
 
       <div>
+
         <span class="section-label">
-          KONSULTASI MESIN
+          KONSULTASI MESIN PACKAGING
         </span>
 
         <h2>
-          Membutuhkan Mesin Packaging Custom?
+          Membutuhkan Mesin Packaging Sesuai Produk Anda?
         </h2>
 
         <p>
-          Sampaikan jenis produk, jenis kemasan,
-          kapasitas produksi, dan proses packaging
-          yang ingin dibuat.
+          Sampaikan jenis produk, ukuran kemasan, kapasitas produksi,
+          serta proses packaging yang dibutuhkan untuk mendapatkan
+          konsep mesin yang lebih sesuai.
         </p>
+
       </div>
 
+
       <a
-        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20mesin%20packaging%20custom."
-        class="btn btn-primary"
+        href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+          "Halo, saya ingin konsultasi tentang pembuatan mesin packaging custom."
+        )}`}
+        class="btn btn-light"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Konsultasi via WhatsApp
+        Konsultasi Sekarang
       </a>
 
     </div>
+
   </section>
 
 </BaseLayout>
 
 
 <style>
-  .hero {
-    padding: 90px 0;
-    background: linear-gradient(
-      135deg,
-      #f8fafc,
-      #ecfeff
-    );
-  }
-
   .container {
     width: min(1180px, 92%);
     margin: 0 auto;
   }
 
+  .narrow {
+    max-width: 850px;
+  }
+
+  .hero {
+    padding: 90px 0;
+    background:
+      linear-gradient(
+        135deg,
+        #f0fdfa 0%,
+        #ffffff 55%,
+        #f8fafc 100%
+      );
+  }
+
   .hero-grid {
     display: grid;
-    grid-template-columns: 1.4fr 0.8fr;
-    gap: 60px;
+    grid-template-columns: 1.35fr 0.65fr;
     align-items: center;
+    gap: 70px;
   }
 
   .eyebrow,
@@ -456,16 +822,17 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   }
 
   h1 {
-    max-width: 760px;
-    margin: 0 0 22px;
-    font-size: clamp(38px, 5vw, 62px);
+    max-width: 800px;
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(38px, 5vw, 64px);
     line-height: 1.08;
     letter-spacing: -1.5px;
-    color: #0f172a;
   }
 
-  .hero-text {
+  .hero-description {
     max-width: 720px;
+    margin: 24px 0 0;
     color: #475569;
     font-size: 18px;
     line-height: 1.8;
@@ -475,17 +842,26 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    margin-top: 30px;
+    margin-top: 32px;
   }
 
   .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 22px;
+    min-height: 48px;
+    padding: 0 22px;
     border-radius: 9px;
     text-decoration: none;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 800;
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
   }
 
   .btn-primary {
@@ -504,24 +880,36 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   }
 
   .hero-card {
-    padding: 35px;
+    padding: 34px;
+    background: #ffffff;
     border: 1px solid #dbeafe;
     border-radius: 18px;
-    background: #ffffff;
     box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
   }
 
   .hero-icon {
-    font-size: 48px;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    background: #ccfbf1;
+    color: #0f766e;
+    font-size: 30px;
+    font-weight: 800;
   }
 
   .hero-card h2 {
-    margin: 0 0 12px;
-    font-size: 25px;
+    margin: 0 0 14px;
+    color: #0f172a;
+    font-size: 24px;
+    line-height: 1.3;
   }
 
   .hero-card p {
+    margin: 0;
     color: #64748b;
     line-height: 1.8;
   }
@@ -530,82 +918,74 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     padding: 85px 0;
   }
 
-  .section-soft {
+  .section-light {
     background: #f8fafc;
   }
 
-  .content-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 0.8fr;
-    gap: 60px;
+  .section-dark {
+    background: #0f172a;
+    color: #cbd5e1;
   }
 
-  h2 {
-    margin: 0 0 20px;
-    font-size: clamp(30px, 4vw, 44px);
-    line-height: 1.15;
+  .section-heading {
+    max-width: 780px;
+    margin-bottom: 42px;
+  }
+
+  .section-heading h2,
+  .narrow h2 {
+    margin: 0 0 18px;
     color: #0f172a;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
   }
 
-  .content-grid p {
-    color: #475569;
+  .section-heading p,
+  .narrow p {
+    color: #64748b;
     line-height: 1.8;
+  }
+
+  .section-dark .section-heading h2 {
+    color: #ffffff;
+  }
+
+  .section-dark .section-heading p {
+    color: #cbd5e1;
+  }
+
+  .section-dark .section-label {
+    color: #5eead4;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .info-card {
     padding: 30px;
     background: #ffffff;
     border: 1px solid #e2e8f0;
-    border-radius: 16px;
+    border-radius: 14px;
+  }
+
+  .card-number {
+    margin-bottom: 20px;
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
   }
 
   .info-card h3 {
-    margin-top: 0;
+    margin: 0 0 12px;
+    color: #0f172a;
     font-size: 20px;
   }
 
-  .info-card ul {
-    padding-left: 20px;
-    color: #475569;
-    line-height: 2;
-  }
-
-  .section-heading {
-    max-width: 760px;
-    margin-bottom: 45px;
-  }
-
-  .section-heading p {
-    color: #64748b;
-    font-size: 17px;
-  }
-
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-  }
-
-  .card {
-    padding: 30px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 15px;
-  }
-
-  .card-icon {
-    margin-bottom: 18px;
-    color: #0f766e;
-    font-size: 14px;
-    font-weight: 800;
-  }
-
-  .card h3 {
-    margin: 0 0 10px;
-    font-size: 20px;
-  }
-
-  .card p {
+  .info-card p {
     margin: 0;
     color: #64748b;
     line-height: 1.75;
@@ -614,81 +994,151 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   .application-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 16px;
   }
 
-  .application-grid > div {
-    padding: 25px;
-    border-left: 4px solid #0f766e;
-    background: #f8fafc;
+  .application-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
   }
 
-  .application-grid strong {
-    font-size: 18px;
+  .application-item strong {
+    color: #0f172a;
   }
 
-  .application-grid p {
-    margin-bottom: 0;
+  .application-item span {
     color: #64748b;
+    line-height: 1.7;
   }
 
   .benefit-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
-  .benefit {
-    padding: 25px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
+  .benefit-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 18px;
+    padding: 26px 0;
+    border-top: 1px solid #334155;
   }
 
-  .benefit h3 {
-    margin-top: 0;
-    font-size: 18px;
+  .benefit-item > span {
+    color: #5eead4;
+    font-size: 13px;
+    font-weight: 800;
   }
 
-  .benefit p {
-    margin-bottom: 0;
-    color: #64748b;
-    line-height: 1.7;
+  .benefit-item h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 19px;
+  }
+
+  .benefit-item p {
+    margin: 0;
+    color: #cbd5e1;
+    line-height: 1.75;
   }
 
   .process-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 18px;
   }
 
-  .process {
+  .process-card {
     padding: 28px;
     border: 1px solid #e2e8f0;
     border-radius: 14px;
   }
 
-  .process span {
-    display: inline-flex;
-    margin-bottom: 20px;
+  .process-card > span {
     color: #0f766e;
-    font-size: 13px;
     font-weight: 800;
+    font-size: 13px;
   }
 
-  .process h3 {
-    margin: 0 0 10px;
+  .process-card h3 {
+    margin: 18px 0 10px;
+    color: #0f172a;
+    font-size: 19px;
   }
 
-  .process p {
+  .process-card p {
     margin: 0;
     color: #64748b;
     line-height: 1.7;
   }
 
-  .cta {
-    padding: 75px 0;
-    background: #0f172a;
+  .benefit-light-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .benefit-light {
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+  }
+
+  .benefit-light h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 19px;
+  }
+
+  .benefit-light p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.75;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+
+  .related-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .related-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.08);
+  }
+
+  .related-card strong {
+    color: #0f172a;
+  }
+
+  .related-card span {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .cta-section {
+    padding: 70px 0;
+    background: #0f766e;
   }
 
   .cta-inner {
@@ -698,39 +1148,51 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     gap: 40px;
   }
 
-  .cta h2 {
+  .cta-inner h2 {
+    max-width: 750px;
+    margin: 0 0 14px;
     color: #ffffff;
-    margin-bottom: 15px;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
   }
 
-  .cta p {
-    max-width: 700px;
+  .cta-inner p {
+    max-width: 720px;
     margin: 0;
-    color: #cbd5e1;
+    color: #ccfbf1;
     line-height: 1.8;
   }
 
-  .cta .section-label {
-    color: #5eead4;
+  .cta-inner .section-label {
+    color: #99f6e4;
   }
 
-  @media (max-width: 950px) {
-    .hero-grid,
-    .content-grid {
+  .btn-light {
+    flex-shrink: 0;
+    background: #ffffff;
+    color: #0f766e;
+  }
+
+  @media (max-width: 1000px) {
+
+    .hero-grid {
       grid-template-columns: 1fr;
+      gap: 40px;
     }
 
     .card-grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .benefit-grid,
-    .process-grid {
+    .process-grid,
+    .related-grid {
       grid-template-columns: repeat(2, 1fr);
     }
+
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 700px) {
+
     .hero {
       padding: 65px 0;
     }
@@ -742,7 +1204,9 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     .card-grid,
     .application-grid,
     .benefit-grid,
-    .process-grid {
+    .benefit-light-grid,
+    .process-grid,
+    .related-grid {
       grid-template-columns: 1fr;
     }
 
@@ -750,5 +1214,10 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
       flex-direction: column;
       align-items: flex-start;
     }
+
+    .hero-description {
+      font-size: 16px;
+    }
+
   }
 </style>
