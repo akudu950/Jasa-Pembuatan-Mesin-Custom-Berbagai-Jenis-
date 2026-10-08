@@ -1,16 +1,18 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { services } from "../../data/site";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
   title="Jasa Pembuatan Mesin Custom untuk Kebutuhan Industri"
-  description="Jasa pembuatan mesin custom, fabrikasi mesin, otomatisasi industri, mesin produksi custom, conveyor, dan mesin packaging untuk berbagai kebutuhan industri."
+  description="Jasa pembuatan mesin custom, fabrikasi mesin, mesin produksi custom, otomatisasi industri, conveyor, dan mesin packaging sesuai kebutuhan industri."
 >
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container hero-inner">
+    <div class="container">
 
       <span class="eyebrow">
         JASA PEMBUATAN MESIN
@@ -20,20 +22,28 @@ import { services } from "../../data/site";
         Jasa Pembuatan Mesin Custom untuk Kebutuhan Industri
       </h1>
 
-      <p>
+      <p class="hero-description">
         Solusi pembuatan mesin custom yang dirancang berdasarkan
-        kebutuhan proses produksi, kapasitas, material, layout,
-        dan sistem kerja di lapangan.
+        kebutuhan proses produksi, kapasitas, fungsi, material,
+        dimensi, dan kondisi operasional.
       </p>
 
       <div class="hero-actions">
-        <a href="/kontak/" class="btn btn-primary">
+
+        <a
+          href={`${base}kontak/`}
+          class="button button-primary"
+        >
           Konsultasikan Kebutuhan
         </a>
 
-        <a href="/mesin/" class="btn btn-secondary">
-          Lihat Katalog Mesin
+        <a
+          href={`${base}portfolio/`}
+          class="button button-secondary"
+        >
+          Lihat Portfolio
         </a>
+
       </div>
 
     </div>
@@ -42,81 +52,79 @@ import { services } from "../../data/site";
 
   <!-- INTRO -->
   <section class="section">
+
     <div class="container intro-grid">
 
       <div>
+
         <span class="section-label">
-          SOLUSI MESIN CUSTOM
+          MESIN CUSTOM INDUSTRI
         </span>
 
         <h2>
-          Mesin Dirancang Berdasarkan Kebutuhan Produksi
+          Mesin Dirancang Berdasarkan Kebutuhan Proses
         </h2>
 
-        <p>
-          Setiap proses produksi memiliki karakteristik yang berbeda.
-          Karena itu, kebutuhan mesin tidak selalu dapat dipenuhi
-          menggunakan mesin standar yang tersedia di pasaran.
-        </p>
-
-        <p>
-          Pembuatan mesin custom memungkinkan desain dan sistem kerja
-          disesuaikan dengan produk, kapasitas produksi, material,
-          ukuran area, serta tahapan proses yang ingin dioptimalkan.
-        </p>
-
-        <p>
-          Pendekatan tersebut dapat diterapkan untuk berbagai bidang,
-          mulai dari industri makanan dan minuman, manufaktur,
-          packaging, pertanian, pengolahan material, hingga
-          otomatisasi proses produksi.
-        </p>
       </div>
 
-      <div class="intro-card">
-        <div class="intro-icon">⚙</div>
-
-        <h3>
-          Dari Konsep hingga Mesin Siap Digunakan
-        </h3>
+      <div>
 
         <p>
-          Proses dapat mencakup konsultasi kebutuhan, perancangan,
-          fabrikasi, perakitan, pengujian, hingga penyesuaian
-          mesin berdasarkan kebutuhan aplikasi.
+          Setiap proses produksi memiliki kebutuhan yang berbeda.
+          Mesin standar terkadang belum dapat menyesuaikan ukuran
+          produk, kapasitas produksi, metode kerja, maupun kondisi
+          ruang yang tersedia.
         </p>
+
+        <p>
+          Jasa pembuatan mesin custom menjadi solusi untuk kebutuhan
+          tersebut dengan merancang mesin berdasarkan fungsi dan
+          proses kerja yang ingin dicapai.
+        </p>
+
+        <p>
+          Konsep mesin dapat disesuaikan mulai dari konstruksi,
+          mekanisme kerja, sistem penggerak, kapasitas, hingga
+          kebutuhan otomatisasi.
+        </p>
+
       </div>
 
     </div>
+
   </section>
 
 
   <!-- SERVICES -->
-  <section class="section section-soft">
+  <section class="section section-light">
+
     <div class="container">
 
       <div class="section-heading">
-        <span class="section-label">
-          LAYANAN
-        </span>
 
-        <h2>
-          Layanan Pembuatan Mesin Custom
-        </h2>
+        <div>
 
-        <p>
-          Pilih jenis layanan yang sesuai dengan kebutuhan
-          produksi dan sistem industri Anda.
-        </p>
+          <span class="section-label">
+            LAYANAN UTAMA
+          </span>
+
+          <h2>
+            Solusi Mesin untuk Berbagai Kebutuhan
+          </h2>
+
+        </div>
+
       </div>
+
 
       <div class="service-grid">
 
         {services.map((service) => (
+
           <article class="service-card">
 
             <div class="service-number">
-              {String(services.indexOf(service) + 1).padStart(2, "0")}
+              ⚙
             </div>
 
             <h3>
@@ -124,181 +132,374 @@ import { services } from "../../data/site";
             </h3>
 
             <p>
-              Solusi {service.title.toLowerCase()} yang dapat
-              disesuaikan dengan kebutuhan proses dan aplikasi.
+              Solusi pembuatan mesin yang disesuaikan dengan
+              kebutuhan fungsi dan proses produksi.
             </p>
 
-            <a href={`/jasa/${service.slug}/`}>
-              Lihat Detail →
+            <a href={`${base}jasa/${service.slug}/`}>
+              Pelajari Layanan →
             </a>
 
           </article>
+
         ))}
 
       </div>
 
     </div>
+
+  </section>
+
+
+  <!-- JENIS KEBUTUHAN -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="section-label">
+            KEBUTUHAN INDUSTRI
+          </span>
+
+          <h2>
+            Berbagai Jenis Mesin Custom
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="needs-grid">
+
+        <div class="need-card">
+
+          <h3>
+            Mesin Produksi Custom
+          </h3>
+
+          <p>
+            Mesin untuk membantu proses produksi dengan kapasitas
+            dan metode kerja yang disesuaikan.
+          </p>
+
+          <a href={`${base}jasa/mesin-produksi-custom/`}>
+            Lihat Detail →
+          </a>
+
+        </div>
+
+
+        <div class="need-card">
+
+          <h3>
+            Mesin Makanan & Minuman
+          </h3>
+
+          <p>
+            Solusi mesin untuk proses pengolahan, produksi,
+            filling, dan kebutuhan industri makanan serta minuman.
+          </p>
+
+          <a href={`${base}mesin/makanan-minuman/`}>
+            Lihat Kategori →
+          </a>
+
+        </div>
+
+
+        <div class="need-card">
+
+          <h3>
+            Mesin Packaging
+          </h3>
+
+          <p>
+            Mesin pengemasan custom untuk mendukung proses
+            packaging berbagai jenis produk.
+          </p>
+
+          <a href={`${base}jasa/mesin-packaging/`}>
+            Lihat Detail →
+          </a>
+
+        </div>
+
+
+        <div class="need-card">
+
+          <h3>
+            Conveyor Custom
+          </h3>
+
+          <p>
+            Conveyor yang dapat dirancang berdasarkan layout,
+            kapasitas, material, dan kebutuhan pemindahan produk.
+          </p>
+
+          <a href={`${base}jasa/pembuatan-conveyor/`}>
+            Lihat Detail →
+          </a>
+
+        </div>
+
+
+        <div class="need-card">
+
+          <h3>
+            Mesin Pertanian & Agro
+          </h3>
+
+          <p>
+            Mesin untuk membantu pengolahan hasil pertanian dan
+            berbagai kebutuhan agroindustri.
+          </p>
+
+          <a href={`${base}mesin/pertanian-agro/`}>
+            Lihat Kategori →
+          </a>
+
+        </div>
+
+
+        <div class="need-card">
+
+          <h3>
+            Mesin Pengolahan Limbah
+          </h3>
+
+          <p>
+            Solusi mesin untuk kebutuhan pengolahan dan
+            pemrosesan berbagai jenis limbah.
+          </p>
+
+          <a href={`${base}mesin/pengolahan-limbah/`}>
+            Lihat Kategori →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
 
   <!-- PROCESS -->
-  <section class="section">
+  <section class="section section-dark">
+
     <div class="container">
 
       <div class="section-heading">
-        <span class="section-label">
-          PROSES KERJA
-        </span>
 
-        <h2>
-          Tahapan Pembuatan Mesin
-        </h2>
+        <div>
 
-        <p>
-          Setiap proyek dapat dimulai dari pembahasan kebutuhan
-          hingga mesin siap digunakan.
-        </p>
+          <span class="section-label">
+            PROSES PEMBUATAN
+          </span>
+
+          <h2>
+            Tahapan Pembuatan Mesin Custom
+          </h2>
+
+        </div>
+
       </div>
+
 
       <div class="process-grid">
 
         <div class="process-card">
+
           <span>01</span>
 
-          <h3>Konsultasi</h3>
+          <h3>
+            Konsultasi
+          </h3>
 
           <p>
-            Membahas kebutuhan mesin, produk, kapasitas,
-            material, dan proses produksi.
+            Memahami kebutuhan fungsi mesin, kapasitas, produk,
+            proses kerja, dan kondisi penggunaan.
           </p>
+
         </div>
 
+
         <div class="process-card">
+
           <span>02</span>
 
-          <h3>Perancangan</h3>
+          <h3>
+            Konsep & Perancangan
+          </h3>
 
           <p>
-            Menentukan konsep, dimensi, sistem kerja,
-            komponen, dan kebutuhan teknis.
+            Menentukan konsep mesin, mekanisme kerja, dimensi,
+            komponen, dan sistem pendukung.
           </p>
+
         </div>
 
+
         <div class="process-card">
+
           <span>03</span>
 
-          <h3>Fabrikasi</h3>
+          <h3>
+            Fabrikasi & Assembly
+          </h3>
 
           <p>
-            Proses pembuatan rangka, komponen mekanik,
-            sistem penggerak, dan bagian mesin lainnya.
+            Pembuatan komponen, rangka, sistem mekanik, serta
+            proses perakitan mesin.
           </p>
+
         </div>
 
+
         <div class="process-card">
+
           <span>04</span>
 
-          <h3>Assembly & Testing</h3>
+          <h3>
+            Testing
+          </h3>
 
           <p>
-            Perakitan dan pengujian dilakukan untuk memastikan
-            mesin bekerja sesuai rancangan.
+            Pengujian fungsi mesin untuk memastikan sistem dapat
+            bekerja sesuai konsep yang dirancang.
           </p>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
 
   <!-- BENEFITS -->
-  <section class="section section-soft">
+  <section class="section">
+
     <div class="container">
 
       <div class="section-heading">
-        <span class="section-label">
-          KEUNGGULAN
-        </span>
 
-        <h2>
-          Mengapa Memilih Mesin Custom?
-        </h2>
+        <div>
+
+          <span class="section-label">
+            KEUNGGULAN
+          </span>
+
+          <h2>
+            Keuntungan Menggunakan Mesin Custom
+          </h2>
+
+        </div>
+
       </div>
+
 
       <div class="benefit-grid">
 
         <div class="benefit-card">
-          <h3>Sesuai Proses</h3>
+
+          <h3>
+            Sesuai Kebutuhan
+          </h3>
 
           <p>
-            Sistem mesin dapat dirancang mengikuti tahapan
-            produksi yang sudah berjalan.
+            Mesin dirancang berdasarkan fungsi dan kebutuhan
+            proses yang ingin dicapai.
           </p>
+
         </div>
 
+
         <div class="benefit-card">
-          <h3>Sesuai Kapasitas</h3>
+
+          <h3>
+            Fleksibel
+          </h3>
 
           <p>
-            Kapasitas mesin dapat disesuaikan dengan target
-            produksi yang dibutuhkan.
+            Dimensi, kapasitas, material, dan mekanisme dapat
+            disesuaikan dengan kondisi penggunaan.
           </p>
+
         </div>
 
+
         <div class="benefit-card">
-          <h3>Sesuai Layout</h3>
+
+          <h3>
+            Mendukung Efisiensi
+          </h3>
 
           <p>
-            Dimensi dan konfigurasi mesin dapat mempertimbangkan
-            kondisi area produksi.
+            Mesin dapat membantu mengurangi pekerjaan manual
+            dan meningkatkan konsistensi proses.
           </p>
+
         </div>
 
+
         <div class="benefit-card">
-          <h3>Dapat Diintegrasikan</h3>
+
+          <h3>
+            Dapat Dikembangkan
+          </h3>
 
           <p>
-            Mesin dapat dikembangkan bersama conveyor,
-            packaging, filling, sensor, dan sistem otomatisasi.
+            Konsep mesin dapat dikembangkan untuk kebutuhan
+            otomatisasi dan peningkatan kapasitas.
           </p>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
 
   <!-- CTA -->
   <section class="cta">
+
     <div class="container cta-inner">
 
       <div>
+
         <span class="section-label">
           KONSULTASI
         </span>
 
         <h2>
-          Punya Kebutuhan Mesin Khusus?
+          Membutuhkan Mesin dengan Spesifikasi Khusus?
         </h2>
 
         <p>
-          Sampaikan kebutuhan proses produksi, kapasitas,
-          material, ukuran area, dan fungsi mesin yang diinginkan.
+          Sampaikan kebutuhan proses, kapasitas produksi,
+          jenis produk, atau fungsi mesin yang dibutuhkan.
         </p>
+
       </div>
 
       <a
-        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20pembuatan%20mesin%20custom."
-        class="btn btn-primary"
-        target="_blank"
-        rel="noopener noreferrer"
+        href={`${base}kontak/`}
+        class="button button-primary"
       >
-        Konsultasi via WhatsApp
+        Konsultasikan Sekarang
       </a>
 
     </div>
+
   </section>
 
 </BaseLayout>
@@ -307,20 +508,12 @@ import { services } from "../../data/site";
 <style>
   .hero {
     padding: 100px 0;
-    background: linear-gradient(
-      135deg,
-      #f8fafc,
-      #ecfeff
-    );
-  }
-
-  .container {
-    width: min(1180px, 92%);
-    margin: 0 auto;
-  }
-
-  .hero-inner {
-    max-width: 900px;
+    background:
+      linear-gradient(
+        135deg,
+        #f8fafc 0%,
+        #ecfeff 100%
+      );
   }
 
   .eyebrow,
@@ -331,21 +524,23 @@ import { services } from "../../data/site";
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
   }
 
-  h1 {
-    margin: 0 0 22px;
+  .hero h1 {
+    max-width: 900px;
+    margin: 0;
+    color: #0f172a;
     font-size: clamp(40px, 5vw, 64px);
     line-height: 1.08;
-    letter-spacing: -1.5px;
-    color: #0f172a;
+    letter-spacing: -2px;
   }
 
-  .hero p {
+  .hero-description {
     max-width: 780px;
-    margin: 0;
+    margin: 25px 0 0;
     color: #475569;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.8;
   }
 
@@ -356,104 +551,104 @@ import { services } from "../../data/site";
     margin-top: 32px;
   }
 
-  .btn {
+  .button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 22px;
+    min-height: 48px;
+    padding: 12px 22px;
     border-radius: 9px;
     text-decoration: none;
     font-weight: 700;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
-  .btn-primary {
+  .button:hover {
+    transform: translateY(-2px);
+  }
+
+  .button-primary {
     background: #0f766e;
     color: #ffffff;
   }
 
-  .btn-primary:hover {
-    background: #115e59;
-  }
-
-  .btn-secondary {
+  .button-secondary {
+    border: 1px solid #cbd5e1;
     background: #ffffff;
     color: #0f172a;
-    border: 1px solid #cbd5e1;
   }
 
   .section {
-    padding: 85px 0;
+    padding: 90px 0;
   }
 
-  .section-soft {
+  .section-light {
     background: #f8fafc;
   }
 
   .intro-grid {
     display: grid;
-    grid-template-columns: 1.4fr 0.8fr;
-    gap: 60px;
-    align-items: start;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
   }
 
-  h2 {
-    margin: 0 0 20px;
+  .intro-grid h2,
+  .section-heading h2 {
+    margin: 0;
     color: #0f172a;
     font-size: clamp(30px, 4vw, 44px);
     line-height: 1.15;
+    letter-spacing: -1px;
   }
 
   .intro-grid p {
-    color: #475569;
-    line-height: 1.8;
-  }
-
-  .intro-card {
-    padding: 35px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06);
-  }
-
-  .intro-icon {
+    margin-top: 0;
     margin-bottom: 20px;
-    font-size: 46px;
-  }
-
-  .intro-card h3 {
-    margin: 0 0 12px;
-    font-size: 22px;
-  }
-
-  .intro-card p {
-    margin: 0;
-    color: #64748b;
+    color: #475569;
+    font-size: 17px;
+    line-height: 1.85;
   }
 
   .section-heading {
-    max-width: 760px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
-  .section-heading p {
-    margin: 0;
-    color: #64748b;
-    font-size: 17px;
-    line-height: 1.8;
+  .service-grid,
+  .needs-grid,
+  .benefit-grid,
+  .process-grid {
+    display: grid;
+    gap: 24px;
   }
 
   .service-grid {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+  }
+
+  .needs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .service-card,
+  .need-card,
+  .benefit-card {
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #ffffff;
   }
 
   .service-card {
-    padding: 30px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 15px;
     transition:
       transform 0.2s ease,
       box-shadow 0.2s ease;
@@ -461,127 +656,125 @@ import { services } from "../../data/site";
 
   .service-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
   }
 
   .service-number {
-    margin-bottom: 18px;
-    color: #0f766e;
-    font-size: 13px;
-    font-weight: 800;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background: #ccfbf1;
+    font-size: 23px;
   }
 
-  .service-card h3 {
+  .service-card h3,
+  .need-card h3,
+  .benefit-card h3 {
     margin: 0 0 12px;
-    font-size: 20px;
+    color: #0f172a;
+    font-size: 19px;
+    line-height: 1.4;
   }
 
-  .service-card p {
-    margin: 0 0 20px;
+  .service-card p,
+  .need-card p,
+  .benefit-card p {
     color: #64748b;
-    line-height: 1.7;
+    line-height: 1.75;
   }
 
-  .service-card a {
+  .service-card a,
+  .need-card a {
     color: #0f766e;
-    text-decoration: none;
     font-weight: 700;
+    text-decoration: none;
   }
 
-  .process-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+  .section-dark {
+    background: #0f172a;
+  }
+
+  .section-dark .section-heading h2 {
+    color: #ffffff;
   }
 
   .process-card {
     padding: 28px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #334155;
     border-radius: 14px;
+    background: #172033;
   }
 
-  .process-card span {
-    display: inline-block;
+  .process-card > span {
+    display: block;
     margin-bottom: 18px;
-    color: #0f766e;
+    color: #2dd4bf;
     font-size: 13px;
     font-weight: 800;
   }
 
   .process-card h3 {
-    margin: 0 0 10px;
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: 19px;
   }
 
   .process-card p {
     margin: 0;
-    color: #64748b;
-    line-height: 1.7;
-  }
-
-  .benefit-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-
-  .benefit-card {
-    padding: 26px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
-  }
-
-  .benefit-card h3 {
-    margin: 0 0 10px;
-    font-size: 18px;
-  }
-
-  .benefit-card p {
-    margin: 0;
-    color: #64748b;
-    line-height: 1.7;
+    color: #cbd5e1;
+    line-height: 1.75;
   }
 
   .cta {
-    padding: 75px 0;
-    background: #0f172a;
+    padding: 80px 0;
+    background: #ecfeff;
   }
 
   .cta-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 50px;
   }
 
   .cta h2 {
-    margin-bottom: 15px;
-    color: #ffffff;
+    max-width: 750px;
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.15;
   }
 
   .cta p {
     max-width: 700px;
-    margin: 0;
-    color: #cbd5e1;
+    margin: 18px 0 0;
+    color: #475569;
     line-height: 1.8;
   }
 
-  .cta .section-label {
-    color: #5eead4;
-  }
-
-  @media (max-width: 950px) {
+  @media (max-width: 1000px) {
     .intro-grid {
       grid-template-columns: 1fr;
+      gap: 30px;
     }
 
-    .service-grid {
+    .service-grid,
+    .needs-grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .process-grid,
-    .benefit-grid {
+    .benefit-grid,
+    .process-grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-inner {
+      align-items: flex-start;
+      flex-direction: column;
     }
   }
 
@@ -595,14 +788,18 @@ import { services } from "../../data/site";
     }
 
     .service-grid,
-    .process-grid,
-    .benefit-grid {
+    .needs-grid,
+    .benefit-grid,
+    .process-grid {
       grid-template-columns: 1fr;
     }
 
-    .cta-inner {
+    .hero-actions {
       flex-direction: column;
-      align-items: flex-start;
+    }
+
+    .button {
+      width: 100%;
     }
   }
 </style>
