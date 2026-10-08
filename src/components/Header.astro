@@ -8,14 +8,16 @@ const menuItems = siteConfig.navigation;
 <header class="site-header">
   <div class="container header-inner">
 
-    <a href="/" class="logo">
+    <a href={import.meta.env.BASE_URL} class="logo">
       <span>JASA PEMBUATAN</span>
       <strong>MESIN CUSTOM</strong>
     </a>
 
     <nav class="main-nav" aria-label="Navigasi utama">
       {menuItems.map((item) => (
-        <a href={item.href}>{item.label}</a>
+        <a href={`${import.meta.env.BASE_URL}${item.href.replace(/^\//, "")}`}>
+  {item.label}
+</a>
       ))}
     </nav>
 
