@@ -16,18 +16,31 @@ const {
   title = "Jasa Pembuatan Mesin Custom",
   description =
     "Jasa pembuatan mesin custom untuk kebutuhan industri, produksi, manufaktur, makanan dan minuman, pertanian, packaging, conveyor, dan otomatisasi.",
-  image = "/og-image.svg",
+  image = "og-image.svg",
   noindex = false,
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const base = import.meta.env.BASE_URL;
 
-const imageURL = new URL(image, Astro.site);
+const canonicalURL = new URL(
+  Astro.url.pathname,
+  Astro.site
+);
+
+const imageURL = new URL(
+  `${base}${image.replace(/^\//, "")}`,
+  Astro.site
+);
+
+const faviconURL = `${base}favicon.svg`;
 ---
 
 <!doctype html>
+
 <html lang="id">
+
   <head>
+
     <meta charset="UTF-8" />
 
     <meta
@@ -42,7 +55,11 @@ const imageURL = new URL(image, Astro.site);
 
     <meta
       name="robots"
-      content={noindex ? "noindex, nofollow" : "index, follow"}
+      content={
+        noindex
+          ? "noindex, nofollow"
+          : "index, follow"
+      }
     />
 
     <meta
@@ -50,18 +67,25 @@ const imageURL = new URL(image, Astro.site);
       content="#0f766e"
     />
 
+
+    <!-- CANONICAL -->
+
     <link
       rel="canonical"
       href={canonicalURL}
     />
 
+
+    <!-- FAVICON -->
+
     <link
       rel="icon"
       type="image/svg+xml"
-      href="/favicon.svg"
+      href={faviconURL}
     />
 
-    <!-- Open Graph -->
+
+    <!-- OPEN GRAPH -->
 
     <meta
       property="og:type"
@@ -98,7 +122,8 @@ const imageURL = new URL(image, Astro.site);
       content={imageURL}
     />
 
-    <!-- Twitter Card -->
+
+    <!-- TWITTER CARD -->
 
     <meta
       name="twitter:card"
@@ -120,10 +145,18 @@ const imageURL = new URL(image, Astro.site);
       content={imageURL}
     />
 
-    <title>{title}</title>
+
+    <!-- TITLE -->
+
+    <title>
+      {title}
+    </title>
+
   </head>
 
+
   <body>
+
     <Header />
 
     <main>
@@ -133,5 +166,7 @@ const imageURL = new URL(image, Astro.site);
     <Footer />
 
     <WhatsAppButton />
+
   </body>
+
 </html>
