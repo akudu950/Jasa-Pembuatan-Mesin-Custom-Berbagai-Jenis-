@@ -1,10 +1,12 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
-  title="Jasa Fabrikasi Mesin Custom untuk Industri"
-  description="Jasa fabrikasi mesin custom untuk pembuatan rangka, komponen, sistem mekanik, conveyor, mesin produksi, dan kebutuhan fabrikasi industri lainnya."
+  title="Jasa Fabrikasi Mesin Custom untuk Kebutuhan Industri"
+  description="Jasa fabrikasi mesin custom untuk pembuatan rangka, komponen, konstruksi, dan kebutuhan mesin industri sesuai spesifikasi dan kebutuhan produksi."
 >
 
   <section class="hero">
@@ -19,27 +21,25 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
       </h1>
 
       <p>
-        Pembuatan dan fabrikasi komponen mesin berdasarkan
-        kebutuhan fungsi, ukuran, material, konstruksi,
-        dan kondisi operasional.
+        Layanan fabrikasi untuk pembuatan rangka, komponen, konstruksi,
+        dan bagian mesin berdasarkan desain serta kebutuhan teknis
+        proyek industri.
       </p>
 
       <div class="hero-actions">
 
         <a
-          href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20jasa%20fabrikasi%20mesin."
-          class="btn-primary"
-          target="_blank"
-          rel="noopener noreferrer"
+          href={`${base}kontak/`}
+          class="btn btn-primary"
         >
-          Konsultasi WhatsApp
+          Konsultasikan Proyek
         </a>
 
         <a
-          href="/jasa/"
-          class="btn-secondary"
+          href={`${base}jasa/mesin-custom/`}
+          class="btn btn-secondary"
         >
-          Lihat Semua Jasa
+          Jasa Mesin Custom
         </a>
 
       </div>
@@ -48,144 +48,205 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   </section>
 
 
-  <section class="content-section">
+  <section class="section">
     <div class="container">
 
-      <div class="intro">
+      <div class="two-column">
+
+        <div>
+
+          <span class="eyebrow">
+            FABRIKASI SESUAI SPESIFIKASI
+          </span>
+
+          <h2>
+            Fabrikasi Mesin untuk Berbagai Kebutuhan
+          </h2>
+
+          <p>
+            Fabrikasi merupakan bagian penting dalam proses pembuatan
+            mesin custom. Setiap komponen perlu dibuat berdasarkan ukuran,
+            bentuk, material, dan fungsi yang telah ditentukan.
+          </p>
+
+          <p>
+            Proses fabrikasi dapat mencakup pembuatan rangka mesin,
+            dudukan komponen, hopper, cover, frame conveyor, struktur
+            pendukung, hingga berbagai komponen custom lainnya.
+          </p>
+
+          <p>
+            Pekerjaan dapat dikembangkan berdasarkan gambar teknik,
+            spesifikasi yang tersedia, maupun kebutuhan proses yang
+            dibahas sejak tahap awal perancangan.
+          </p>
+
+        </div>
+
+
+        <div class="feature-box">
+
+          <div class="feature">
+            <strong>Rangka Mesin</strong>
+
+            <span>
+              Pembuatan rangka dan struktur utama sesuai dimensi
+              serta kebutuhan beban mesin.
+            </span>
+          </div>
+
+
+          <div class="feature">
+            <strong>Komponen Custom</strong>
+
+            <span>
+              Pembuatan komponen tertentu berdasarkan fungsi dan
+              spesifikasi teknis yang dibutuhkan.
+            </span>
+          </div>
+
+
+          <div class="feature">
+            <strong>Struktur Conveyor</strong>
+
+            <span>
+              Fabrikasi frame dan struktur pendukung untuk berbagai
+              kebutuhan sistem conveyor.
+            </span>
+          </div>
+
+
+          <div class="feature">
+            <strong>Assembly</strong>
+
+            <span>
+              Komponen hasil fabrikasi dapat dilanjutkan ke proses
+              perakitan sesuai konsep mesin.
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section section-light">
+    <div class="container">
+
+      <div class="section-heading">
 
         <span class="eyebrow">
-          FABRIKASI INDUSTRI
+          LINGKUP FABRIKASI
         </span>
 
         <h2>
-          Fabrikasi Mesin Sesuai Spesifikasi
+          Komponen dan Konstruksi yang Dapat Dibuat
         </h2>
 
         <p>
-          Fabrikasi merupakan salah satu bagian penting dalam
-          proses pembuatan mesin custom. Proses ini mencakup
-          pembuatan berbagai komponen, rangka, dudukan, struktur,
-          dan bagian mekanik yang diperlukan untuk membangun
-          sebuah mesin.
-        </p>
-
-        <p>
-          Spesifikasi fabrikasi dapat disesuaikan dengan desain
-          mesin, ukuran komponen, jenis material, beban kerja,
-          serta kebutuhan proses produksi. Dengan perencanaan
-          yang tepat, setiap bagian mesin dapat dibuat agar
-          mendukung fungsi yang telah dirancang.
+          Lingkup pekerjaan dapat disesuaikan dengan kebutuhan mesin,
+          sistem produksi, dan spesifikasi proyek.
         </p>
 
       </div>
 
 
-      <div class="feature-grid">
+      <div class="service-grid">
 
-        <article class="feature-card">
+        <article class="service-card">
 
-          <div class="number">
-            01
-          </div>
+          <div class="icon">⚙️</div>
 
           <h3>
             Rangka Mesin
           </h3>
 
           <p>
-            Pembuatan rangka mesin berdasarkan ukuran,
-            bentuk, beban, dan kebutuhan penempatan
-            komponen.
+            Struktur utama mesin yang dirancang untuk menopang berbagai
+            komponen mekanik dan sistem kerja.
           </p>
 
         </article>
 
 
-        <article class="feature-card">
+        <article class="service-card">
 
-          <div class="number">
-            02
-          </div>
+          <div class="icon">🔩</div>
 
           <h3>
-            Komponen Mekanik
+            Dudukan Komponen
           </h3>
 
           <p>
-            Fabrikasi berbagai komponen mekanik yang
-            diperlukan untuk mendukung sistem kerja mesin.
+            Pembuatan dudukan untuk motor, gearbox, bearing, panel,
+            sensor, dan komponen lainnya.
           </p>
 
         </article>
 
 
-        <article class="feature-card">
+        <article class="service-card">
 
-          <div class="number">
-            03
-          </div>
+          <div class="icon">📦</div>
+
+          <h3>
+            Hopper
+          </h3>
+
+          <p>
+            Fabrikasi hopper untuk penampungan dan pengumpanan material
+            sesuai kebutuhan proses.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="icon">🔧</div>
+
+          <h3>
+            Cover & Guard
+          </h3>
+
+          <p>
+            Pembuatan cover atau pelindung komponen untuk kebutuhan
+            konstruksi dan sistem mesin.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="icon">📐</div>
 
           <h3>
             Struktur Conveyor
           </h3>
 
           <p>
-            Pembuatan frame, dudukan, support,
-            dan struktur conveyor sesuai kebutuhan.
+            Fabrikasi frame conveyor berdasarkan panjang, lebar,
+            ketinggian, dan konfigurasi jalur.
           </p>
 
         </article>
 
 
-        <article class="feature-card">
+        <article class="service-card">
 
-          <div class="number">
-            04
-          </div>
+          <div class="icon">🏭</div>
 
           <h3>
-            Hopper & Chute
+            Konstruksi Custom
           </h3>
 
           <p>
-            Pembuatan hopper, chute, corong,
-            dan komponen penyalur material.
-          </p>
-
-        </article>
-
-
-        <article class="feature-card">
-
-          <div class="number">
-            05
-          </div>
-
-          <h3>
-            Tangki & Wadah
-          </h3>
-
-          <p>
-            Fabrikasi tangki, wadah, bak proses,
-            dan komponen penampung sesuai kebutuhan.
-          </p>
-
-        </article>
-
-
-        <article class="feature-card">
-
-          <div class="number">
-            06
-          </div>
-
-          <h3>
-            Konstruksi Khusus
-          </h3>
-
-          <p>
-            Pembuatan konstruksi dan komponen khusus
-            berdasarkan desain atau kebutuhan proyek.
+            Pembuatan konstruksi dan komponen khusus berdasarkan
+            kebutuhan proyek industri.
           </p>
 
         </article>
@@ -196,61 +257,83 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   </section>
 
 
-  <section class="material-section">
-    <div class="container material-grid">
+  <section class="section">
+    <div class="container">
 
-      <div>
+      <div class="section-heading">
 
         <span class="eyebrow">
-          MATERIAL
+          MATERIAL & SPESIFIKASI
         </span>
 
         <h2>
-          Pemilihan Material Berdasarkan Kebutuhan
+          Fabrikasi Berdasarkan Kebutuhan Proyek
         </h2>
 
         <p>
-          Material yang digunakan dalam fabrikasi dapat
-          disesuaikan dengan fungsi komponen, lingkungan kerja,
-          beban, kebutuhan kebersihan, serta karakteristik
-          material yang diproses.
+          Pemilihan material dan konstruksi perlu disesuaikan dengan
+          fungsi komponen, beban kerja, lingkungan operasional,
+          serta kebutuhan mesin.
         </p>
 
       </div>
 
 
-      <div class="material-list">
+      <div class="material-grid">
 
-        <div>
-          <strong>Stainless Steel</strong>
-          <span>
-            Untuk kebutuhan tertentu yang memerlukan
-            permukaan dan karakteristik material khusus.
-          </span>
+        <div class="material-card">
+
+          <h3>
+            Material Konstruksi
+          </h3>
+
+          <p>
+            Pemilihan material dapat mempertimbangkan kekuatan,
+            ketahanan, berat, lingkungan kerja, dan kebutuhan penggunaan.
+          </p>
+
         </div>
 
-        <div>
-          <strong>Baja Karbon</strong>
-          <span>
-            Digunakan pada berbagai konstruksi dan
-            komponen mesin sesuai kebutuhan.
-          </span>
+
+        <div class="material-card">
+
+          <h3>
+            Ukuran & Dimensi
+          </h3>
+
+          <p>
+            Dimensi komponen dibuat berdasarkan desain dan kondisi
+            pemasangan agar dapat terintegrasi dengan sistem mesin.
+          </p>
+
         </div>
 
-        <div>
-          <strong>Besi</strong>
-          <span>
-            Dapat digunakan untuk berbagai rangka,
-            dudukan, dan konstruksi mesin.
-          </span>
+
+        <div class="material-card">
+
+          <h3>
+            Finishing
+          </h3>
+
+          <p>
+            Finishing dapat disesuaikan dengan kebutuhan tampilan,
+            perlindungan permukaan, maupun kondisi lingkungan kerja.
+          </p>
+
         </div>
 
-        <div>
-          <strong>Material Khusus</strong>
-          <span>
-            Material lain dapat dipertimbangkan sesuai
-            spesifikasi dan kebutuhan proyek.
-          </span>
+
+        <div class="material-card">
+
+          <h3>
+            Kebutuhan Beban
+          </h3>
+
+          <p>
+            Struktur dan komponen mempertimbangkan beban kerja serta
+            fungsi yang akan dijalankan dalam sistem mesin.
+          </p>
+
         </div>
 
       </div>
@@ -259,7 +342,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   </section>
 
 
-  <section class="process-section">
+  <section class="section section-light">
     <div class="container">
 
       <div class="section-heading">
@@ -269,76 +352,248 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
         </span>
 
         <h2>
-          Tahapan Pengerjaan
+          Tahapan Pengerjaan Fabrikasi Mesin
         </h2>
+
+        <p>
+          Proses fabrikasi dilakukan secara bertahap mulai dari
+          memahami kebutuhan hingga pemeriksaan hasil pekerjaan.
+        </p>
 
       </div>
 
 
       <div class="process-grid">
 
-        <div class="process-item">
-
+        <div class="process-card">
           <span>01</span>
 
           <h3>
-            Analisis Kebutuhan
+            Analisis
           </h3>
 
           <p>
-            Memahami fungsi, ukuran, beban,
-            material, dan kondisi penggunaan.
+            Memahami gambar, ukuran, fungsi, material, dan kebutuhan proyek.
           </p>
-
         </div>
 
 
-        <div class="process-item">
-
+        <div class="process-card">
           <span>02</span>
 
           <h3>
-            Persiapan Material
+            Persiapan
           </h3>
 
           <p>
-            Menentukan material dan kebutuhan
-            komponen berdasarkan spesifikasi.
+            Menyiapkan material dan kebutuhan pengerjaan sesuai spesifikasi.
           </p>
-
         </div>
 
 
-        <div class="process-item">
-
+        <div class="process-card">
           <span>03</span>
 
           <h3>
-            Proses Fabrikasi
+            Fabrikasi
           </h3>
 
           <p>
-            Pemotongan, pembentukan, pengelasan,
-            pengerjaan komponen, dan perakitan.
+            Pemotongan, pembentukan, pengelasan, dan pengerjaan komponen.
           </p>
-
         </div>
 
 
-        <div class="process-item">
-
+        <div class="process-card">
           <span>04</span>
+
+          <h3>
+            Assembly
+          </h3>
+
+          <p>
+            Perakitan komponen sesuai desain atau konfigurasi mesin.
+          </p>
+        </div>
+
+
+        <div class="process-card">
+          <span>05</span>
 
           <h3>
             Pemeriksaan
           </h3>
 
           <p>
-            Pemeriksaan hasil fabrikasi dan
-            penyesuaian terhadap kebutuhan desain.
+            Pemeriksaan ukuran, konstruksi, dan fungsi sebelum digunakan.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+
+      <div class="two-column">
+
+        <div>
+
+          <span class="eyebrow">
+            KEBUTUHAN DATA
+          </span>
+
+          <h2>
+            Informasi yang Membantu Proses Fabrikasi
+          </h2>
+
+          <p>
+            Informasi awal yang lengkap membantu menentukan metode
+            pengerjaan dan spesifikasi komponen yang sesuai.
           </p>
 
         </div>
+
+
+        <div class="info-list">
+
+          <div>
+            <span>01</span>
+
+            <p>
+              Gambar teknik atau sketsa komponen jika tersedia.
+            </p>
+          </div>
+
+
+          <div>
+            <span>02</span>
+
+            <p>
+              Ukuran dan dimensi komponen yang dibutuhkan.
+            </p>
+          </div>
+
+
+          <div>
+            <span>03</span>
+
+            <p>
+              Jenis material dan kebutuhan konstruksi.
+            </p>
+          </div>
+
+
+          <div>
+            <span>04</span>
+
+            <p>
+              Fungsi komponen dalam sistem mesin.
+            </p>
+          </div>
+
+
+          <div>
+            <span>05</span>
+
+            <p>
+              Jumlah unit dan kebutuhan produksi.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section section-light">
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          LAYANAN TERKAIT
+        </span>
+
+        <h2>
+          Layanan Mesin Custom Lainnya
+        </h2>
+
+      </div>
+
+
+      <div class="related-grid">
+
+        <a href={`${base}jasa/mesin-custom/`}>
+          <strong>
+            Jasa Pembuatan Mesin Custom
+          </strong>
+
+          <span>
+            Pembuatan mesin berdasarkan kebutuhan proses dan spesifikasi.
+          </span>
+        </a>
+
+
+        <a href={`${base}jasa/otomatisasi-industri/`}>
+          <strong>
+            Otomatisasi Industri
+          </strong>
+
+          <span>
+            Solusi otomatisasi untuk meningkatkan efisiensi proses produksi.
+          </span>
+        </a>
+
+
+        <a href={`${base}jasa/mesin-produksi-custom/`}>
+          <strong>
+            Mesin Produksi Custom
+          </strong>
+
+          <span>
+            Mesin yang dirancang untuk kebutuhan proses produksi tertentu.
+          </span>
+        </a>
+
+
+        <a href={`${base}jasa/pembuatan-conveyor/`}>
+          <strong>
+            Pembuatan Conveyor
+          </strong>
+
+          <span>
+            Conveyor custom untuk pemindahan produk dan material.
+          </span>
+        </a>
+
+
+        <a href={`${base}jasa/mesin-packaging/`}>
+          <strong>
+            Mesin Packaging
+          </strong>
+
+          <span>
+            Mesin untuk kebutuhan pengemasan produk dan integrasi packaging.
+          </span>
+        </a>
+
+
+        <a href={`${base}portfolio/`}>
+          <strong>
+            Portfolio
+          </strong>
+
+          <span>
+            Lihat contoh proyek dan konsep mesin custom.
+          </span>
+        </a>
 
       </div>
 
@@ -349,36 +604,25 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   <section class="cta-section">
     <div class="container">
 
-      <div class="cta-box">
+      <span class="eyebrow">
+        KONSULTASI FABRIKASI
+      </span>
 
-        <div>
+      <h2>
+        Memiliki Kebutuhan Fabrikasi Mesin?
+      </h2>
 
-          <span class="eyebrow">
-            FABRIKASI MESIN CUSTOM
-          </span>
+      <p>
+        Sampaikan gambar, ukuran, material, jumlah, atau kebutuhan
+        komponen yang ingin dibuat untuk pembahasan lebih lanjut.
+      </p>
 
-          <h2>
-            Butuh Komponen atau Konstruksi Mesin?
-          </h2>
-
-          <p>
-            Konsultasikan kebutuhan fabrikasi berdasarkan
-            ukuran, material, fungsi, dan spesifikasi
-            komponen yang diperlukan.
-          </p>
-
-        </div>
-
-        <a
-          href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20fabrikasi%20mesin."
-          class="cta-button"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Konsultasi WhatsApp
-        </a>
-
-      </div>
+      <a
+        href={`${base}kontak/`}
+        class="btn btn-light"
+      >
+        Konsultasikan Proyek
+      </a>
 
     </div>
   </section>
@@ -387,42 +631,40 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 
 
 <style>
-
-  .hero {
-    padding: 105px 0 85px;
-    background:
-      linear-gradient(
-        135deg,
-        #f0fdfa 0%,
-        #ffffff 65%
-      );
-  }
-
   .container {
     width: min(1180px, 92%);
     margin: 0 auto;
   }
 
+  .hero {
+    padding: 100px 0;
+    background:
+      linear-gradient(
+        135deg,
+        #f0fdfa 0%,
+        #ffffff 55%,
+        #f8fafc 100%
+      );
+  }
+
   .eyebrow {
     display: inline-block;
-    margin-bottom: 14px;
     color: #0f766e;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 800;
     letter-spacing: 1.5px;
   }
 
-  h1 {
-    max-width: 850px;
-    margin: 0 0 22px;
+  .hero h1 {
+    max-width: 900px;
+    margin: 15px 0 20px;
     color: #0f172a;
-    font-size: clamp(38px, 6vw, 62px);
+    font-size: clamp(36px, 5vw, 58px);
     line-height: 1.08;
   }
 
   .hero p {
-    max-width: 760px;
-    margin: 0;
+    max-width: 780px;
     color: #475569;
     font-size: 18px;
     line-height: 1.8;
@@ -435,15 +677,15 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     margin-top: 32px;
   }
 
-  .btn-primary,
-  .btn-secondary {
+  .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 13px 22px;
-    border-radius: 8px;
+    padding: 14px 22px;
+    border-radius: 9px;
     text-decoration: none;
     font-weight: 700;
+    transition: 0.2s ease;
   }
 
   .btn-primary {
@@ -458,7 +700,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   .btn-secondary {
     border: 1px solid #cbd5e1;
     background: #ffffff;
-    color: #334155;
+    color: #0f172a;
   }
 
   .btn-secondary:hover {
@@ -466,255 +708,289 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     color: #0f766e;
   }
 
-  .content-section {
+  .section {
     padding: 90px 0;
   }
 
-  .intro {
-    max-width: 800px;
-    margin-bottom: 50px;
-  }
-
-  .intro h2,
-  .material-grid h2 {
-    margin: 0 0 18px;
-    color: #0f172a;
-    font-size: 36px;
-    line-height: 1.25;
-  }
-
-  .intro p,
-  .material-grid > div > p {
-    margin: 0 0 18px;
-    color: #475569;
-    line-height: 1.85;
-  }
-
-  .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
-  .feature-card {
-    padding: 28px;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
-    background: #ffffff;
-  }
-
-  .number {
-    margin-bottom: 18px;
-    color: #0f766e;
-    font-size: 26px;
-    font-weight: 800;
-  }
-
-  .feature-card h3 {
-    margin: 0 0 10px;
-    color: #0f172a;
-    font-size: 19px;
-  }
-
-  .feature-card p {
-    margin: 0;
-    color: #64748b;
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .material-section {
-    padding: 90px 0;
+  .section-light {
     background: #f8fafc;
   }
 
-  .material-grid {
+  .section-heading {
+    max-width: 800px;
+    margin-bottom: 45px;
+  }
+
+  .section-heading h2 {
+    margin: 10px 0 16px;
+    color: #0f172a;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.2;
+  }
+
+  .section-heading p {
+    color: #64748b;
+    line-height: 1.8;
+  }
+
+  .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 70px;
     align-items: start;
   }
 
-  .material-list {
-    display: grid;
-    gap: 14px;
+  .two-column h2 {
+    margin: 10px 0 18px;
+    color: #0f172a;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.2;
   }
 
-  .material-list > div {
+  .two-column > div > p {
+    color: #64748b;
+    line-height: 1.8;
+  }
+
+  .feature-box {
+    display: grid;
+    gap: 16px;
+  }
+
+  .feature {
     padding: 22px;
-    background: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
+    background: #ffffff;
   }
 
-  .material-list strong {
+  .feature strong {
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     color: #0f172a;
   }
 
-  .material-list span {
-    display: block;
+  .feature span {
     color: #64748b;
-    font-size: 14px;
     line-height: 1.7;
+    font-size: 14px;
   }
 
-  .process-section {
-    padding: 90px 0;
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
-  .section-heading {
-    margin-bottom: 45px;
+  .service-card {
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #ffffff;
   }
 
-  .section-heading h2 {
-    margin: 0;
+  .icon {
+    margin-bottom: 18px;
+    font-size: 30px;
+  }
+
+  .service-card h3 {
+    margin: 0 0 12px;
     color: #0f172a;
-    font-size: 36px;
+    font-size: 20px;
+  }
+
+  .service-card p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .material-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .material-card {
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #ffffff;
+  }
+
+  .material-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+  }
+
+  .material-card p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.7;
   }
 
   .process-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
   }
 
-  .process-item {
-    padding: 28px;
-    background: #f8fafc;
+  .process-card {
+    padding: 24px;
     border: 1px solid #e2e8f0;
     border-radius: 14px;
+    background: #ffffff;
   }
 
-  .process-item span {
-    display: block;
+  .process-card span {
+    display: inline-flex;
     margin-bottom: 18px;
     color: #0f766e;
-    font-size: 26px;
+    font-size: 13px;
     font-weight: 800;
   }
 
-  .process-item h3 {
+  .process-card h3 {
     margin: 0 0 10px;
     color: #0f172a;
-    font-size: 18px;
   }
 
-  .process-item p {
+  .process-card p {
     margin: 0;
     color: #64748b;
+    line-height: 1.6;
     font-size: 14px;
-    line-height: 1.7;
+  }
+
+  .info-list {
+    display: grid;
+    gap: 14px;
+  }
+
+  .info-list div {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 18px 20px;
+    border-radius: 10px;
+    background: #f8fafc;
+  }
+
+  .info-list span {
+    flex: 0 0 auto;
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .info-list p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.6;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .related-grid a {
+    display: block;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #ffffff;
+    text-decoration: none;
+  }
+
+  .related-grid a:hover {
+    border-color: #0f766e;
+  }
+
+  .related-grid strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #0f172a;
+  }
+
+  .related-grid span {
+    color: #64748b;
+    line-height: 1.6;
+    font-size: 14px;
   }
 
   .cta-section {
-    padding: 0 0 90px;
-  }
-
-  .cta-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 35px;
-    padding: 45px;
-    border-radius: 18px;
+    padding: 90px 0;
     background: #0f766e;
+    text-align: center;
   }
 
-  .cta-box .eyebrow {
+  .cta-section .eyebrow {
     color: #ccfbf1;
   }
 
-  .cta-box h2 {
-    max-width: 650px;
-    margin: 0 0 12px;
+  .cta-section h2 {
+    margin: 12px 0 16px;
     color: #ffffff;
-    font-size: 34px;
-    line-height: 1.2;
+    font-size: clamp(30px, 4vw, 44px);
   }
 
-  .cta-box p {
-    max-width: 650px;
-    margin: 0;
+  .cta-section p {
+    max-width: 720px;
+    margin: 0 auto 30px;
     color: #d1fae5;
-    line-height: 1.7;
+    line-height: 1.8;
   }
 
-  .cta-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    padding: 14px 22px;
-    border-radius: 8px;
+  .btn-light {
     background: #ffffff;
     color: #0f766e;
-    text-decoration: none;
-    font-weight: 800;
   }
 
-  .cta-button:hover {
+  .btn-light:hover {
     background: #f0fdfa;
   }
 
   @media (max-width: 900px) {
-
-    .feature-grid {
+    .service-grid {
       grid-template-columns: repeat(2, 1fr);
-    }
-
-    .material-grid {
-      grid-template-columns: 1fr;
-      gap: 45px;
     }
 
     .process-grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .cta-box {
-      flex-direction: column;
-      align-items: flex-start;
+    .two-column {
+      grid-template-columns: 1fr;
+      gap: 40px;
     }
-
   }
 
   @media (max-width: 600px) {
-
     .hero {
-      padding: 80px 0 65px;
+      padding: 70px 0;
     }
 
-    .content-section,
-    .material-section,
-    .process-section {
+    .section {
       padding: 65px 0;
     }
 
-    .feature-grid,
-    .process-grid {
+    .service-grid,
+    .material-grid,
+    .process-grid,
+    .related-grid {
       grid-template-columns: 1fr;
     }
 
-    .intro h2,
-    .material-grid h2,
-    .section-heading h2 {
-      font-size: 30px;
+    .hero-actions {
+      flex-direction: column;
     }
 
-    .cta-section {
-      padding-bottom: 65px;
+    .btn {
+      width: 100%;
     }
-
-    .cta-box {
-      padding: 30px 24px;
-    }
-
-    .cta-box h2 {
-      font-size: 28px;
-    }
-
   }
-
 </style>
