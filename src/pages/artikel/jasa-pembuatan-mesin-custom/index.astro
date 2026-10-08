@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
@@ -7,48 +9,57 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   description="Jasa pembuatan mesin custom untuk kebutuhan industri, produksi, manufaktur, makanan dan minuman, packaging, conveyor, pertanian, serta otomatisasi."
 >
 
-  <article class="article-page">
+  <!-- HERO -->
+  <section class="article-hero">
 
-    <!-- ARTICLE HEADER -->
-    <header class="article-header">
-      <div class="container">
+    <div class="container">
 
-        <span class="category">
-          MESIN CUSTOM
-        </span>
-
-        <h1>
-          Jasa Pembuatan Mesin Custom: Solusi Mesin Sesuai Kebutuhan Industri
-        </h1>
-
-        <p class="lead">
-          Jasa pembuatan mesin custom menjadi solusi bagi industri
-          yang membutuhkan mesin dengan fungsi, ukuran, kapasitas,
-          dan sistem kerja yang disesuaikan dengan kebutuhan produksi.
-        </p>
-
+      <div class="breadcrumb">
+        <a href={base}>Beranda</a>
+        <span>/</span>
+        <a href={`${base}artikel/`}>Artikel</a>
+        <span>/</span>
+        <span>Jasa Pembuatan Mesin Custom</span>
       </div>
-    </header>
+
+      <span class="eyebrow">
+        MESIN CUSTOM & INDUSTRI
+      </span>
+
+      <h1>
+        Jasa Pembuatan Mesin Custom:
+        Solusi Mesin Sesuai Kebutuhan Industri
+      </h1>
+
+      <p class="lead">
+        Jasa pembuatan mesin custom menjadi solusi bagi perusahaan
+        yang membutuhkan mesin dengan fungsi, kapasitas, ukuran,
+        dan sistem kerja yang disesuaikan dengan proses produksi.
+      </p>
+
+    </div>
+
+  </section>
 
 
-    <!-- ARTICLE CONTENT -->
+  <!-- ARTICLE -->
+  <section class="article-section">
+
     <div class="container article-layout">
 
-      <main class="article-content">
+      <article class="article-content">
 
         <p>
-          Kebutuhan mesin dalam industri tidak selalu dapat dipenuhi
-          menggunakan mesin standar. Setiap perusahaan dapat memiliki
-          karakteristik produk, kapasitas produksi, layout area,
-          material, serta alur kerja yang berbeda.
+          Setiap proses produksi memiliki kebutuhan yang berbeda.
+          Mesin standar yang tersedia di pasaran memang dapat digunakan
+          untuk banyak aplikasi, tetapi tidak selalu mampu memenuhi
+          kebutuhan proses secara optimal.
         </p>
 
         <p>
-          Kondisi tersebut membuat jasa pembuatan mesin custom menjadi
-          salah satu pilihan bagi perusahaan yang membutuhkan solusi
-          mesin yang lebih spesifik. Mesin dapat dirancang berdasarkan
-          fungsi yang dibutuhkan dan disesuaikan dengan proses produksi
-          yang sudah berjalan.
+          Karena itu, pembuatan mesin custom menjadi salah satu solusi
+          yang dapat dipertimbangkan oleh perusahaan yang membutuhkan
+          peralatan produksi dengan fungsi dan spesifikasi tertentu.
         </p>
 
 
@@ -57,22 +68,18 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
         </h2>
 
         <p>
-          Jasa pembuatan mesin custom adalah layanan perancangan dan
-          pembuatan mesin berdasarkan kebutuhan tertentu yang tidak
-          selalu dapat dipenuhi oleh mesin standar.
+          Jasa pembuatan mesin custom adalah layanan pengembangan mesin
+          yang dirancang berdasarkan kebutuhan pengguna. Mesin tidak
+          hanya dibuat berdasarkan bentuk atau ukuran tertentu, tetapi
+          juga mempertimbangkan proses kerja, kapasitas produksi,
+          karakteristik material, tingkat otomatisasi, dan kondisi
+          pemasangan.
         </p>
 
         <p>
-          Dalam prosesnya, rancangan mesin dapat mempertimbangkan
-          fungsi utama, kapasitas produksi, jenis material, dimensi
-          produk, sistem penggerak, tingkat otomatisasi, hingga kondisi
-          area tempat mesin akan digunakan.
-        </p>
-
-        <p>
-          Dengan pendekatan custom, mesin tidak hanya dibuat berdasarkan
-          bentuk atau ukuran tertentu, tetapi berdasarkan kebutuhan
-          proses yang ingin diselesaikan.
+          Dengan pendekatan tersebut, mesin dapat dirancang agar lebih
+          sesuai dengan alur kerja yang sudah berjalan di sebuah
+          fasilitas produksi.
         </p>
 
 
@@ -81,53 +88,50 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
         </h2>
 
         <p>
-          Mesin standar memiliki spesifikasi tertentu yang dibuat untuk
-          kebutuhan umum. Dalam beberapa proses produksi, spesifikasi
-          tersebut belum tentu sesuai dengan kebutuhan perusahaan.
+          Kebutuhan terhadap mesin custom biasanya muncul ketika
+          perusahaan memiliki proses kerja yang tidak dapat ditangani
+          secara optimal menggunakan mesin standar.
         </p>
 
-        <p>
-          Mesin custom dapat menjadi alternatif ketika proses produksi
-          membutuhkan konfigurasi khusus, kapasitas tertentu, ukuran
-          yang berbeda, atau integrasi dengan mesin lainnya.
-        </p>
+        <div class="reason-grid">
 
-        <h3>
-          1. Menyesuaikan Proses Produksi
-        </h3>
+          <div class="reason-card">
+            <span>01</span>
+            <h3>Proses Produksi Khusus</h3>
+            <p>
+              Mesin dapat dirancang untuk menjalankan proses yang
+              memiliki tahapan atau karakteristik khusus.
+            </p>
+          </div>
 
-        <p>
-          Mesin dapat dirancang mengikuti alur produksi yang sudah
-          tersedia sehingga proses kerja dapat dibuat lebih terstruktur.
-        </p>
+          <div class="reason-card">
+            <span>02</span>
+            <h3>Kapasitas Tertentu</h3>
+            <p>
+              Kapasitas mesin dapat disesuaikan dengan target produksi
+              dan kebutuhan operasional.
+            </p>
+          </div>
 
-        <h3>
-          2. Menyesuaikan Kapasitas
-        </h3>
+          <div class="reason-card">
+            <span>03</span>
+            <h3>Keterbatasan Ruang</h3>
+            <p>
+              Dimensi mesin dapat dirancang agar sesuai dengan ruang
+              pemasangan yang tersedia.
+            </p>
+          </div>
 
-        <p>
-          Kapasitas mesin dapat ditentukan berdasarkan target produksi,
-          mulai dari kebutuhan skala kecil hingga kebutuhan industri.
-        </p>
+          <div class="reason-card">
+            <span>04</span>
+            <h3>Integrasi Sistem</h3>
+            <p>
+              Mesin dapat dipersiapkan untuk terhubung dengan proses
+              atau peralatan lain dalam lini produksi.
+            </p>
+          </div>
 
-        <h3>
-          3. Menyesuaikan Layout
-        </h3>
-
-        <p>
-          Dimensi mesin dapat mempertimbangkan luas ruangan,
-          posisi mesin lain, jalur material, serta kebutuhan operator.
-        </p>
-
-        <h3>
-          4. Mendukung Otomatisasi
-        </h3>
-
-        <p>
-          Mesin custom dapat dikembangkan menjadi sistem semi otomatis
-          maupun otomatis dan dapat diintegrasikan dengan conveyor,
-          sensor, kontrol, dan mesin lainnya.
-        </p>
+        </div>
 
 
         <h2>
@@ -135,66 +139,84 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
         </h2>
 
         <p>
-          Pembuatan mesin custom dapat diterapkan pada berbagai bidang
-          industri. Jenis mesin yang dibuat bergantung pada kebutuhan
-          proses dan karakteristik produk.
+          Mesin custom dapat dikembangkan untuk berbagai bidang industri.
+          Jenis mesin yang dibuat sangat bergantung pada proses,
+          material, kapasitas, dan fungsi yang dibutuhkan.
         </p>
+
 
         <h3>
           Mesin Produksi Custom
         </h3>
 
         <p>
-          Mesin produksi custom digunakan untuk membantu proses
-          pengolahan, pembentukan, pemindahan, maupun perakitan produk.
+          Mesin produksi custom digunakan untuk membantu proses produksi
+          yang membutuhkan mekanisme kerja tertentu. Sistem dapat
+          dirancang berdasarkan kapasitas produksi dan karakteristik
+          produk yang diproses.
         </p>
+
 
         <h3>
           Mesin Makanan dan Minuman
         </h3>
 
         <p>
-          Dapat digunakan untuk mendukung proses pengolahan,
-          filling, pemindahan produk, hingga packaging makanan
-          dan minuman.
+          Industri makanan dan minuman membutuhkan berbagai jenis
+          peralatan untuk proses pengolahan, pencampuran, pengisian,
+          pemindahan, hingga pengemasan.
         </p>
+
+        <p>
+          Mesin dapat disesuaikan dengan karakteristik bahan,
+          kapasitas produksi, dan kebutuhan sanitasi proses.
+        </p>
+
 
         <h3>
           Mesin Packaging
         </h3>
 
         <p>
-          Mesin packaging dapat digunakan untuk proses filling,
-          sealing, labeling, counting, sorting, maupun proses
-          pengemasan lainnya.
+          Mesin packaging digunakan untuk membantu proses pengemasan
+          produk agar lebih konsisten dan efisien. Penerapannya dapat
+          mencakup proses filling, sealing, counting, labeling,
+          maupun kombinasi beberapa tahapan.
         </p>
+
 
         <h3>
           Conveyor Custom
         </h3>
 
         <p>
-          Conveyor digunakan untuk membantu pemindahan material
-          dan produk dari satu proses ke proses lainnya.
+          Conveyor merupakan bagian penting dalam banyak lini produksi.
+          Sistem conveyor custom dapat dirancang berdasarkan arah
+          perpindahan, panjang jalur, tinggi pemasangan, jenis produk,
+          dan kebutuhan kapasitas.
         </p>
+
 
         <h3>
           Mesin Pertanian dan Agro
         </h3>
 
         <p>
-          Mesin custom juga dapat dikembangkan untuk membantu proses
-          pengolahan hasil pertanian dan kebutuhan agroindustri.
+          Sektor pertanian dan agroindustri juga membutuhkan berbagai
+          peralatan untuk membantu proses pengolahan hasil pertanian.
+          Mesin dapat dikembangkan untuk proses seperti pemindahan,
+          pengolahan, pemisahan, atau penanganan hasil panen.
         </p>
+
 
         <h3>
           Mesin Pengolahan Limbah
         </h3>
 
         <p>
-          Sistem mesin dapat dikembangkan untuk mendukung proses
-          pemindahan, pemrosesan, maupun pengolahan material limbah
-          sesuai kebutuhan aplikasi.
+          Mesin pengolahan limbah dapat dirancang untuk membantu proses
+          pengurangan ukuran material, pemilahan, pemindahan,
+          pengolahan, atau tahapan lain sesuai karakteristik limbah.
         </p>
 
 
@@ -204,85 +226,143 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 
         <p>
           Pembuatan mesin custom membutuhkan proses yang terstruktur
-          agar hasil akhir dapat sesuai dengan kebutuhan aplikasi.
+          agar hasil akhir dapat sesuai dengan kebutuhan penggunaan.
         </p>
 
-        <h3>
-          Konsultasi Kebutuhan
-        </h3>
 
-        <p>
-          Tahap awal dilakukan dengan memahami fungsi mesin,
-          produk yang diproses, kapasitas, material, dan kondisi
-          area penggunaan.
-        </p>
+        <div class="process-list">
 
-        <h3>
-          Perancangan Mesin
-        </h3>
+          <div class="process-item">
 
-        <p>
-          Berdasarkan kebutuhan tersebut, konsep mesin kemudian
-          dikembangkan menjadi rancangan yang mempertimbangkan
-          fungsi dan sistem kerja.
-        </p>
+            <div class="process-number">
+              01
+            </div>
 
-        <h3>
-          Fabrikasi
-        </h3>
+            <div>
+              <h3>
+                Konsultasi Kebutuhan
+              </h3>
 
-        <p>
-          Tahap fabrikasi meliputi pembuatan rangka, komponen mekanik,
-          dudukan, sistem penggerak, serta bagian mesin lainnya.
-        </p>
+              <p>
+                Tahap awal dimulai dengan memahami proses yang ingin
+                diselesaikan, kapasitas, material, ruang kerja,
+                dan target penggunaan mesin.
+              </p>
+            </div>
 
-        <h3>
-          Assembly dan Testing
-        </h3>
+          </div>
 
-        <p>
-          Komponen dirakit menjadi satu sistem kemudian dilakukan
-          pengujian untuk memastikan fungsi mesin berjalan sesuai
-          rancangan.
-        </p>
+
+          <div class="process-item">
+
+            <div class="process-number">
+              02
+            </div>
+
+            <div>
+              <h3>
+                Perancangan Mesin
+              </h3>
+
+              <p>
+                Konsep mesin kemudian dikembangkan menjadi rancangan
+                yang mempertimbangkan mekanisme kerja, dimensi,
+                komponen, dan sistem pendukung.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="process-item">
+
+            <div class="process-number">
+              03
+            </div>
+
+            <div>
+              <h3>
+                Fabrikasi
+              </h3>
+
+              <p>
+                Setelah rancangan ditentukan, proses fabrikasi dilakukan
+                untuk membuat rangka, komponen, dudukan, serta bagian
+                mesin lainnya.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="process-item">
+
+            <div class="process-number">
+              04
+            </div>
+
+            <div>
+              <h3>
+                Assembly dan Testing
+              </h3>
+
+              <p>
+                Komponen dirakit dan mesin diuji untuk memastikan
+                mekanisme serta fungsi utamanya berjalan sesuai
+                rancangan.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
 
 
         <h2>
-          Faktor yang Perlu Dipertimbangkan Sebelum Membuat Mesin
+          Faktor yang Perlu Dipertimbangkan
         </h2>
 
-        <ul>
+        <p>
+          Sebelum membuat mesin custom, beberapa aspek penting perlu
+          diperhatikan agar rancangan yang dibuat benar-benar sesuai
+          dengan kebutuhan.
+        </p>
+
+
+        <ul class="check-list">
+
           <li>
-            Fungsi utama mesin
+            Kapasitas produksi yang dibutuhkan
           </li>
 
           <li>
-            Jenis produk atau material
+            Jenis dan karakteristik material
           </li>
 
           <li>
-            Target kapasitas produksi
+            Ukuran produk atau benda kerja
           </li>
 
           <li>
-            Ukuran dan karakteristik produk
+            Dimensi ruang pemasangan
           </li>
 
           <li>
-            Kondisi layout area
+            Tingkat otomatisasi yang dibutuhkan
           </li>
 
           <li>
-            Tingkat otomatisasi
+            Sistem kontrol dan kelistrikan
           </li>
 
           <li>
-            Sistem penggerak dan kontrol
+            Kemudahan pengoperasian dan perawatan
           </li>
 
           <li>
-            Kemudahan perawatan
+            Target efisiensi proses produksi
           </li>
+
         </ul>
 
 
@@ -291,89 +371,176 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
         </h2>
 
         <p>
-          Mesin yang dirancang sesuai kebutuhan dapat membantu
-          perusahaan memperoleh solusi yang lebih spesifik terhadap
-          proses produksi yang dijalankan.
+          Salah satu keuntungan utama mesin custom adalah fleksibilitas
+          dalam menyesuaikan fungsi mesin dengan kebutuhan proses.
         </p>
 
         <p>
-          Selain menyesuaikan fungsi dan kapasitas, mesin custom juga
-          dapat dirancang agar dapat terintegrasi dengan peralatan
-          yang sudah tersedia.
+          Mesin dapat dirancang berdasarkan kondisi nyata di lapangan,
+          mulai dari ukuran area kerja, kapasitas produksi, alur material,
+          hingga kebutuhan integrasi dengan peralatan lainnya.
         </p>
 
-        <p>
-          Hal tersebut membuat mesin custom dapat menjadi bagian
-          dari pengembangan sistem produksi yang lebih efisien
-          dan terstruktur.
-        </p>
+        <div class="benefit-grid">
+
+          <div>
+            <strong>
+              Sesuai Kebutuhan
+            </strong>
+
+            <span>
+              Fungsi dan spesifikasi dapat disesuaikan.
+            </span>
+          </div>
+
+          <div>
+            <strong>
+              Fleksibel
+            </strong>
+
+            <span>
+              Rancangan dapat mengikuti kondisi proses.
+            </span>
+          </div>
+
+          <div>
+            <strong>
+              Terintegrasi
+            </strong>
+
+            <span>
+              Dapat dipersiapkan untuk lini produksi.
+            </span>
+          </div>
+
+          <div>
+            <strong>
+              Dapat Dikembangkan
+            </strong>
+
+            <span>
+              Sistem dapat dirancang dengan mempertimbangkan
+              kebutuhan pengembangan berikutnya.
+            </span>
+          </div>
+
+        </div>
 
 
         <h2>
-          Konsultasikan Kebutuhan Mesin Custom
+          Kesimpulan
         </h2>
 
         <p>
-          Setiap kebutuhan mesin memiliki karakteristik yang berbeda.
-          Karena itu, proses perancangan sebaiknya dimulai dengan
-          memahami kebutuhan produksi secara detail.
+          Jasa pembuatan mesin custom merupakan solusi bagi industri
+          yang membutuhkan mesin dengan fungsi dan spesifikasi tertentu.
+          Proses pembuatannya dimulai dari pemahaman kebutuhan,
+          perancangan, fabrikasi, assembly, hingga pengujian.
         </p>
 
         <p>
-          Informasi seperti fungsi mesin, jenis produk, kapasitas,
-          ukuran area, material yang digunakan, serta tingkat
-          otomatisasi akan membantu menentukan konsep mesin yang tepat.
+          Dengan perencanaan yang tepat, mesin custom dapat membantu
+          menyesuaikan proses produksi dengan kebutuhan operasional,
+          kapasitas, ruang, serta target efisiensi yang ingin dicapai.
         </p>
 
-        <p>
-          Jika Anda memiliki kebutuhan mesin produksi, mesin packaging,
-          conveyor, mesin makanan dan minuman, mesin pertanian,
-          otomatisasi industri, atau mesin khusus lainnya, kebutuhan
-          tersebut dapat dikonsultasikan terlebih dahulu.
-        </p>
 
-        <a
-          href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20jasa%20pembuatan%20mesin%20custom."
-          class="article-cta"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Konsultasi Jasa Pembuatan Mesin Custom →
-        </a>
+        <!-- ARTICLE CTA -->
 
-      </main>
+        <div class="article-cta">
+
+          <span>
+            BUTUH MESIN SESUAI KEBUTUHAN?
+          </span>
+
+          <h2>
+            Konsultasikan Rencana Mesin Custom Anda
+          </h2>
+
+          <p>
+            Sampaikan jenis proses, kapasitas, fungsi, atau kebutuhan
+            mesin yang ingin dikembangkan.
+          </p>
+
+          <a
+            href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+              "Halo, saya ingin konsultasi tentang jasa pembuatan mesin custom."
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Konsultasi melalui WhatsApp →
+          </a>
+
+        </div>
+
+      </article>
 
 
       <!-- SIDEBAR -->
+
       <aside class="sidebar">
 
         <div class="sidebar-card">
 
           <h2>
-            Layanan Mesin
+            Daftar Isi
           </h2>
 
-          <a href="/jasa/mesin-custom/">
-            Mesin Custom
+          <a href="#apa-itu">
+            Apa Itu Mesin Custom?
           </a>
 
-          <a href="/jasa/fabrikasi-mesin/">
-            Fabrikasi Mesin
+          <a href="#mengapa">
+            Mengapa Industri Membutuhkan Mesin Custom?
           </a>
 
-          <a href="/jasa/otomatisasi-industri/">
+          <a href="#jenis">
+            Jenis Mesin Custom
+          </a>
+
+          <a href="#tahapan">
+            Tahapan Pembuatan
+          </a>
+
+          <a href="#faktor">
+            Faktor yang Perlu Dipertimbangkan
+          </a>
+
+          <a href="#keuntungan">
+            Keuntungan Mesin Custom
+          </a>
+
+        </div>
+
+
+        <div class="sidebar-card">
+
+          <h2>
+            Layanan
+          </h2>
+
+          <a href={`${base}jasa/mesin-custom/`}>
+            Jasa Mesin Custom
+          </a>
+
+          <a href={`${base}jasa/fabrikasi-mesin/`}>
+            Jasa Fabrikasi Mesin
+          </a>
+
+          <a href={`${base}jasa/otomatisasi-industri/`}>
             Otomatisasi Industri
           </a>
 
-          <a href="/jasa/mesin-produksi-custom/">
+          <a href={`${base}jasa/mesin-produksi-custom/`}>
             Mesin Produksi Custom
           </a>
 
-          <a href="/jasa/pembuatan-conveyor/">
+          <a href={`${base}jasa/pembuatan-conveyor/`}>
             Pembuatan Conveyor
           </a>
 
-          <a href="/jasa/mesin-packaging/">
+          <a href={`${base}jasa/mesin-packaging/`}>
             Mesin Packaging
           </a>
 
@@ -386,27 +553,27 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
             Kategori Mesin
           </h2>
 
-          <a href="/mesin/makanan-minuman/">
+          <a href={`${base}mesin/makanan-minuman/`}>
             Makanan & Minuman
           </a>
 
-          <a href="/mesin/manufaktur-logam/">
+          <a href={`${base}mesin/manufaktur-logam/`}>
             Manufaktur & Logam
           </a>
 
-          <a href="/mesin/pertanian-agro/">
+          <a href={`${base}mesin/pertanian-agro/`}>
             Pertanian & Agro
           </a>
 
-          <a href="/mesin/pengolahan-limbah/">
+          <a href={`${base}mesin/pengolahan-limbah/`}>
             Pengolahan Limbah
           </a>
 
-          <a href="/mesin/packaging/">
+          <a href={`${base}mesin/packaging/`}>
             Packaging
           </a>
 
-          <a href="/mesin/conveyor/">
+          <a href={`${base}mesin/conveyor/`}>
             Conveyor
           </a>
 
@@ -416,67 +583,91 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 
     </div>
 
-  </article>
+  </section>
 
 </BaseLayout>
 
 
 <style>
-  .article-page {
-    background: #ffffff;
-  }
-
   .container {
     width: min(1180px, 92%);
     margin: 0 auto;
   }
 
-  .article-header {
-    padding: 85px 0 70px;
-    background: #f8fafc;
+  .article-hero {
+    padding: 70px 0 80px;
+    background:
+      linear-gradient(
+        135deg,
+        #f0fdfa,
+        #ffffff 60%,
+        #f8fafc
+      );
     border-bottom: 1px solid #e2e8f0;
   }
 
-  .category {
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 42px;
+    color: #94a3b8;
+    font-size: 13px;
+  }
+
+  .breadcrumb a {
+    color: #64748b;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    color: #0f766e;
+  }
+
+  .eyebrow {
     display: inline-block;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     color: #0f766e;
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 1.5px;
   }
 
-  .article-header h1 {
-    max-width: 950px;
-    margin: 0 0 25px;
+  h1 {
+    max-width: 900px;
+    margin: 0;
     color: #0f172a;
-    font-size: clamp(38px, 5vw, 60px);
+    font-size: clamp(38px, 5vw, 62px);
     line-height: 1.1;
     letter-spacing: -1.5px;
   }
 
   .lead {
-    max-width: 850px;
-    margin: 0;
-    color: #64748b;
+    max-width: 820px;
+    margin: 25px 0 0;
+    color: #475569;
     font-size: 19px;
     line-height: 1.8;
+  }
+
+  .article-section {
+    padding: 80px 0;
   }
 
   .article-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 300px;
     gap: 70px;
-    padding-top: 70px;
+    align-items: start;
   }
 
   .article-content {
-    max-width: 820px;
+    max-width: 800px;
   }
 
-  .article-content p {
-    margin: 0 0 24px;
-    color: #334155;
+  .article-content > p {
+    margin: 0 0 22px;
+    color: #475569;
     font-size: 17px;
     line-height: 1.9;
   }
@@ -484,49 +675,173 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   .article-content h2 {
     margin: 55px 0 20px;
     color: #0f172a;
-    font-size: 32px;
+    font-size: clamp(28px, 4vw, 38px);
     line-height: 1.25;
   }
 
   .article-content h3 {
     margin: 35px 0 12px;
     color: #0f172a;
-    font-size: 22px;
+    font-size: 23px;
+    line-height: 1.3;
   }
 
-  .article-content ul {
-    margin: 25px 0;
-    padding-left: 24px;
-    color: #334155;
+  .article-content h2:first-of-type {
+    margin-top: 45px;
   }
 
-  .article-content li {
-    margin: 10px 0;
+  .reason-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin: 30px 0;
+  }
+
+  .reason-card {
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #f8fafc;
+  }
+
+  .reason-card span {
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .reason-card h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+  }
+
+  .reason-card p {
+    margin: 0;
+    color: #64748b;
     line-height: 1.7;
   }
 
-  .article-cta {
-    display: inline-flex;
-    margin-top: 20px;
-    padding: 15px 22px;
-    border-radius: 9px;
-    background: #0f766e;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
+  .process-list {
+    margin: 30px 0;
   }
 
-  .article-cta:hover {
-    background: #115e59;
+  .process-item {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .process-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #ccfbf1;
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .process-item h3 {
+    margin: 3px 0 8px;
+    font-size: 20px;
+  }
+
+  .process-item p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.7;
+  }
+
+  .check-list {
+    margin: 30px 0;
+    padding: 28px 30px 28px 48px;
+    border-radius: 14px;
+    background: #f8fafc;
+  }
+
+  .check-list li {
+    margin: 12px 0;
+    color: #475569;
+    line-height: 1.6;
+  }
+
+  .benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 30px 0;
+  }
+
+  .benefit-grid > div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 22px;
+    border: 1px solid #e2e8f0;
+    border-radius: 13px;
+  }
+
+  .benefit-grid strong {
+    color: #0f172a;
+  }
+
+  .benefit-grid span {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .article-cta {
+    margin-top: 60px;
+    padding: 35px;
+    border-radius: 16px;
+    background: #0f766e;
+  }
+
+  .article-cta > span {
+    color: #99f6e4;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+  }
+
+  .article-cta h2 {
+    margin: 12px 0;
+    color: #ffffff;
+    font-size: 30px;
+  }
+
+  .article-cta p {
+    margin: 0 0 22px;
+    color: #ccfbf1;
+    line-height: 1.7;
+  }
+
+  .article-cta a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 46px;
+    padding: 0 20px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #0f766e;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14px;
   }
 
   .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    position: sticky;
+    top: 105px;
   }
 
   .sidebar-card {
+    margin-bottom: 20px;
     padding: 25px;
     border: 1px solid #e2e8f0;
     border-radius: 14px;
@@ -536,28 +851,24 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   .sidebar-card h2 {
     margin: 0 0 18px;
     color: #0f172a;
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .sidebar-card a {
     display: block;
-    padding: 10px 0;
-    border-bottom: 1px solid #f1f5f9;
-    color: #475569;
+    padding: 9px 0;
+    color: #64748b;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 600;
-  }
-
-  .sidebar-card a:last-child {
-    border-bottom: 0;
+    line-height: 1.5;
   }
 
   .sidebar-card a:hover {
     color: #0f766e;
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 900px) {
+
     .article-layout {
       grid-template-columns: 1fr;
       gap: 45px;
@@ -568,34 +879,33 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     }
 
     .sidebar {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      position: static;
     }
+
   }
 
-  @media (max-width: 600px) {
-    .article-header {
-      padding: 65px 0 50px;
+  @media (max-width: 650px) {
+
+    .article-hero {
+      padding: 50px 0 60px;
     }
 
-    .article-layout {
-      padding-top: 50px;
+    .article-section {
+      padding: 60px 0;
     }
 
-    .article-content h2 {
-      font-size: 27px;
+    .reason-grid,
+    .benefit-grid {
+      grid-template-columns: 1fr;
     }
 
-    .article-content h3 {
-      font-size: 20px;
-    }
-
-    .article-content p {
+    .article-content > p {
       font-size: 16px;
     }
 
-    .sidebar {
-      grid-template-columns: 1fr;
+    .lead {
+      font-size: 17px;
     }
+
   }
 </style>
