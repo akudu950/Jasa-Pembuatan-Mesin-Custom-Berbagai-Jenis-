@@ -1,0 +1,451 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { services } from "../../data/site";
+---
+
+<BaseLayout
+  title="Jasa Pembuatan Mesin Custom untuk Kebutuhan Industri"
+  description="Jasa pembuatan mesin custom, fabrikasi mesin, mesin produksi, otomatisasi industri, conveyor, packaging, dan berbagai mesin khusus sesuai kebutuhan."
+>
+
+  <section class="hero">
+    <div class="container">
+
+      <span class="eyebrow">
+        JASA MESIN CUSTOM
+      </span>
+
+      <h1>
+        Jasa Pembuatan Mesin Custom
+        untuk Kebutuhan Industri
+      </h1>
+
+      <p>
+        Solusi pembuatan mesin custom yang dirancang berdasarkan
+        kebutuhan proses produksi, kapasitas, material, fungsi,
+        dan kondisi operasional di lapangan.
+      </p>
+
+      <div class="hero-actions">
+        <a
+          href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20pembuatan%20mesin%20custom."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button-primary"
+        >
+          Konsultasi Mesin
+        </a>
+
+        <a href="/portfolio/" class="button-secondary">
+          Lihat Portfolio
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="intro">
+    <div class="container narrow">
+
+      <h2>
+        Pembuatan Mesin Sesuai Kebutuhan Produksi
+      </h2>
+
+      <p>
+        Tidak semua kebutuhan industri dapat dipenuhi oleh mesin
+        standar. Setiap proses produksi dapat memiliki kebutuhan
+        kapasitas, ukuran, material, sistem kerja, hingga tingkat
+        otomatisasi yang berbeda.
+      </p>
+
+      <p>
+        Jasa pembuatan mesin custom hadir untuk menghasilkan
+        peralatan yang disesuaikan dengan kebutuhan tersebut.
+        Konsep mesin dapat dikembangkan berdasarkan proses kerja,
+        target produksi, ruang yang tersedia, serta kebutuhan
+        operasional.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section class="services">
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          LAYANAN
+        </span>
+
+        <h2>
+          Layanan Pembuatan Mesin
+        </h2>
+
+        <p>
+          Berbagai solusi mesin custom untuk mendukung proses
+          produksi, manufaktur, pengolahan, dan otomatisasi.
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+        {
+          services.map((service) => (
+            <article class="service-card">
+
+              <div class="icon">
+                ⚙
+              </div>
+
+              <h3>
+                {service.title}
+              </h3>
+
+              <p>
+                Solusi pembuatan {service.title.toLowerCase()}
+                yang dapat disesuaikan dengan kebutuhan proses
+                dan spesifikasi pekerjaan.
+              </p>
+
+              <a href={`/jasa/${service.slug}/`}>
+                Lihat Detail →
+              </a>
+
+            </article>
+          ))
+        }
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="process">
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          PROSES KERJA
+        </span>
+
+        <h2>
+          Proses Pembuatan Mesin Custom
+        </h2>
+
+      </div>
+
+
+      <div class="process-grid">
+
+        <article>
+          <span>01</span>
+          <h3>Konsultasi</h3>
+          <p>
+            Membahas kebutuhan mesin, fungsi, kapasitas,
+            material, dan proses produksi.
+          </p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Analisis Kebutuhan</h3>
+          <p>
+            Menentukan konsep mesin dan spesifikasi berdasarkan
+            kebutuhan operasional.
+          </p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Perancangan</h3>
+          <p>
+            Mengembangkan desain dan sistem kerja mesin sesuai
+            kebutuhan yang telah ditentukan.
+          </p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Fabrikasi</h3>
+          <p>
+            Proses pembuatan komponen, perakitan, dan
+            penyelesaian mesin.
+          </p>
+        </article>
+
+        <article>
+          <span>05</span>
+          <h3>Pengujian</h3>
+          <p>
+            Mesin diuji untuk memastikan fungsi dan sistem kerja
+            berjalan sesuai kebutuhan.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="cta">
+    <div class="container">
+
+      <h2>
+        Punya Kebutuhan Mesin Khusus?
+      </h2>
+
+      <p>
+        Konsultasikan kebutuhan mesin, proses produksi,
+        kapasitas, dan spesifikasi yang diperlukan.
+      </p>
+
+      <a
+        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20pembuatan%20mesin%20custom."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button-primary"
+      >
+        Hubungi via WhatsApp
+      </a>
+
+    </div>
+  </section>
+
+</BaseLayout>
+
+
+<style>
+  .hero {
+    padding: 100px 0;
+    background:
+      linear-gradient(
+        135deg,
+        #f0fdfa 0%,
+        #ffffff 55%,
+        #f8fafc 100%
+      );
+  }
+
+  .container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+  }
+
+  .narrow {
+    max-width: 820px;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+  }
+
+  h1 {
+    max-width: 850px;
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+  }
+
+  .hero p {
+    max-width: 760px;
+    margin: 24px 0 0;
+    color: #475569;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+  }
+
+  .button-primary,
+  .button-secondary {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .button-primary {
+    background: #0f766e;
+    color: #ffffff;
+  }
+
+  .button-primary:hover {
+    background: #115e59;
+  }
+
+  .button-secondary {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #0f172a;
+  }
+
+  .intro {
+    padding: 90px 0 50px;
+  }
+
+  .intro h2,
+  .section-heading h2,
+  .cta h2 {
+    margin: 0 0 18px;
+    color: #0f172a;
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .intro p {
+    color: #475569;
+    line-height: 1.85;
+    font-size: 16px;
+  }
+
+  .services {
+    padding: 70px 0;
+    background: #f8fafc;
+  }
+
+  .section-heading {
+    max-width: 760px;
+    margin-bottom: 40px;
+  }
+
+  .section-heading p {
+    color: #64748b;
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+
+  .service-card {
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+  }
+
+  .service-card:hover {
+    border-color: #99f6e4;
+  }
+
+  .icon {
+    margin-bottom: 18px;
+    font-size: 32px;
+  }
+
+  .service-card h3 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 19px;
+  }
+
+  .service-card p {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .service-card a {
+    color: #0f766e;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .process {
+    padding: 90px 0;
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+  }
+
+  .process-grid article {
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+  }
+
+  .process-grid span {
+    color: #0f766e;
+    font-weight: 800;
+    font-size: 14px;
+  }
+
+  .process-grid h3 {
+    margin: 12px 0 8px;
+    font-size: 17px;
+  }
+
+  .process-grid p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .cta {
+    padding: 80px 0;
+    background: #0f172a;
+    text-align: center;
+  }
+
+  .cta h2 {
+    color: #ffffff;
+  }
+
+  .cta p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: #cbd5e1;
+  }
+
+  @media (max-width: 900px) {
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero {
+      padding: 70px 0;
+    }
+
+    .service-grid,
+    .process-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .intro,
+    .process {
+      padding: 60px 0;
+    }
+  }
+</style>
