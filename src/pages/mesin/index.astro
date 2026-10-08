@@ -1,142 +1,307 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { machineCategories } from "../../data/site";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
   title="Katalog Mesin Custom untuk Berbagai Kebutuhan Industri"
-  description="Katalog mesin custom untuk industri makanan dan minuman, manufaktur, pertanian, pengolahan limbah, packaging, conveyor, dan kebutuhan produksi lainnya."
+  description="Katalog mesin custom untuk industri makanan dan minuman, manufaktur, logam, pertanian, pengolahan limbah, packaging, dan conveyor."
 >
 
+  <!-- HERO -->
   <section class="hero">
     <div class="container">
 
       <span class="eyebrow">
-        KATALOG MESIN
+        KATALOG MESIN CUSTOM
       </span>
 
       <h1>
-        Katalog Mesin Custom
-        untuk Berbagai Kebutuhan Industri
+        Mesin Custom untuk Berbagai Kebutuhan Industri
       </h1>
 
       <p>
-        Jelajahi berbagai kategori mesin custom yang dapat
-        dikembangkan sesuai kebutuhan proses produksi,
-        kapasitas, material, dan sistem kerja.
+        Temukan berbagai kategori mesin yang dapat dikembangkan
+        dan disesuaikan dengan kebutuhan proses produksi,
+        kapasitas, material, dan kondisi operasional.
       </p>
+
+      <div class="hero-actions">
+
+        <a
+          href={`${base}kontak/`}
+          class="button button-primary"
+        >
+          Konsultasikan Kebutuhan
+        </a>
+
+        <a
+          href={`${base}jasa/`}
+          class="button button-secondary"
+        >
+          Lihat Jasa
+        </a>
+
+      </div>
 
     </div>
   </section>
 
 
-  <section class="catalog">
+  <!-- INTRO -->
+  <section class="section">
+
+    <div class="container intro">
+
+      <span class="section-label">
+        SOLUSI MESIN INDUSTRI
+      </span>
+
+      <h2>
+        Katalog Mesin Berdasarkan Kebutuhan
+      </h2>
+
+      <p>
+        Setiap industri memiliki karakteristik proses yang
+        berbeda. Karena itu, kebutuhan mesin dapat berbeda
+        berdasarkan jenis produk, kapasitas, material, layout,
+        dan metode produksi.
+      </p>
+
+      <p>
+        Kategori berikut membantu memberikan gambaran mengenai
+        jenis mesin yang dapat dikembangkan untuk berbagai
+        kebutuhan industri.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CATEGORIES -->
+  <section class="section section-light">
+
     <div class="container">
 
       <div class="section-heading">
-        <span class="eyebrow">
+
+        <span class="section-label">
           KATEGORI MESIN
         </span>
 
         <h2>
-          Pilihan Mesin Berdasarkan Kebutuhan
+          Pilihan Mesin Custom
         </h2>
 
-        <p>
-          Setiap mesin dapat disesuaikan dengan kebutuhan
-          operasional dan karakteristik proses produksi.
-        </p>
       </div>
 
 
-      <div class="category-grid">
+      <div class="machine-grid">
 
-        {
-          machineCategories.map((category) => (
-            <article class="category-card">
+        {machineCategories.map((category) => (
 
-              <div class="icon">
-                ⚙
-              </div>
+          <article class="machine-card">
 
-              <h3>
-                {category.title}
-              </h3>
+            <div class="machine-icon">
+              ⚙
+            </div>
 
-              <p>
-                {category.description}
-              </p>
+            <h3>
+              {category.title}
+            </h3>
 
-              <a href={`/mesin/${category.slug}/`}>
-                Lihat Kategori →
-              </a>
+            <p>
+              {category.description}
+            </p>
 
-            </article>
-          ))
-        }
+            <a
+              href={`${base}mesin/${category.slug}/`}
+            >
+              Lihat Kategori →
+            </a>
+
+          </article>
+
+        ))}
 
       </div>
 
     </div>
+
   </section>
 
 
-  <section class="custom">
+  <!-- CUSTOM MACHINE -->
+  <section class="section">
+
     <div class="container custom-grid">
 
       <div>
-        <span class="eyebrow">
+
+        <span class="section-label">
           MESIN KHUSUS
         </span>
 
         <h2>
-          Membutuhkan Mesin di Luar Katalog?
+          Membutuhkan Mesin di Luar Kategori?
         </h2>
 
+      </div>
+
+      <div>
+
         <p>
-          Tidak menemukan mesin yang sesuai? Kebutuhan
-          mesin dapat dibahas berdasarkan proses produksi,
-          fungsi, kapasitas, ukuran, material, dan tingkat
-          otomatisasi yang diperlukan.
+          Tidak semua kebutuhan produksi dapat dimasukkan ke
+          dalam kategori mesin tertentu. Mesin khusus dapat
+          dirancang berdasarkan fungsi, proses, produk,
+          kapasitas, dan kondisi lapangan.
+        </p>
+
+        <p>
+          Konsep tersebut dapat mencakup mesin produksi,
+          sistem pemindahan material, mekanisme otomatis,
+          mesin pengolahan, maupun sistem pendukung lainnya.
         </p>
 
         <a
-          href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20mengenai%20mesin%20custom."
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button"
+          href={`${base}jasa/mesin-custom/`}
+          class="button button-primary"
         >
-          Konsultasikan Kebutuhan
+          Konsultasikan Mesin Custom
         </a>
+
       </div>
 
     </div>
+
   </section>
 
 
-  <section class="cta">
+  <!-- BENEFITS -->
+  <section class="section section-dark">
+
     <div class="container">
 
-      <h2>
-        Punya Kebutuhan Mesin Custom?
-      </h2>
+      <div class="section-heading">
 
-      <p>
-        Sampaikan kebutuhan proses produksi dan spesifikasi
-        mesin yang diperlukan untuk mendapatkan pembahasan
-        yang lebih sesuai.
-      </p>
+        <span class="section-label">
+          KEUNGGULAN
+        </span>
+
+        <h2>
+          Mengapa Memilih Mesin Custom?
+        </h2>
+
+      </div>
+
+
+      <div class="benefit-grid">
+
+        <div class="benefit">
+
+          <span>01</span>
+
+          <h3>
+            Sesuai Proses
+          </h3>
+
+          <p>
+            Konsep mesin dapat disesuaikan dengan proses kerja
+            yang ingin dijalankan.
+          </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+          <span>02</span>
+
+          <h3>
+            Kapasitas Spesifik
+          </h3>
+
+          <p>
+            Kapasitas mesin dapat dirancang berdasarkan target
+            produksi dan kebutuhan operasional.
+          </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+          <span>03</span>
+
+          <h3>
+            Fleksibel
+          </h3>
+
+          <p>
+            Dimensi, material, sistem mekanik, dan komponen
+            dapat menyesuaikan kondisi lapangan.
+          </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+          <span>04</span>
+
+          <h3>
+            Dapat Dikembangkan
+          </h3>
+
+          <p>
+            Mesin dapat dikembangkan menuju proses otomatisasi
+            dan peningkatan kapasitas.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="container cta-inner">
+
+      <div>
+
+        <span class="section-label">
+          KONSULTASI
+        </span>
+
+        <h2>
+          Punya Kebutuhan Mesin Tertentu?
+        </h2>
+
+        <p>
+          Sampaikan jenis produk, proses produksi, kapasitas,
+          atau fungsi mesin yang dibutuhkan untuk mendapatkan
+          konsep solusi yang lebih sesuai.
+        </p>
+
+      </div>
 
       <a
-        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20mesin%20custom."
-        target="_blank"
-        rel="noopener noreferrer"
-        class="button-light"
+        href={`${base}kontak/`}
+        class="button button-primary"
       >
-        Konsultasi via WhatsApp
+        Hubungi Sekarang
       </a>
 
     </div>
+
   </section>
 
 </BaseLayout>
@@ -148,190 +313,282 @@ import { machineCategories } from "../../data/site";
     background:
       linear-gradient(
         135deg,
-        #f0fdfa 0%,
-        #ffffff 55%,
-        #f8fafc 100%
+        #f8fafc 0%,
+        #ecfeff 100%
       );
   }
 
-  .container {
-    width: min(1180px, 92%);
-    margin: 0 auto;
-  }
-
-  .eyebrow {
+  .eyebrow,
+  .section-label {
     display: inline-block;
     margin-bottom: 14px;
     color: #0f766e;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
   }
 
-  h1 {
+  .hero h1 {
     max-width: 850px;
     margin: 0;
     color: #0f172a;
-    font-size: clamp(38px, 6vw, 62px);
+    font-size: clamp(40px, 5vw, 64px);
     line-height: 1.08;
-    letter-spacing: -1.5px;
+    letter-spacing: -2px;
   }
 
-  .hero p {
+  .hero > .container > p {
     max-width: 760px;
-    margin-top: 24px;
+    margin: 25px 0 0;
     color: #475569;
     font-size: 18px;
     line-height: 1.8;
   }
 
-  .catalog {
-    padding: 90px 0;
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
   }
 
-  .section-heading {
-    max-width: 760px;
-    margin-bottom: 40px;
-  }
-
-  .section-heading h2 {
-    margin: 0 0 16px;
-    color: #0f172a;
-    font-size: 34px;
-    line-height: 1.2;
-  }
-
-  .section-heading p {
-    color: #64748b;
-  }
-
-  .category-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-  }
-
-  .category-card {
-    padding: 30px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 22px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 700;
     transition:
       transform 0.2s ease,
       box-shadow 0.2s ease;
   }
 
-  .category-card:hover {
+  .button:hover {
+    transform: translateY(-2px);
+  }
+
+  .button-primary {
+    background: #0f766e;
+    color: #ffffff;
+  }
+
+  .button-secondary {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #0f172a;
+  }
+
+  .section {
+    padding: 90px 0;
+  }
+
+  .section-light {
+    background: #f8fafc;
+  }
+
+  .intro {
+    max-width: 850px;
+  }
+
+  .intro h2,
+  .section-heading h2,
+  .custom-grid h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+  }
+
+  .intro p {
+    color: #475569;
+    font-size: 17px;
+    line-height: 1.85;
+  }
+
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .machine-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .machine-card {
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    background: #ffffff;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .machine-card:hover {
     transform: translateY(-4px);
-    box-shadow:
-      0 15px 35px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
   }
 
-  .icon {
-    margin-bottom: 18px;
-    font-size: 34px;
+  .machine-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 13px;
+    background: #ccfbf1;
+    font-size: 25px;
   }
 
-  .category-card h3 {
+  .machine-card h3 {
     margin: 0 0 12px;
     color: #0f172a;
-    font-size: 19px;
+    font-size: 20px;
   }
 
-  .category-card p {
-    min-height: 75px;
+  .machine-card p {
     color: #64748b;
-    line-height: 1.7;
-    font-size: 14px;
+    line-height: 1.75;
   }
 
-  .category-card a {
+  .machine-card a {
     color: #0f766e;
     font-weight: 700;
     text-decoration: none;
   }
 
-  .custom {
-    padding: 80px 0;
-    background: #f8fafc;
-  }
-
   .custom-grid {
-    max-width: 850px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+    align-items: start;
   }
 
-  .custom h2 {
-    margin: 0 0 18px;
-    color: #0f172a;
-    font-size: 34px;
-  }
-
-  .custom p {
-    margin-bottom: 28px;
+  .custom-grid p {
+    margin-top: 0;
     color: #475569;
-    line-height: 1.8;
+    line-height: 1.85;
   }
 
-  .button {
-    display: inline-block;
-    padding: 14px 22px;
-    background: #0f766e;
+  .custom-grid .button {
+    margin-top: 10px;
+  }
+
+  .section-dark {
+    background: #0f172a;
+  }
+
+  .section-dark .section-heading h2 {
     color: #ffffff;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 700;
   }
 
-  .button:hover {
-    background: #115e59;
+  .benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .benefit {
+    padding: 28px;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    background: #172033;
+  }
+
+  .benefit > span {
+    display: block;
+    margin-bottom: 18px;
+    color: #2dd4bf;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .benefit h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 19px;
+  }
+
+  .benefit p {
+    margin: 0;
+    color: #cbd5e1;
+    line-height: 1.75;
   }
 
   .cta {
     padding: 80px 0;
-    background: #0f172a;
-    text-align: center;
+    background: #ecfeff;
+  }
+
+  .cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
   }
 
   .cta h2 {
-    margin: 0 0 18px;
-    color: #ffffff;
-    font-size: 34px;
+    max-width: 750px;
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.15;
   }
 
   .cta p {
-    max-width: 680px;
-    margin: 0 auto 28px;
-    color: #cbd5e1;
+    max-width: 700px;
+    margin: 18px 0 0;
+    color: #475569;
     line-height: 1.8;
   }
 
-  .button-light {
-    display: inline-block;
-    padding: 14px 22px;
-    background: #ffffff;
-    color: #0f172a;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 700;
-  }
-
-  @media (max-width: 900px) {
-    .category-grid {
+  @media (max-width: 1000px) {
+    .machine-grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefit-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .custom-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .cta-inner {
+      align-items: flex-start;
+      flex-direction: column;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     .hero {
       padding: 70px 0;
     }
 
-    .catalog {
-      padding: 60px 0;
+    .section {
+      padding: 65px 0;
     }
 
-    .category-grid {
+    .machine-grid,
+    .benefit-grid {
       grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+      flex-direction: column;
+    }
+
+    .button {
+      width: 100%;
     }
   }
 </style>
