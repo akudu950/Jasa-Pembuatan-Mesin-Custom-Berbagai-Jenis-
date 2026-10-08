@@ -1,18 +1,20 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
   title="Artikel Mesin Custom dan Industri"
-  description="Artikel seputar jasa pembuatan mesin custom, fabrikasi mesin, mesin produksi, packaging, conveyor, otomatisasi industri, dan berbagai solusi mesin."
+  description="Artikel seputar jasa pembuatan mesin custom, mesin produksi, fabrikasi mesin, otomatisasi industri, packaging, conveyor, dan berbagai solusi mesin untuk kebutuhan industri."
 >
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container">
+    <div class="container hero-inner">
 
       <span class="eyebrow">
-        ARTIKEL & INFORMASI
+        ARTIKEL & INFORMASI INDUSTRI
       </span>
 
       <h1>
@@ -21,8 +23,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
       <p>
         Temukan informasi mengenai pembuatan mesin custom,
-        proses fabrikasi, mesin produksi, packaging,
-        conveyor, otomatisasi, dan berbagai kebutuhan industri.
+        mesin produksi, fabrikasi, otomatisasi, packaging,
+        conveyor, dan berbagai kebutuhan mesin industri.
       </p>
 
     </div>
@@ -31,32 +33,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
   <!-- FEATURED ARTICLE -->
   <section class="section">
+
     <div class="container">
 
-      <div class="section-heading">
-
-        <span class="section-label">
-          ARTIKEL UTAMA
-        </span>
-
-        <h2>
-          Jasa Pembuatan Mesin Custom
-        </h2>
-
-        <p>
-          Panduan mengenai konsep mesin custom, manfaat,
-          jenis mesin, proses pembuatan, serta faktor yang
-          perlu dipertimbangkan sebelum membuat mesin.
-        </p>
-
-      </div>
-
-      <article class="featured-card">
+      <div class="featured">
 
         <div class="featured-content">
 
-          <span class="article-category">
-            MESIN CUSTOM
+          <span class="article-label">
+            ARTIKEL UTAMA
           </span>
 
           <h2>
@@ -64,28 +49,43 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
           </h2>
 
           <p>
-            Pelajari bagaimana mesin custom dapat dirancang
-            berdasarkan proses produksi, kapasitas, material,
-            layout area, dan kebutuhan otomatisasi industri.
+            Mesin custom menjadi solusi ketika kebutuhan proses produksi
+            tidak dapat dipenuhi secara optimal oleh mesin standar.
+            Pelajari konsep, proses, jenis mesin, dan faktor penting
+            dalam pembuatan mesin custom.
           </p>
 
           <a
-            href="/artikel/jasa-pembuatan-mesin-custom/"
-            class="article-link"
+            href={`${base}artikel/jasa-pembuatan-mesin-custom/`}
+            class="btn btn-primary"
           >
-            Baca Artikel →
+            Baca Artikel Utama →
           </a>
 
         </div>
 
-      </article>
+        <div class="featured-visual">
+
+          <div class="visual-icon">
+            ⚙
+          </div>
+
+          <span>
+            MESIN CUSTOM INDUSTRI
+          </span>
+
+        </div>
+
+      </div>
 
     </div>
+
   </section>
 
 
-  <!-- TOPIC -->
-  <section class="section section-soft">
+  <!-- TOPICS -->
+  <section class="section section-light">
+
     <div class="container">
 
       <div class="section-heading">
@@ -95,105 +95,403 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </span>
 
         <h2>
-          Topik yang Akan Dibahas
+          Jelajahi Informasi Berdasarkan Topik
         </h2>
 
         <p>
-          Struktur konten akan dikembangkan berdasarkan kebutuhan
-          informasi pengguna dan berbagai topik yang berkaitan
-          dengan mesin custom.
+          Informasi disusun berdasarkan kebutuhan mesin,
+          proses produksi, dan bidang industri yang berbeda.
         </p>
 
       </div>
 
+
       <div class="topic-grid">
 
-        <article class="topic-card">
-          <span>01</span>
+        <!-- TOPIC 01 -->
+        <a
+          href={`${base}jasa/mesin-custom/`}
+          class="topic-card"
+        >
+
+          <span class="topic-number">
+            01
+          </span>
 
           <h3>
             Mesin Custom
           </h3>
 
           <p>
-            Informasi mengenai konsep, manfaat, desain,
-            dan pembuatan mesin custom.
+            Informasi tentang konsep, manfaat, proses,
+            dan kebutuhan mesin custom untuk industri.
           </p>
-        </article>
 
-        <article class="topic-card">
-          <span>02</span>
+          <strong>
+            Lihat Layanan →
+          </strong>
+
+        </a>
+
+
+        <!-- TOPIC 02 -->
+        <a
+          href={`${base}jasa/mesin-produksi-custom/`}
+          class="topic-card"
+        >
+
+          <span class="topic-number">
+            02
+          </span>
 
           <h3>
             Mesin Produksi
           </h3>
 
           <p>
-            Pembahasan mesin untuk membantu berbagai
-            proses produksi industri.
+            Pembahasan mengenai mesin produksi custom
+            untuk berbagai kebutuhan proses industri.
           </p>
-        </article>
 
-        <article class="topic-card">
-          <span>03</span>
+          <strong>
+            Lihat Layanan →
+          </strong>
+
+        </a>
+
+
+        <!-- TOPIC 03 -->
+        <a
+          href={`${base}jasa/otomatisasi-industri/`}
+          class="topic-card"
+        >
+
+          <span class="topic-number">
+            03
+          </span>
 
           <h3>
             Otomatisasi Industri
           </h3>
 
           <p>
-            Informasi tentang otomatisasi proses,
-            integrasi mesin, dan sistem produksi.
+            Informasi tentang otomatisasi, integrasi mesin,
+            kontrol proses, dan peningkatan efisiensi produksi.
           </p>
-        </article>
 
-        <article class="topic-card">
-          <span>04</span>
+          <strong>
+            Lihat Layanan →
+          </strong>
+
+        </a>
+
+
+        <!-- TOPIC 04 -->
+        <a
+          href={`${base}mesin/packaging/`}
+          class="topic-card"
+        >
+
+          <span class="topic-number">
+            04
+          </span>
 
           <h3>
-            Packaging
+            Mesin Packaging
           </h3>
 
           <p>
-            Pembahasan mesin filling, sealing,
-            labeling, counting, dan packaging.
+            Informasi mengenai filling, sealing, counting,
+            labeling, dan sistem pengemasan produk.
           </p>
-        </article>
 
-        <article class="topic-card">
-          <span>05</span>
+          <strong>
+            Lihat Kategori →
+          </strong>
+
+        </a>
+
+
+        <!-- TOPIC 05 -->
+        <a
+          href={`${base}mesin/conveyor/`}
+          class="topic-card"
+        >
+
+          <span class="topic-number">
+            05
+          </span>
 
           <h3>
             Conveyor
           </h3>
 
           <p>
-            Informasi mengenai conveyor custom,
-            sistem pemindahan material, dan integrasi produksi.
+            Pembahasan mengenai conveyor custom untuk
+            pemindahan produk dan material.
           </p>
-        </article>
 
-        <article class="topic-card">
-          <span>06</span>
+          <strong>
+            Lihat Kategori →
+          </strong>
+
+        </a>
+
+
+        <!-- TOPIC 06 -->
+        <a
+          href={`${base}jasa/fabrikasi-mesin/`}
+          class="topic-card"
+        >
+
+          <span class="topic-number">
+            06
+          </span>
 
           <h3>
             Fabrikasi Mesin
           </h3>
 
           <p>
-            Informasi tentang rangka mesin, komponen,
-            material, dan proses fabrikasi.
+            Informasi tentang fabrikasi rangka, komponen,
+            konstruksi, dan kebutuhan mesin custom.
           </p>
-        </article>
+
+          <strong>
+            Lihat Layanan →
+          </strong>
+
+        </a>
 
       </div>
 
     </div>
+
+  </section>
+
+
+  <!-- MACHINE CATEGORIES -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label">
+          KATEGORI MESIN
+        </span>
+
+        <h2>
+          Informasi Berdasarkan Bidang Industri
+        </h2>
+
+        <p>
+          Jelajahi kategori mesin berdasarkan jenis kebutuhan
+          industri dan proses produksinya.
+        </p>
+
+      </div>
+
+
+      <div class="category-grid">
+
+        <a
+          href={`${base}mesin/makanan-minuman/`}
+          class="category-card"
+        >
+          <span>01</span>
+          <strong>
+            Mesin Makanan & Minuman
+          </strong>
+          <small>
+            Pengolahan, mixing, filling, packaging
+          </small>
+        </a>
+
+
+        <a
+          href={`${base}mesin/manufaktur-logam/`}
+          class="category-card"
+        >
+          <span>02</span>
+          <strong>
+            Manufaktur & Logam
+          </strong>
+          <small>
+            Fabrikasi dan proses pengolahan material
+          </small>
+        </a>
+
+
+        <a
+          href={`${base}mesin/pertanian-agro/`}
+          class="category-card"
+        >
+          <span>03</span>
+          <strong>
+            Pertanian & Agro
+          </strong>
+          <small>
+            Pengolahan hasil pertanian dan agroindustri
+          </small>
+        </a>
+
+
+        <a
+          href={`${base}mesin/pengolahan-limbah/`}
+          class="category-card"
+        >
+          <span>04</span>
+          <strong>
+            Pengolahan Limbah
+          </strong>
+          <small>
+            Pencacahan, pemilahan, dan pemrosesan limbah
+          </small>
+        </a>
+
+
+        <a
+          href={`${base}mesin/packaging/`}
+          class="category-card"
+        >
+          <span>05</span>
+          <strong>
+            Packaging
+          </strong>
+          <small>
+            Sistem pengemasan dan lini packaging
+          </small>
+        </a>
+
+
+        <a
+          href={`${base}mesin/conveyor/`}
+          class="category-card"
+        >
+          <span>06</span>
+          <strong>
+            Conveyor
+          </strong>
+          <small>
+            Pemindahan produk dan material
+          </small>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTENT STRATEGY -->
+  <section class="section section-dark">
+
+    <div class="container">
+
+      <div class="dark-heading">
+
+        <span class="section-label">
+          PUSAT INFORMASI
+        </span>
+
+        <h2>
+          Membantu Memahami Kebutuhan Mesin Sebelum Membuat Keputusan
+        </h2>
+
+        <p>
+          Pemilihan mesin sebaiknya mempertimbangkan kebutuhan proses,
+          kapasitas produksi, karakteristik material, ruang pemasangan,
+          tingkat otomatisasi, dan tujuan penggunaan.
+        </p>
+
+      </div>
+
+
+      <div class="info-grid">
+
+        <div class="info-card">
+
+          <span>
+            01
+          </span>
+
+          <h3>
+            Memahami Kebutuhan
+          </h3>
+
+          <p>
+            Kenali proses yang ingin diselesaikan sebelum
+            menentukan jenis mesin.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <span>
+            02
+          </span>
+
+          <h3>
+            Menentukan Spesifikasi
+          </h3>
+
+          <p>
+            Kapasitas, dimensi, material, dan fungsi perlu
+            ditentukan sesuai kebutuhan.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <span>
+            03
+          </span>
+
+          <h3>
+            Mempertimbangkan Otomatisasi
+          </h3>
+
+          <p>
+            Tingkat otomatisasi dapat disesuaikan dengan
+            kebutuhan proses dan target produksi.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <span>
+            04
+          </span>
+
+          <h3>
+            Konsultasi Proyek
+          </h3>
+
+          <p>
+            Kebutuhan yang lebih spesifik dapat dibahas
+            sebelum masuk tahap perancangan mesin.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
 
   <!-- INTERNAL LINKS -->
   <section class="section">
+
     <div class="container">
 
       <div class="section-heading">
@@ -203,93 +501,141 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </span>
 
         <h2>
-          Temukan Solusi Mesin yang Sesuai
+          Temukan Informasi dan Layanan Lainnya
         </h2>
 
       </div>
 
+
       <div class="link-grid">
 
-        <a href="/jasa/" class="link-card">
-          <strong>Jasa Pembuatan Mesin</strong>
-          <span>Lihat seluruh layanan →</span>
+        <a
+          href={`${base}jasa/`}
+          class="link-card"
+        >
+          <strong>
+            Jasa Pembuatan Mesin
+          </strong>
+
+          <span>
+            Lihat seluruh layanan pembuatan mesin custom.
+          </span>
         </a>
 
-        <a href="/mesin/" class="link-card">
-          <strong>Katalog Mesin</strong>
-          <span>Lihat kategori mesin →</span>
+
+        <a
+          href={`${base}mesin/`}
+          class="link-card"
+        >
+          <strong>
+            Katalog Mesin
+          </strong>
+
+          <span>
+            Jelajahi berbagai kategori mesin industri.
+          </span>
         </a>
 
-        <a href="/portfolio/" class="link-card">
-          <strong>Portfolio</strong>
-          <span>Lihat contoh proyek →</span>
+
+        <a
+          href={`${base}portfolio/`}
+          class="link-card"
+        >
+          <strong>
+            Portfolio
+          </strong>
+
+          <span>
+            Lihat contoh pengembangan mesin custom.
+          </span>
         </a>
 
-        <a href="/kontak/" class="link-card">
-          <strong>Kontak</strong>
-          <span>Konsultasikan kebutuhan →</span>
+
+        <a
+          href={`${base}kontak/`}
+          class="link-card"
+        >
+          <strong>
+            Kontak
+          </strong>
+
+          <span>
+            Konsultasikan kebutuhan mesin Anda.
+          </span>
         </a>
 
       </div>
 
     </div>
+
   </section>
 
 
   <!-- CTA -->
-  <section class="cta">
+  <section class="cta-section">
+
     <div class="container cta-inner">
 
       <div>
 
         <span class="section-label">
-          KONSULTASI
+          BUTUH MESIN CUSTOM?
         </span>
 
         <h2>
-          Punya Kebutuhan Mesin Custom?
+          Konsultasikan Kebutuhan Mesin Anda
         </h2>
 
         <p>
-          Jika kebutuhan mesin Anda tidak tersedia dalam
-          spesifikasi standar, konsultasikan kebutuhan
-          tersebut untuk mendapatkan konsep yang sesuai.
+          Sampaikan kebutuhan proses, kapasitas, fungsi,
+          atau jenis mesin yang ingin dikembangkan.
         </p>
 
       </div>
 
+
       <a
-        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20jasa%20pembuatan%20mesin%20custom."
-        class="btn"
+        href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+          "Halo, saya ingin konsultasi tentang pembuatan mesin custom."
+        )}`}
+        class="btn btn-light"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Konsultasi via WhatsApp
+        Konsultasi WhatsApp
       </a>
 
     </div>
+
   </section>
 
 </BaseLayout>
 
 
 <style>
-  .hero {
-    padding: 90px 0;
-    background: linear-gradient(
-      135deg,
-      #f8fafc,
-      #ecfeff
-    );
-  }
-
   .container {
     width: min(1180px, 92%);
     margin: 0 auto;
   }
 
+  .hero {
+    padding: 90px 0;
+    background:
+      linear-gradient(
+        135deg,
+        #f0fdfa 0%,
+        #ffffff 55%,
+        #f8fafc 100%
+      );
+  }
+
+  .hero-inner {
+    max-width: 900px;
+  }
+
   .eyebrow,
-  .section-label {
+  .section-label,
+  .article-label {
     display: inline-block;
     margin-bottom: 14px;
     color: #0f766e;
@@ -298,18 +644,18 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     letter-spacing: 1.5px;
   }
 
-  .hero h1 {
+  h1 {
     max-width: 850px;
-    margin: 0 0 20px;
+    margin: 0;
     color: #0f172a;
-    font-size: clamp(40px, 5vw, 62px);
+    font-size: clamp(38px, 5vw, 64px);
     line-height: 1.08;
     letter-spacing: -1.5px;
   }
 
   .hero p {
     max-width: 780px;
-    margin: 0;
+    margin: 24px 0 0;
     color: #475569;
     font-size: 18px;
     line-height: 1.8;
@@ -319,8 +665,94 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     padding: 85px 0;
   }
 
-  .section-soft {
+  .section-light {
     background: #f8fafc;
+  }
+
+  .section-dark {
+    background: #0f172a;
+    color: #cbd5e1;
+  }
+
+  .featured {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    background: #ffffff;
+  }
+
+  .featured-content {
+    padding: 48px;
+  }
+
+  .featured-content h2 {
+    max-width: 720px;
+    margin: 0 0 18px;
+    color: #0f172a;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+  }
+
+  .featured-content p {
+    max-width: 680px;
+    margin: 0 0 28px;
+    color: #64748b;
+    line-height: 1.8;
+  }
+
+  .featured-visual {
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background:
+      linear-gradient(
+        135deg,
+        #ccfbf1,
+        #e2e8f0
+      );
+    color: #334155;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+  }
+
+  .visual-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 24px;
+    background: #ffffff;
+    color: #0f766e;
+    font-size: 48px;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.1);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .btn-primary {
+    background: #0f766e;
+    color: #ffffff;
+  }
+
+  .btn-primary:hover {
+    background: #115e59;
   }
 
   .section-heading {
@@ -328,58 +760,19 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     margin-bottom: 42px;
   }
 
-  .section-heading h2 {
+  .section-heading h2,
+  .dark-heading h2 {
     margin: 0 0 18px;
     color: #0f172a;
     font-size: clamp(30px, 4vw, 44px);
-    line-height: 1.15;
-  }
-
-  .section-heading p {
-    margin: 0;
-    color: #64748b;
-    font-size: 17px;
-    line-height: 1.8;
-  }
-
-  .featured-card {
-    padding: 42px;
-    border: 1px solid #dbeafe;
-    border-radius: 18px;
-    background: #ffffff;
-    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.07);
-  }
-
-  .featured-content {
-    max-width: 850px;
-  }
-
-  .article-category {
-    display: inline-block;
-    margin-bottom: 15px;
-    color: #0f766e;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1.3px;
-  }
-
-  .featured-content h2 {
-    margin: 0 0 16px;
-    color: #0f172a;
-    font-size: clamp(27px, 4vw, 38px);
     line-height: 1.2;
   }
 
-  .featured-content p {
-    margin: 0 0 25px;
+  .section-heading p,
+  .dark-heading p {
+    margin: 0;
     color: #64748b;
     line-height: 1.8;
-  }
-
-  .article-link {
-    color: #0f766e;
-    text-decoration: none;
-    font-weight: 800;
   }
 
   .topic-grid {
@@ -389,67 +782,169 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
   }
 
   .topic-card {
-    padding: 28px;
-    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
     border: 1px solid #e2e8f0;
-    border-radius: 14px;
+    border-radius: 15px;
+    background: #ffffff;
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
-  .topic-card span {
+  .topic-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.08);
+  }
+
+  .topic-number {
+    margin-bottom: 22px;
     color: #0f766e;
     font-size: 13px;
     font-weight: 800;
   }
 
   .topic-card h3 {
-    margin: 15px 0 10px;
+    margin: 0 0 12px;
     color: #0f172a;
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .topic-card p {
-    margin: 0;
+    margin: 0 0 20px;
     color: #64748b;
+    line-height: 1.7;
+  }
+
+  .topic-card strong {
+    margin-top: auto;
+    color: #0f766e;
+    font-size: 14px;
+  }
+
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .category-card {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 15px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .category-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  }
+
+  .category-card > span {
+    grid-row: span 2;
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .category-card strong {
+    color: #0f172a;
+  }
+
+  .category-card small {
+    margin-top: 7px;
+    color: #64748b;
+    line-height: 1.5;
+  }
+
+  .dark-heading {
+    max-width: 800px;
+    margin-bottom: 42px;
+  }
+
+  .section-dark .section-label {
+    color: #5eead4;
+  }
+
+  .section-dark .dark-heading h2 {
+    color: #ffffff;
+  }
+
+  .section-dark .dark-heading p {
+    color: #cbd5e1;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .info-card {
+    padding: 28px;
+    border: 1px solid #334155;
+    border-radius: 14px;
+  }
+
+  .info-card > span {
+    color: #5eead4;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .info-card h3 {
+    margin: 18px 0 10px;
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  .info-card p {
+    margin: 0;
+    color: #cbd5e1;
     line-height: 1.7;
   }
 
   .link-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 18px;
   }
 
   .link-card {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 25px;
+    gap: 9px;
+    padding: 24px;
     border: 1px solid #e2e8f0;
     border-radius: 14px;
-    background: #ffffff;
-    color: inherit;
     text-decoration: none;
-  }
-
-  .link-card strong {
-    color: #0f172a;
-    font-size: 18px;
-  }
-
-  .link-card span {
-    color: #0f766e;
-    font-size: 14px;
-    font-weight: 700;
   }
 
   .link-card:hover {
     border-color: #99f6e4;
-    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
   }
 
-  .cta {
-    padding: 75px 0;
-    background: #0f172a;
+  .link-card strong {
+    color: #0f172a;
+  }
+
+  .link-card span {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .cta-section {
+    padding: 70px 0;
+    background: #0f766e;
   }
 
   .cta-inner {
@@ -459,52 +954,47 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     gap: 40px;
   }
 
-  .cta h2 {
-    margin: 0 0 15px;
+  .cta-inner h2 {
+    max-width: 760px;
+    margin: 0 0 14px;
     color: #ffffff;
     font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
   }
 
-  .cta p {
+  .cta-inner p {
     max-width: 700px;
     margin: 0;
-    color: #cbd5e1;
+    color: #ccfbf1;
     line-height: 1.8;
   }
 
-  .cta .section-label {
-    color: #5eead4;
+  .cta-inner .section-label {
+    color: #99f6e4;
   }
 
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  .btn-light {
     flex-shrink: 0;
-    padding: 15px 22px;
-    border-radius: 9px;
-    background: #0f766e;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
+    background: #ffffff;
+    color: #0f766e;
   }
 
-  .btn:hover {
-    background: #115e59;
-  }
+  @media (max-width: 1000px) {
 
-  @media (max-width: 850px) {
-    .topic-grid {
+    .topic-grid,
+    .category-grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .cta-inner {
-      align-items: flex-start;
-      flex-direction: column;
+    .info-grid,
+    .link-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
+
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 750px) {
+
     .hero {
       padding: 65px 0;
     }
@@ -513,13 +1003,29 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
       padding: 65px 0;
     }
 
+    .featured {
+      grid-template-columns: 1fr;
+    }
+
+    .featured-visual {
+      min-height: 240px;
+    }
+
     .topic-grid,
+    .category-grid,
+    .info-grid,
     .link-grid {
       grid-template-columns: 1fr;
     }
 
-    .featured-card {
-      padding: 28px;
+    .cta-inner {
+      flex-direction: column;
+      align-items: flex-start;
     }
+
+    .hero p {
+      font-size: 16px;
+    }
+
   }
 </style>
