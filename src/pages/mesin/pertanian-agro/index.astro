@@ -1,471 +1,1065 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
-  title="Jasa Pembuatan Mesin Pertanian dan Agro Custom"
-  description="Jasa pembuatan mesin pertanian dan agro custom untuk pengolahan hasil panen, sortasi, pemindahan material, produksi, dan kebutuhan agroindustri."
+  title="Mesin Pertanian dan Agro Custom untuk Industri"
+  description="Jasa pembuatan mesin pertanian dan agro custom untuk pengolahan hasil panen, proses produksi, pemindahan material, pengolahan bahan, dan otomatisasi."
 >
 
+  <!-- HERO -->
   <section class="hero">
     <div class="container">
 
       <span class="eyebrow">
-        PERTANIAN & AGRO
+        MESIN PERTANIAN & AGRO
       </span>
 
       <h1>
-        Jasa Pembuatan Mesin
-        Pertanian dan Agro Custom
+        Mesin Pertanian dan Agro Custom untuk Berbagai Kebutuhan
       </h1>
 
-      <p>
-        Solusi mesin custom untuk membantu proses pertanian,
-        pengolahan hasil panen, pemindahan material,
-        sortasi, hingga kebutuhan agroindustri.
+      <p class="hero-description">
+        Pembuatan mesin custom untuk membantu proses pertanian,
+        pengolahan hasil panen, agroindustri, pemindahan material,
+        hingga kebutuhan produksi dan otomatisasi.
       </p>
 
-      <a
-        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20mesin%20pertanian%20dan%20agro%20custom."
-        target="_blank"
-        rel="noopener noreferrer"
-        class="button"
-      >
-        Konsultasi Mesin
-      </a>
+      <div class="hero-actions">
+
+        <a
+          href={`${base}kontak/`}
+          class="button button-primary"
+        >
+          Konsultasikan Kebutuhan
+        </a>
+
+        <a
+          href={`${base}jasa/mesin-custom/`}
+          class="button button-secondary"
+        >
+          Jasa Mesin Custom
+        </a>
+
+      </div>
 
     </div>
   </section>
 
 
-  <section class="content">
-    <div class="container narrow">
+  <!-- INTRO -->
+  <section class="section">
 
-      <h2>
-        Mesin Custom untuk Pertanian dan Agroindustri
-      </h2>
+    <div class="container intro-grid">
 
-      <p>
-        Kebutuhan mesin pada sektor pertanian dan agroindustri
-        sangat beragam. Proses produksi dapat melibatkan
-        pengolahan bahan, pemindahan hasil panen, sortasi,
-        pencucian, pengeringan, hingga pengemasan.
-      </p>
+      <div>
 
-      <p>
-        Setiap usaha dapat memiliki kapasitas dan alur kerja
-        yang berbeda. Karena itu, mesin custom dapat
-        dikembangkan berdasarkan kebutuhan proses, jenis
-        material, kapasitas produksi, serta kondisi operasional.
-      </p>
+        <span class="section-label">
+          SOLUSI PERTANIAN & AGROINDUSTRI
+        </span>
 
-      <p>
-        Solusi mesin dapat dirancang untuk membantu mengurangi
-        pekerjaan manual, memperlancar alur produksi, dan
-        mendukung kebutuhan pengolahan hasil pertanian.
-      </p>
+        <h2>
+          Mesin Disesuaikan dengan Kebutuhan Proses
+        </h2>
+
+      </div>
+
+      <div>
+
+        <p>
+          Kegiatan pertanian dan agroindustri memiliki berbagai
+          tahapan proses, mulai dari penanganan bahan, pengolahan
+          hasil panen, pemindahan material, penyortiran, hingga
+          pengemasan produk.
+        </p>
+
+        <p>
+          Setiap proses dapat memiliki kebutuhan mesin yang
+          berbeda berdasarkan jenis bahan, kapasitas, ukuran,
+          karakteristik produk, dan kondisi lokasi penggunaan.
+        </p>
+
+        <p>
+          Mesin custom dapat dikembangkan untuk membantu proses
+          tersebut dengan rancangan yang disesuaikan berdasarkan
+          fungsi dan kebutuhan operasional.
+        </p>
+
+      </div>
 
     </div>
+
   </section>
 
 
-  <section class="machine-types">
+  <!-- JENIS MESIN -->
+  <section class="section section-light">
+
     <div class="container">
 
-      <div class="heading">
+      <div class="section-heading">
 
-        <span class="eyebrow">
+        <span class="section-label">
           JENIS MESIN
         </span>
 
         <h2>
-          Contoh Mesin Pertanian dan Agro
+          Contoh Mesin untuk Pertanian dan Agro
         </h2>
 
         <p>
-          Beberapa jenis kebutuhan mesin yang dapat
-          dikembangkan untuk sektor pertanian dan agroindustri.
+          Berikut beberapa contoh solusi mesin yang dapat
+          dikembangkan untuk mendukung proses pertanian dan
+          agroindustri.
         </p>
 
       </div>
 
 
-      <div class="grid">
+      <div class="machine-grid">
 
-        <article>
-          <h3>Mesin Pengolahan Hasil Pertanian</h3>
+        <article class="machine-card">
+
+          <div class="machine-icon">
+            ⚙
+          </div>
+
+          <h3>
+            Mesin Pengolahan Hasil Panen
+          </h3>
 
           <p>
-            Mesin untuk membantu proses pengolahan bahan
-            atau hasil panen menjadi produk yang siap
-            diproses lebih lanjut.
+            Mesin untuk membantu proses pengolahan bahan hasil
+            pertanian sesuai karakteristik produk.
           </p>
+
+          <a href={`${base}jasa/mesin-custom/`}>
+            Konsultasikan Mesin →
+          </a>
+
         </article>
 
 
-        <article>
-          <h3>Mesin Sortasi</h3>
+        <article class="machine-card">
+
+          <div class="machine-icon">
+            ⚙
+          </div>
+
+          <h3>
+            Mesin Sortasi
+          </h3>
 
           <p>
-            Sistem sortasi untuk membantu pemisahan bahan
-            berdasarkan ukuran, bentuk, atau karakteristik
+            Sistem sortasi dapat dikembangkan untuk membantu
+            pemisahan produk berdasarkan ukuran atau karakteristik
             tertentu.
           </p>
+
+          <a href={`${base}jasa/otomatisasi-industri/`}>
+            Konsultasikan →
+          </a>
+
         </article>
 
 
-        <article>
-          <h3>Mesin Pencuci</h3>
+        <article class="machine-card">
+
+          <div class="machine-icon">
+            ⚙
+          </div>
+
+          <h3>
+            Mesin Pengering
+          </h3>
 
           <p>
-            Mesin pencuci custom untuk membantu proses
-            pembersihan bahan hasil pertanian.
+            Mesin pengering custom dapat dirancang berdasarkan
+            jenis bahan, kapasitas, dan kebutuhan proses.
           </p>
+
+          <a href={`${base}jasa/mesin-custom/`}>
+            Konsultasikan Mesin →
+          </a>
+
         </article>
 
 
-        <article>
-          <h3>Mesin Pengering</h3>
+        <article class="machine-card">
+
+          <div class="machine-icon">
+            ⚙
+          </div>
+
+          <h3>
+            Mesin Pencacah
+          </h3>
 
           <p>
-            Solusi mesin pengering yang dapat disesuaikan
-            dengan jenis bahan dan kebutuhan proses.
+            Mesin pencacah dapat digunakan untuk membantu
+            proses pengecilan ukuran berbagai bahan.
           </p>
+
+          <a href={`${base}jasa/mesin-produksi-custom/`}>
+            Lihat Jasa →
+          </a>
+
         </article>
 
 
-        <article>
-          <h3>Conveyor Pertanian</h3>
+        <article class="machine-card">
+
+          <div class="machine-icon">
+            ⚙
+          </div>
+
+          <h3>
+            Conveyor Pertanian
+          </h3>
 
           <p>
-            Conveyor untuk membantu pemindahan bahan,
-            hasil panen, atau produk antarproses.
+            Sistem conveyor untuk membantu pemindahan bahan dan
+            hasil produksi antarproses.
           </p>
+
+          <a href={`${base}mesin/conveyor/`}>
+            Lihat Conveyor →
+          </a>
+
         </article>
 
 
-        <article>
-          <h3>Mesin Packaging</h3>
+        <article class="machine-card">
+
+          <div class="machine-icon">
+            ⚙
+          </div>
+
+          <h3>
+            Mesin Packaging Produk
+          </h3>
 
           <p>
-            Mesin pengemasan untuk mendukung proses akhir
-            pengolahan produk pertanian dan agro.
+            Mesin packaging untuk mendukung proses pengemasan
+            hasil pertanian dan produk agroindustri.
           </p>
+
+          <a href={`${base}mesin/packaging/`}>
+            Lihat Packaging →
+          </a>
+
         </article>
 
       </div>
 
     </div>
+
   </section>
 
 
-  <section class="advantages">
+  <!-- APLIKASI -->
+  <section class="section">
+
     <div class="container">
 
-      <div class="heading">
+      <div class="section-heading">
 
-        <span class="eyebrow">
-          KEUNGGULAN
+        <span class="section-label">
+          APLIKASI
         </span>
 
         <h2>
-          Mesin Disesuaikan dengan Kondisi Produksi
+          Mendukung Berbagai Tahapan Agroindustri
         </h2>
 
       </div>
 
 
-      <div class="advantages-grid">
+      <div class="application-grid">
 
-        <div>
-          <strong>01</strong>
+        <div class="application-card">
+
+          <span>01</span>
 
           <h3>
-            Sesuai Jenis Bahan
+            Penanganan Bahan
           </h3>
 
           <p>
-            Konsep mesin dapat mempertimbangkan karakteristik
-            bahan yang diproses.
+            Mesin dapat membantu proses pemindahan dan
+            penanganan bahan sebelum masuk ke proses berikutnya.
           </p>
+
         </div>
 
 
-        <div>
-          <strong>02</strong>
+        <div class="application-card">
+
+          <span>02</span>
 
           <h3>
-            Kapasitas Fleksibel
+            Pengolahan Hasil Panen
           </h3>
 
           <p>
-            Kapasitas mesin dapat dibahas berdasarkan target
-            produksi dan kebutuhan operasional.
+            Sistem mesin dapat disesuaikan dengan kebutuhan
+            pengolahan berbagai jenis hasil pertanian.
           </p>
+
         </div>
 
 
-        <div>
-          <strong>03</strong>
+        <div class="application-card">
+
+          <span>03</span>
 
           <h3>
-            Alur Produksi Lebih Teratur
+            Penyortiran
           </h3>
 
           <p>
-            Sistem mesin dapat dirancang untuk mendukung
-            alur pemrosesan dari satu tahap ke tahap berikutnya.
+            Sistem sortasi dapat membantu proses pemisahan
+            produk berdasarkan parameter tertentu.
           </p>
+
         </div>
 
 
-        <div>
-          <strong>04</strong>
+        <div class="application-card">
+
+          <span>04</span>
 
           <h3>
-            Dapat Dikembangkan
+            Pengeringan
           </h3>
 
           <p>
-            Mesin dapat dipertimbangkan untuk pengembangan
-            otomatisasi pada tahap berikutnya.
+            Mesin pengering dapat dikembangkan berdasarkan
+            karakteristik bahan dan kapasitas produksi.
           </p>
+
+        </div>
+
+
+        <div class="application-card">
+
+          <span>05</span>
+
+          <h3>
+            Pemindahan Material
+          </h3>
+
+          <p>
+            Conveyor dan sistem handling dapat membantu
+            perpindahan bahan antarproses.
+          </p>
+
+        </div>
+
+
+        <div class="application-card">
+
+          <span>06</span>
+
+          <h3>
+            Pengemasan
+          </h3>
+
+          <p>
+            Mesin packaging dapat mendukung proses pengemasan
+            produk sebelum distribusi.
+          </p>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
 
-  <section class="cta">
+  <!-- KEBUTUHAN -->
+  <section class="section section-dark">
+
     <div class="container">
 
-      <h2>
-        Membutuhkan Mesin Pertanian Custom?
-      </h2>
+      <div class="section-heading">
 
-      <p>
-        Sampaikan jenis bahan, proses pengolahan, kapasitas,
-        dan fungsi mesin yang dibutuhkan.
-      </p>
+        <span class="section-label">
+          PERANCANGAN
+        </span>
 
-      <a
-        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20mesin%20pertanian%20custom."
-        target="_blank"
-        rel="noopener noreferrer"
-        class="button-light"
-      >
-        Konsultasi via WhatsApp
-      </a>
+        <h2>
+          Faktor yang Dipertimbangkan dalam Pembuatan Mesin
+        </h2>
+
+      </div>
+
+
+      <div class="factor-grid">
+
+        <div class="factor-card">
+
+          <span>01</span>
+
+          <h3>
+            Jenis Bahan
+          </h3>
+
+          <p>
+            Karakteristik bahan menjadi pertimbangan penting
+            dalam menentukan sistem kerja mesin.
+          </p>
+
+        </div>
+
+
+        <div class="factor-card">
+
+          <span>02</span>
+
+          <h3>
+            Kapasitas
+          </h3>
+
+          <p>
+            Kapasitas mesin dapat disesuaikan dengan kebutuhan
+            produksi dan target operasional.
+          </p>
+
+        </div>
+
+
+        <div class="factor-card">
+
+          <span>03</span>
+
+          <h3>
+            Ukuran Produk
+          </h3>
+
+          <p>
+            Dimensi dan ukuran produk dapat memengaruhi desain
+            mekanisme serta bagian kerja mesin.
+          </p>
+
+        </div>
+
+
+        <div class="factor-card">
+
+          <span>04</span>
+
+          <h3>
+            Kondisi Lokasi
+          </h3>
+
+          <p>
+            Ukuran dan konfigurasi mesin dapat disesuaikan
+            dengan area pemasangan dan kondisi lapangan.
+          </p>
+
+        </div>
+
+
+        <div class="factor-card">
+
+          <span>05</span>
+
+          <h3>
+            Sistem Penggerak
+          </h3>
+
+          <p>
+            Sistem penggerak dipilih berdasarkan kebutuhan
+            fungsi dan mekanisme mesin.
+          </p>
+
+        </div>
+
+
+        <div class="factor-card">
+
+          <span>06</span>
+
+          <h3>
+            Pengembangan Otomatisasi
+          </h3>
+
+          <p>
+            Mesin dapat dikembangkan untuk mendukung proses
+            otomatisasi dan peningkatan efisiensi.
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
+
+  </section>
+
+
+  <!-- PROSES -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label">
+          PROSES PEMBUATAN
+        </span>
+
+        <h2>
+          Tahapan Pembuatan Mesin Pertanian dan Agro
+        </h2>
+
+      </div>
+
+
+      <div class="process-grid">
+
+        <div class="process-card">
+
+          <span>01</span>
+
+          <h3>
+            Konsultasi
+          </h3>
+
+          <p>
+            Membahas jenis bahan, proses, kapasitas, fungsi,
+            dan kebutuhan penggunaan mesin.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <span>02</span>
+
+          <h3>
+            Perancangan
+          </h3>
+
+          <p>
+            Menentukan konsep, mekanisme, dimensi, material,
+            dan sistem kerja mesin.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <span>03</span>
+
+          <h3>
+            Fabrikasi
+          </h3>
+
+          <p>
+            Pembuatan rangka dan komponen mesin berdasarkan
+            rancangan yang telah ditentukan.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <span>04</span>
+
+          <h3>
+            Testing
+          </h3>
+
+          <p>
+            Pengujian fungsi mesin sebelum digunakan dalam
+            proses operasional.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RELATED -->
+  <section class="section section-light">
+
+    <div class="container related">
+
+      <div>
+
+        <span class="section-label">
+          EKSPLORASI
+        </span>
+
+        <h2>
+          Solusi Mesin Lainnya
+        </h2>
+
+      </div>
+
+
+      <div class="related-links">
+
+        <a href={`${base}mesin/`}>
+          Semua Kategori Mesin →
+        </a>
+
+        <a href={`${base}mesin/makanan-minuman/`}>
+          Mesin Makanan & Minuman →
+        </a>
+
+        <a href={`${base}mesin/packaging/`}>
+          Mesin Packaging →
+        </a>
+
+        <a href={`${base}mesin/conveyor/`}>
+          Conveyor Custom →
+        </a>
+
+        <a href={`${base}jasa/mesin-custom/`}>
+          Jasa Mesin Custom →
+        </a>
+
+        <a href={`${base}artikel/`}>
+          Artikel Mesin & Industri →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="container cta-inner">
+
+      <div>
+
+        <span class="section-label">
+          KONSULTASI MESIN
+        </span>
+
+        <h2>
+          Membutuhkan Mesin untuk Pertanian atau Agroindustri?
+        </h2>
+
+        <p>
+          Sampaikan jenis bahan, proses produksi, kapasitas,
+          ukuran, atau fungsi mesin yang dibutuhkan untuk
+          mendapatkan konsep solusi yang sesuai.
+        </p>
+
+      </div>
+
+
+      <div class="cta-actions">
+
+        <a
+          href={`${base}kontak/`}
+          class="button button-primary"
+        >
+          Konsultasikan Sekarang
+        </a>
+
+        <a
+          href={`${base}portfolio/`}
+          class="button button-secondary"
+        >
+          Lihat Portfolio
+        </a>
+
+      </div>
+
+    </div>
+
   </section>
 
 </BaseLayout>
 
 
 <style>
-  .container {
-    width: min(1180px, 92%);
-    margin: 0 auto;
-  }
-
-  .narrow {
-    max-width: 850px;
-  }
-
   .hero {
     padding: 100px 0;
     background:
       linear-gradient(
         135deg,
-        #f0fdfa 0%,
-        #ffffff 55%,
-        #f8fafc 100%
+        #f8fafc 0%,
+        #ecfeff 100%
       );
   }
 
-  .eyebrow {
+  .eyebrow,
+  .section-label {
     display: inline-block;
     margin-bottom: 14px;
     color: #0f766e;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
   }
 
-  h1 {
+  .hero h1 {
     max-width: 900px;
     margin: 0;
     color: #0f172a;
-    font-size: clamp(38px, 6vw, 62px);
+    font-size: clamp(40px, 5vw, 64px);
     line-height: 1.08;
-    letter-spacing: -1.5px;
+    letter-spacing: -2px;
   }
 
-  .hero p {
+  .hero-description {
     max-width: 780px;
-    margin: 24px 0 30px;
+    margin: 25px 0 0;
     color: #475569;
     font-size: 18px;
     line-height: 1.8;
   }
 
+  .hero-actions,
+  .cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+  }
+
   .button {
-    display: inline-block;
-    padding: 14px 22px;
-    background: #0f766e;
-    color: #ffffff;
-    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 22px;
+    border-radius: 9px;
     text-decoration: none;
     font-weight: 700;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
   .button:hover {
-    background: #115e59;
+    transform: translateY(-2px);
   }
 
-  .content {
-    padding: 90px 0 60px;
+  .button-primary {
+    background: #0f766e;
+    color: #ffffff;
   }
 
-  .content h2,
-  .heading h2 {
-    margin: 0 0 20px;
+  .button-primary:hover {
+    box-shadow: 0 10px 25px rgba(15, 118, 110, 0.2);
+  }
+
+  .button-secondary {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
     color: #0f172a;
-    font-size: 34px;
-    line-height: 1.2;
   }
 
-  .content p,
-  .heading p {
-    color: #475569;
-    line-height: 1.85;
+  .section {
+    padding: 90px 0;
   }
 
-  .machine-types {
-    padding: 80px 0;
+  .section-light {
     background: #f8fafc;
   }
 
-  .heading {
-    max-width: 800px;
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+  }
+
+  .intro-grid h2,
+  .section-heading h2,
+  .related h2,
+  .cta h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+  }
+
+  .intro-grid p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #475569;
+    font-size: 17px;
+    line-height: 1.85;
+  }
+
+  .section-heading {
+    max-width: 900px;
     margin-bottom: 40px;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+  .section-heading p {
+    margin: 18px 0 0;
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 17px;
   }
 
-  .grid article {
-    padding: 28px;
-    background: #ffffff;
+  .machine-grid,
+  .application-grid,
+  .factor-grid,
+  .process-grid {
+    display: grid;
+    gap: 24px;
+  }
+
+  .machine-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .application-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .factor-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .machine-card,
+  .application-card,
+  .process-card {
+    padding: 30px;
     border: 1px solid #e2e8f0;
     border-radius: 14px;
+    background: #ffffff;
   }
 
-  .grid h3 {
+  .machine-card {
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .machine-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  }
+
+  .machine-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 13px;
+    background: #ccfbf1;
+    font-size: 25px;
+  }
+
+  .machine-card h3,
+  .application-card h3 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  .machine-card p,
+  .application-card p {
+    color: #64748b;
+    line-height: 1.75;
+  }
+
+  .machine-card a {
+    color: #0f766e;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .application-card > span,
+  .factor-card > span,
+  .process-card > span {
+    display: block;
+    margin-bottom: 18px;
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .factor-card {
+    padding: 28px;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    background: #172033;
+  }
+
+  .section-dark {
+    background: #0f172a;
+  }
+
+  .section-dark .section-heading h2 {
+    color: #ffffff;
+  }
+
+  .factor-card > span {
+    color: #2dd4bf;
+  }
+
+  .factor-card h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 19px;
+  }
+
+  .factor-card p {
+    margin: 0;
+    color: #cbd5e1;
+    line-height: 1.75;
+  }
+
+  .process-card > span {
+    color: #0f766e;
+  }
+
+  .process-card h3 {
     margin: 0 0 12px;
     color: #0f172a;
     font-size: 19px;
   }
 
-  .grid p {
+  .process-card p {
     margin: 0;
     color: #64748b;
-    font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.75;
   }
 
-  .advantages {
-    padding: 90px 0;
-  }
-
-  .advantages-grid {
+  .related {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+    align-items: start;
   }
 
-  .advantages-grid div {
-    padding: 25px;
+  .related-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .related-links a {
+    display: block;
+    padding: 18px 20px;
     border: 1px solid #e2e8f0;
-    border-radius: 12px;
-  }
-
-  .advantages-grid strong {
+    border-radius: 10px;
+    background: #ffffff;
     color: #0f766e;
-    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
   }
 
-  .advantages-grid h3 {
-    margin: 12px 0 8px;
-    color: #0f172a;
-    font-size: 17px;
-  }
-
-  .advantages-grid p {
-    margin: 0;
-    color: #64748b;
-    font-size: 14px;
-    line-height: 1.7;
+  .related-links a:hover {
+    border-color: #99f6e4;
+    background: #f0fdfa;
   }
 
   .cta {
     padding: 80px 0;
-    background: #0f172a;
-    text-align: center;
+    background: #ecfeff;
+  }
+
+  .cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
   }
 
   .cta h2 {
-    margin: 0 0 18px;
-    color: #ffffff;
-    font-size: 34px;
+    max-width: 750px;
   }
 
   .cta p {
     max-width: 700px;
-    margin: 0 auto 28px;
-    color: #cbd5e1;
+    margin: 18px 0 0;
+    color: #475569;
     line-height: 1.8;
   }
 
-  .button-light {
-    display: inline-block;
-    padding: 14px 22px;
-    background: #ffffff;
-    color: #0f172a;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 700;
+  .cta-actions {
+    flex-shrink: 0;
+    margin-top: 0;
   }
 
-  @media (max-width: 900px) {
-    .grid {
+  @media (max-width: 1000px) {
+    .intro-grid,
+    .related {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .machine-grid,
+    .application-grid,
+    .factor-grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .advantages-grid {
+    .process-grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-inner {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .cta-actions {
+      margin-top: 0;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     .hero {
       padding: 70px 0;
     }
 
-    .content,
-    .advantages {
-      padding: 60px 0;
+    .section {
+      padding: 65px 0;
     }
 
-    .grid,
-    .advantages-grid {
+    .machine-grid,
+    .application-grid,
+    .factor-grid,
+    .process-grid,
+    .related-links {
       grid-template-columns: 1fr;
+    }
+
+    .hero-actions,
+    .cta-actions {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .button {
+      width: 100%;
     }
   }
 </style>
