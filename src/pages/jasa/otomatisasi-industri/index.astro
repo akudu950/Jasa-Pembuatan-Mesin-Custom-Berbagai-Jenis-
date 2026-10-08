@@ -1,183 +1,73 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
-  title="Jasa Otomatisasi Industri dan Mesin Produksi Custom"
-  description="Jasa otomatisasi industri dan pembuatan mesin produksi custom untuk membantu meningkatkan efisiensi, konsistensi, dan produktivitas proses kerja."
+  title="Jasa Otomatisasi Industri dan Sistem Mesin Custom"
+  description="Jasa otomatisasi industri dan pembuatan sistem mesin custom untuk meningkatkan efisiensi, konsistensi, kapasitas produksi, dan pengendalian proses."
 >
 
+  <!-- HERO -->
   <section class="hero">
-    <div class="container">
+    <div class="container hero-grid">
 
-      <span class="eyebrow">
-        OTOMATISASI INDUSTRI
-      </span>
+      <div class="hero-content">
 
-      <h1>
-        Jasa Otomatisasi Industri untuk Proses Produksi
-      </h1>
+        <span class="eyebrow">
+          OTOMATISASI INDUSTRI
+        </span>
 
-      <p>
-        Solusi otomatisasi dan mesin custom untuk membantu
-        meningkatkan efisiensi proses, mengurangi pekerjaan
-        manual, serta membuat alur produksi lebih terstruktur.
-      </p>
+        <h1>
+          Jasa Otomatisasi Industri untuk Produksi yang Lebih Efisien
+        </h1>
 
-      <div class="hero-actions">
+        <p class="hero-description">
+          Perancangan dan pembuatan sistem otomatisasi industri sesuai
+          kebutuhan proses produksi, mulai dari mekanik, conveyor,
+          kontrol mesin, hingga integrasi beberapa tahapan produksi.
+        </p>
 
-        <a
-          href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20otomatisasi%20industri."
-          class="btn-primary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Konsultasi WhatsApp
-        </a>
+        <div class="hero-actions">
 
-        <a
-          href="/jasa/"
-          class="btn-secondary"
-        >
-          Lihat Semua Jasa
-        </a>
+          <a
+            href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+              "Halo, saya ingin konsultasi tentang otomatisasi industri."
+            )}`}
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Konsultasi Otomatisasi
+          </a>
+
+          <a
+            href={`${base}jasa/mesin-custom/`}
+            class="btn btn-secondary"
+          >
+            Mesin Custom
+          </a>
+
+        </div>
 
       </div>
 
-    </div>
-  </section>
+      <div class="hero-card">
 
-
-  <section class="content-section">
-    <div class="container">
-
-      <div class="intro">
-
-        <span class="eyebrow">
-          AUTOMATION SOLUTION
-        </span>
+        <div class="hero-icon">
+          ⚙
+        </div>
 
         <h2>
-          Mengubah Proses Manual Menjadi Lebih Terstruktur
+          Sistem Otomatisasi Sesuai Proses Produksi
         </h2>
 
         <p>
-          Dalam proses produksi, pekerjaan yang dilakukan secara
-          manual secara berulang dapat membutuhkan waktu dan
-          tenaga yang besar. Selain itu, proses manual tertentu
-          dapat menghasilkan perbedaan hasil apabila tidak
-          dilakukan secara konsisten.
+          Setiap proses produksi memiliki kebutuhan berbeda.
+          Sistem otomatisasi dapat dirancang berdasarkan alur kerja,
+          kapasitas, material, tingkat presisi, dan target produksi.
         </p>
-
-        <p>
-          Otomatisasi industri dapat digunakan untuk membantu
-          menjalankan proses tertentu secara lebih terkontrol.
-          Sistem dapat dirancang berdasarkan kebutuhan proses,
-          mulai dari pemindahan material hingga pengoperasian
-          mesin produksi.
-        </p>
-
-      </div>
-
-
-      <div class="solution-grid">
-
-        <article class="solution-card">
-
-          <span>01</span>
-
-          <h3>
-            Sistem Pemindahan Material
-          </h3>
-
-          <p>
-            Otomatisasi pemindahan produk atau material
-            menggunakan conveyor dan sistem pendukung lainnya.
-          </p>
-
-        </article>
-
-
-        <article class="solution-card">
-
-          <span>02</span>
-
-          <h3>
-            Kontrol Proses Produksi
-          </h3>
-
-          <p>
-            Sistem kontrol dapat dirancang untuk membantu
-            menjalankan proses tertentu secara lebih teratur.
-          </p>
-
-        </article>
-
-
-        <article class="solution-card">
-
-          <span>03</span>
-
-          <h3>
-            Mesin Semi Otomatis
-          </h3>
-
-          <p>
-            Solusi untuk proses yang masih membutuhkan
-            operator tetapi sebagian pekerjaan dapat
-            dibantu oleh sistem mesin.
-          </p>
-
-        </article>
-
-
-        <article class="solution-card">
-
-          <span>04</span>
-
-          <h3>
-            Mesin Otomatis
-          </h3>
-
-          <p>
-            Sistem mesin yang dirancang untuk menjalankan
-            tahapan proses tertentu secara otomatis sesuai
-            konsep yang dibutuhkan.
-          </p>
-
-        </article>
-
-
-        <article class="solution-card">
-
-          <span>05</span>
-
-          <h3>
-            Integrasi Mesin
-          </h3>
-
-          <p>
-            Menghubungkan beberapa proses atau mesin agar
-            dapat bekerja sebagai bagian dari satu alur produksi.
-          </p>
-
-        </article>
-
-
-        <article class="solution-card">
-
-          <span>06</span>
-
-          <h3>
-            Special Purpose Machine
-          </h3>
-
-          <p>
-            Mesin khusus yang dibuat untuk menjalankan
-            pekerjaan tertentu berdasarkan kebutuhan proses.
-          </p>
-
-        </article>
 
       </div>
 
@@ -185,17 +75,270 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   </section>
 
 
-  <section class="benefit-section">
+  <!-- INTRO -->
+  <section class="section">
+
+    <div class="container narrow">
+
+      <span class="section-label">
+        SOLUSI OTOMATISASI
+      </span>
+
+      <h2>
+        Apa Itu Otomatisasi Industri?
+      </h2>
+
+      <p>
+        Otomatisasi industri merupakan penerapan sistem mekanik,
+        elektrik, kontrol, sensor, dan perangkat pendukung untuk
+        membantu menjalankan proses produksi secara lebih teratur
+        dan efisien.
+      </p>
+
+      <p>
+        Pada kebutuhan tertentu, sistem otomatisasi tidak cukup
+        menggunakan mesin standar. Diperlukan perancangan mesin
+        custom yang disesuaikan dengan karakteristik produk,
+        kapasitas produksi, ruang kerja, dan alur proses.
+      </p>
+
+      <p>
+        Karena itu, jasa otomatisasi industri dapat dikombinasikan
+        dengan pembuatan mesin custom, conveyor, sistem feeding,
+        filling, packaging, maupun sistem pemindahan material.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- SOLUTIONS -->
+  <section class="section section-light">
+
     <div class="container">
 
       <div class="section-heading">
 
-        <span class="eyebrow">
-          MANFAAT OTOMATISASI
+        <span class="section-label">
+          RUANG LINGKUP
         </span>
 
         <h2>
-          Mengapa Otomatisasi Diperlukan?
+          Solusi Otomatisasi yang Dapat Dikembangkan
+        </h2>
+
+        <p>
+          Sistem dapat dirancang berdasarkan kebutuhan proses dan
+          tingkat otomatisasi yang diinginkan.
+        </p>
+
+      </div>
+
+
+      <div class="card-grid">
+
+        <article class="info-card">
+
+          <div class="card-number">
+            01
+          </div>
+
+          <h3>
+            Conveyor Otomatis
+          </h3>
+
+          <p>
+            Sistem conveyor untuk memindahkan produk atau material
+            antarproses produksi secara lebih teratur.
+          </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+          <div class="card-number">
+            02
+          </div>
+
+          <h3>
+            Sistem Feeding
+          </h3>
+
+          <p>
+            Perancangan sistem feeding untuk memasukkan bahan atau
+            produk ke proses berikutnya secara lebih konsisten.
+          </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+          <div class="card-number">
+            03
+          </div>
+
+          <h3>
+            Mesin Filling
+          </h3>
+
+          <p>
+            Sistem pengisian produk yang dapat disesuaikan dengan
+            jenis material, ukuran kemasan, dan kapasitas produksi.
+          </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+          <div class="card-number">
+            04
+          </div>
+
+          <h3>
+            Sistem Packaging
+          </h3>
+
+          <p>
+            Integrasi proses pengemasan dengan conveyor, sealing,
+            filling, counting, atau proses pendukung lainnya.
+          </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+          <div class="card-number">
+            05
+          </div>
+
+          <h3>
+            Kontrol Mesin
+          </h3>
+
+          <p>
+            Sistem kontrol dapat dikembangkan untuk mengatur
+            urutan kerja mesin dan parameter proses produksi.
+          </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+          <div class="card-number">
+            06
+          </div>
+
+          <h3>
+            Integrasi Sistem Produksi
+          </h3>
+
+          <p>
+            Beberapa mesin dan tahapan proses dapat diintegrasikan
+            menjadi satu sistem produksi yang lebih terkoordinasi.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- APPLICATIONS -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label">
+          PENERAPAN
+        </span>
+
+        <h2>
+          Otomatisasi untuk Berbagai Kebutuhan Industri
+        </h2>
+
+        <p>
+          Sistem otomatisasi dapat dikembangkan untuk berbagai
+          bidang industri dan karakteristik proses produksi.
+        </p>
+
+      </div>
+
+
+      <div class="application-grid">
+
+        <div class="application-item">
+          <strong>Industri Makanan & Minuman</strong>
+          <span>
+            Filling, conveyor, packaging, mixing, dan proses produksi.
+          </span>
+        </div>
+
+        <div class="application-item">
+          <strong>Industri Manufaktur</strong>
+          <span>
+            Pemindahan material, assembly, handling, dan proses produksi.
+          </span>
+        </div>
+
+        <div class="application-item">
+          <strong>Industri Packaging</strong>
+          <span>
+            Feeding, counting, filling, sealing, dan pemindahan produk.
+          </span>
+        </div>
+
+        <div class="application-item">
+          <strong>Pertanian & Agro</strong>
+          <span>
+            Sortasi, pengolahan hasil panen, conveyor, dan packaging.
+          </span>
+        </div>
+
+        <div class="application-item">
+          <strong>Pengolahan Limbah</strong>
+          <span>
+            Pemindahan material, pencacahan, pemilahan, dan proses lainnya.
+          </span>
+        </div>
+
+        <div class="application-item">
+          <strong>Produksi Custom</strong>
+          <span>
+            Sistem khusus berdasarkan alur produksi dan kebutuhan industri.
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BENEFITS -->
+  <section class="section section-dark">
+
+    <div class="container">
+
+      <div class="section-heading dark">
+
+        <span class="section-label">
+          KEUNGGULAN
+        </span>
+
+        <h2>
+          Mengapa Menggunakan Otomatisasi Industri?
         </h2>
 
       </div>
@@ -205,18 +348,16 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 
         <div class="benefit-item">
 
-          <div class="icon">
-            01
-          </div>
+          <span>01</span>
 
           <div>
             <h3>
-              Efisiensi Proses
+              Proses Lebih Konsisten
             </h3>
 
             <p>
-              Membantu mengurangi pekerjaan manual yang
-              dilakukan secara berulang.
+              Sistem otomatisasi dapat membantu menjaga
+              konsistensi proses kerja sesuai parameter yang ditentukan.
             </p>
           </div>
 
@@ -225,18 +366,16 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 
         <div class="benefit-item">
 
-          <div class="icon">
-            02
-          </div>
+          <span>02</span>
 
           <div>
             <h3>
-              Konsistensi
+              Efisiensi Produksi
             </h3>
 
             <p>
-              Proses tertentu dapat dijalankan dengan
-              parameter yang lebih terkontrol.
+              Otomatisasi dapat membantu mengurangi pekerjaan
+              berulang dan meningkatkan efisiensi alur produksi.
             </p>
           </div>
 
@@ -245,18 +384,16 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 
         <div class="benefit-item">
 
-          <div class="icon">
-            03
-          </div>
+          <span>03</span>
 
           <div>
             <h3>
-              Produktivitas
+              Kapasitas Dapat Disesuaikan
             </h3>
 
             <p>
-              Sistem otomatisasi dapat membantu meningkatkan
-              kapasitas proses sesuai desain mesin.
+              Sistem dirancang berdasarkan kebutuhan kapasitas,
+              ukuran produk, dan target produksi.
             </p>
           </div>
 
@@ -265,18 +402,16 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 
         <div class="benefit-item">
 
-          <div class="icon">
-            04
-          </div>
+          <span>04</span>
 
           <div>
             <h3>
-              Alur Produksi
+              Dapat Dikembangkan
             </h3>
 
             <p>
-              Proses kerja dapat dibuat lebih terstruktur
-              dari satu tahapan ke tahapan berikutnya.
+              Sistem dapat dipersiapkan agar memungkinkan
+              pengembangan atau penambahan proses di kemudian hari.
             </p>
           </div>
 
@@ -285,92 +420,89 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
       </div>
 
     </div>
+
   </section>
 
 
-  <section class="process-section">
+  <!-- PROCESS -->
+  <section class="section">
+
     <div class="container">
 
       <div class="section-heading">
 
-        <span class="eyebrow">
-          PROSES OTOMATISASI
+        <span class="section-label">
+          TAHAPAN
         </span>
 
         <h2>
-          Tahapan Perancangan Sistem
+          Proses Pengembangan Sistem Otomatisasi
         </h2>
-
-        <p>
-          Sistem otomatisasi perlu disesuaikan dengan proses
-          kerja yang sebenarnya agar solusi yang dibuat
-          benar-benar relevan.
-        </p>
 
       </div>
 
 
       <div class="process-grid">
 
-        <div class="process-item">
+        <div class="process-card">
 
-          <strong>01</strong>
+          <span>01</span>
 
           <h3>
             Analisis Proses
           </h3>
 
           <p>
-            Memahami alur kerja dan bagian proses yang
-            membutuhkan otomatisasi.
+            Memahami alur produksi, material, kapasitas,
+            kebutuhan operator, dan target otomatisasi.
           </p>
 
         </div>
 
 
-        <div class="process-item">
+        <div class="process-card">
 
-          <strong>02</strong>
+          <span>02</span>
 
           <h3>
-            Konsep Sistem
+            Perancangan
           </h3>
 
           <p>
-            Menentukan konsep mekanik, sistem kontrol,
-            sensor, aktuator, dan komponen pendukung.
+            Menentukan konsep mekanik, alur kerja mesin,
+            sistem pemindahan material, dan kontrol.
           </p>
 
         </div>
 
 
-        <div class="process-item">
+        <div class="process-card">
 
-          <strong>03</strong>
+          <span>03</span>
 
           <h3>
-            Pembuatan Mesin
+            Fabrikasi & Assembly
           </h3>
 
           <p>
-            Proses fabrikasi, perakitan, instalasi,
-            dan integrasi komponen.
+            Pembuatan komponen, rangka, sistem mekanik,
+            kemudian dilanjutkan dengan proses perakitan.
           </p>
 
         </div>
 
 
-        <div class="process-item">
+        <div class="process-card">
 
-          <strong>04</strong>
+          <span>04</span>
 
           <h3>
-            Pengujian
+            Testing
           </h3>
 
           <p>
-            Pengujian sistem untuk memastikan fungsi
-            berjalan sesuai konsep yang direncanakan.
+            Pengujian dilakukan untuk memastikan sistem
+            bekerja sesuai rancangan dan kebutuhan proses.
           </p>
 
         </div>
@@ -378,66 +510,221 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
       </div>
 
     </div>
+
   </section>
 
 
-  <section class="cta-section">
-    <div class="container">
+  <!-- REQUIREMENTS -->
+  <section class="section section-light">
 
-      <div class="cta-box">
+    <div class="container two-column">
+
+      <div>
+
+        <span class="section-label">
+          INFORMASI KEBUTUHAN
+        </span>
+
+        <h2>
+          Informasi yang Sebaiknya Disiapkan
+        </h2>
+
+        <p>
+          Semakin lengkap informasi proses produksi,
+          semakin mudah konsep otomatisasi dikembangkan
+          sesuai kebutuhan.
+        </p>
+
+      </div>
+
+
+      <div class="check-list">
 
         <div>
-
-          <span class="eyebrow">
-            INDUSTRIAL AUTOMATION
-          </span>
-
-          <h2>
-            Ingin Mengotomatisasi Proses Produksi?
-          </h2>
-
-          <p>
-            Jelaskan proses yang saat ini masih dilakukan
-            secara manual dan kebutuhan yang ingin ditingkatkan.
-          </p>
-
+          ✓ Jenis produk atau material
         </div>
 
+        <div>
+          ✓ Kapasitas produksi
+        </div>
+
+        <div>
+          ✓ Alur proses produksi
+        </div>
+
+        <div>
+          ✓ Ukuran dan karakteristik produk
+        </div>
+
+        <div>
+          ✓ Tingkat otomatisasi yang diinginkan
+        </div>
+
+        <div>
+          ✓ Kondisi ruang dan area pemasangan
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RELATED -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label">
+          LAYANAN TERKAIT
+        </span>
+
+        <h2>
+          Layanan Mesin yang Berkaitan dengan Otomatisasi
+        </h2>
+
+      </div>
+
+
+      <div class="related-grid">
+
         <a
-          href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20otomatisasi%20industri."
-          class="cta-button"
-          target="_blank"
-          rel="noopener noreferrer"
+          href={`${base}jasa/mesin-produksi-custom/`}
+          class="related-card"
         >
-          Konsultasi WhatsApp
+          <strong>
+            Mesin Produksi Custom
+          </strong>
+
+          <span>
+            Mesin produksi yang dirancang sesuai proses industri.
+          </span>
+        </a>
+
+
+        <a
+          href={`${base}jasa/pembuatan-conveyor/`}
+          class="related-card"
+        >
+          <strong>
+            Pembuatan Conveyor
+          </strong>
+
+          <span>
+            Conveyor custom untuk kebutuhan pemindahan material.
+          </span>
+        </a>
+
+
+        <a
+          href={`${base}jasa/mesin-packaging/`}
+          class="related-card"
+        >
+          <strong>
+            Mesin Packaging
+          </strong>
+
+          <span>
+            Solusi mesin pengemasan untuk berbagai jenis produk.
+          </span>
+        </a>
+
+
+        <a
+          href={`${base}jasa/fabrikasi-mesin/`}
+          class="related-card"
+        >
+          <strong>
+            Jasa Fabrikasi Mesin
+          </strong>
+
+          <span>
+            Pembuatan rangka dan komponen mesin sesuai spesifikasi.
+          </span>
         </a>
 
       </div>
 
     </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta-section">
+
+    <div class="container cta-inner">
+
+      <div>
+
+        <span class="section-label">
+          KONSULTASI
+        </span>
+
+        <h2>
+          Ingin Mengembangkan Sistem Otomatisasi untuk Produksi?
+        </h2>
+
+        <p>
+          Konsultasikan alur produksi, kebutuhan kapasitas,
+          dan proses yang ingin diotomatisasi untuk mendapatkan
+          konsep mesin yang sesuai.
+        </p>
+
+      </div>
+
+
+      <a
+        href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+          "Halo, saya ingin konsultasi tentang otomatisasi industri dan sistem mesin custom."
+        )}`}
+        class="btn btn-light"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Konsultasi Sekarang
+      </a>
+
+    </div>
+
   </section>
 
 </BaseLayout>
 
 
 <style>
-
-  .hero {
-    padding: 105px 0 85px;
-    background:
-      linear-gradient(
-        135deg,
-        #f0fdfa 0%,
-        #ffffff 65%
-      );
-  }
-
   .container {
     width: min(1180px, 92%);
     margin: 0 auto;
   }
 
-  .eyebrow {
+  .narrow {
+    max-width: 850px;
+  }
+
+  .hero {
+    padding: 90px 0;
+    background:
+      linear-gradient(
+        135deg,
+        #f0fdfa 0%,
+        #ffffff 55%,
+        #f8fafc 100%
+      );
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    align-items: center;
+    gap: 70px;
+  }
+
+  .eyebrow,
+  .section-label {
     display: inline-block;
     margin-bottom: 14px;
     color: #0f766e;
@@ -447,16 +734,17 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   }
 
   h1 {
-    max-width: 850px;
-    margin: 0 0 22px;
+    max-width: 780px;
+    margin: 0;
     color: #0f172a;
-    font-size: clamp(38px, 6vw, 62px);
+    font-size: clamp(38px, 5vw, 64px);
     line-height: 1.08;
+    letter-spacing: -1.5px;
   }
 
-  .hero p {
-    max-width: 760px;
-    margin: 0;
+  .hero-description {
+    max-width: 720px;
+    margin: 24px 0 0;
     color: #475569;
     font-size: 18px;
     line-height: 1.8;
@@ -469,15 +757,23 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     margin-top: 32px;
   }
 
-  .btn-primary,
-  .btn-secondary {
+  .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 13px 22px;
-    border-radius: 8px;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 9px;
     text-decoration: none;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 800;
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
   }
 
   .btn-primary {
@@ -490,227 +786,303 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   }
 
   .btn-secondary {
+    background: #ffffff;
+    color: #0f172a;
     border: 1px solid #cbd5e1;
+  }
+
+  .hero-card {
+    padding: 34px;
     background: #ffffff;
-    color: #334155;
+    border: 1px solid #dbeafe;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
   }
 
-  .btn-secondary:hover {
-    border-color: #0f766e;
-    color: #0f766e;
+  .hero-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    background: #ccfbf1;
+    font-size: 32px;
   }
 
-  .content-section {
-    padding: 90px 0;
-  }
-
-  .intro {
-    max-width: 800px;
-    margin-bottom: 50px;
-  }
-
-  .intro h2 {
-    margin: 0 0 18px;
-    color: #0f172a;
-    font-size: 36px;
-    line-height: 1.25;
-  }
-
-  .intro p {
-    margin: 0 0 18px;
-    color: #475569;
-    line-height: 1.85;
-  }
-
-  .solution-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
-  .solution-card {
-    padding: 28px;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
-    background: #ffffff;
-  }
-
-  .solution-card > span {
-    display: block;
-    margin-bottom: 18px;
-    color: #0f766e;
-    font-size: 26px;
-    font-weight: 800;
-  }
-
-  .solution-card h3 {
-    margin: 0 0 10px;
-    color: #0f172a;
-    font-size: 19px;
-  }
-
-  .solution-card p {
-    margin: 0;
-    color: #64748b;
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .benefit-section {
-    padding: 90px 0;
-    background: #f8fafc;
-  }
-
-  .section-heading {
-    max-width: 760px;
-    margin-bottom: 45px;
-  }
-
-  .section-heading h2 {
+  .hero-card h2 {
     margin: 0 0 14px;
     color: #0f172a;
-    font-size: 36px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.3;
   }
 
-  .section-heading p {
+  .hero-card p {
     margin: 0;
     color: #64748b;
     line-height: 1.8;
   }
 
-  .benefit-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+  .section {
+    padding: 85px 0;
   }
 
-  .benefit-item {
-    display: flex;
-    gap: 18px;
-    padding: 25px;
+  .section-light {
+    background: #f8fafc;
+  }
+
+  .section-dark {
+    background: #0f172a;
+    color: #cbd5e1;
+  }
+
+  .section-heading {
+    max-width: 760px;
+    margin-bottom: 42px;
+  }
+
+  .section-heading h2,
+  .narrow h2,
+  .two-column h2 {
+    margin: 0 0 18px;
+    color: #0f172a;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
+  }
+
+  .section-heading p,
+  .narrow p,
+  .two-column p {
+    color: #64748b;
+    line-height: 1.8;
+  }
+
+  .section-dark .section-heading h2 {
+    color: #ffffff;
+  }
+
+  .section-dark .section-label {
+    color: #5eead4;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .info-card {
+    padding: 30px;
     background: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 14px;
   }
 
-  .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #ccfbf1;
+  .card-number {
+    margin-bottom: 20px;
     color: #0f766e;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  .info-card h3 {
+    margin: 0 0 12px;
+    color: #0f172a;
+    font-size: 20px;
+  }
+
+  .info-card p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.75;
+  }
+
+  .application-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .application-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+  }
+
+  .application-item strong {
+    color: #0f172a;
+  }
+
+  .application-item span {
+    color: #64748b;
+    line-height: 1.7;
+  }
+
+  .benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .benefit-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 18px;
+    padding: 26px 0;
+    border-top: 1px solid #334155;
+  }
+
+  .benefit-item > span {
+    color: #5eead4;
+    font-size: 13px;
     font-weight: 800;
   }
 
   .benefit-item h3 {
-    margin: 0 0 7px;
-    color: #0f172a;
-    font-size: 18px;
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 19px;
   }
 
   .benefit-item p {
     margin: 0;
-    color: #64748b;
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .process-section {
-    padding: 90px 0;
+    line-height: 1.75;
   }
 
   .process-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 18px;
   }
 
-  .process-item {
+  .process-card {
     padding: 28px;
-    background: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 14px;
   }
 
-  .process-item strong {
-    display: block;
-    margin-bottom: 18px;
+  .process-card > span {
     color: #0f766e;
-    font-size: 26px;
+    font-weight: 800;
+    font-size: 13px;
   }
 
-  .process-item h3 {
-    margin: 0 0 10px;
+  .process-card h3 {
+    margin: 18px 0 10px;
     color: #0f172a;
-    font-size: 18px;
+    font-size: 19px;
   }
 
-  .process-item p {
+  .process-card p {
     margin: 0;
     color: #64748b;
-    font-size: 14px;
     line-height: 1.7;
+  }
+
+  .two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: start;
+  }
+
+  .check-list {
+    display: grid;
+    gap: 12px;
+  }
+
+  .check-list div {
+    padding: 16px 18px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    color: #334155;
+    font-weight: 600;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+
+  .related-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .related-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.08);
+  }
+
+  .related-card strong {
+    color: #0f172a;
+  }
+
+  .related-card span {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
   }
 
   .cta-section {
-    padding: 0 0 90px;
-  }
-
-  .cta-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 35px;
-    padding: 45px;
-    border-radius: 18px;
+    padding: 70px 0;
     background: #0f766e;
   }
 
-  .cta-box .eyebrow {
-    color: #ccfbf1;
+  .cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
   }
 
-  .cta-box h2 {
-    max-width: 650px;
-    margin: 0 0 12px;
+  .cta-inner h2 {
+    max-width: 750px;
+    margin: 0 0 14px;
     color: #ffffff;
-    font-size: 34px;
+    font-size: clamp(30px, 4vw, 44px);
     line-height: 1.2;
   }
 
-  .cta-box p {
-    max-width: 650px;
+  .cta-inner p {
+    max-width: 720px;
     margin: 0;
-    color: #d1fae5;
-    line-height: 1.7;
+    color: #ccfbf1;
+    line-height: 1.8;
   }
 
-  .cta-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  .cta-inner .section-label {
+    color: #99f6e4;
+  }
+
+  .btn-light {
     flex-shrink: 0;
-    padding: 14px 22px;
-    border-radius: 8px;
     background: #ffffff;
     color: #0f766e;
-    text-decoration: none;
-    font-weight: 800;
   }
 
-  .cta-button:hover {
-    background: #f0fdfa;
-  }
+  @media (max-width: 1000px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
 
-  @media (max-width: 900px) {
-
-    .solution-grid {
+    .card-grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -718,48 +1090,36 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .cta-box {
+    .related-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .hero {
+      padding: 65px 0;
+    }
+
+    .section {
+      padding: 65px 0;
+    }
+
+    .card-grid,
+    .application-grid,
+    .benefit-grid,
+    .process-grid,
+    .two-column,
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-inner {
       flex-direction: column;
       align-items: flex-start;
     }
 
+    .hero-description {
+      font-size: 16px;
+    }
   }
-
-  @media (max-width: 600px) {
-
-    .hero {
-      padding: 80px 0 65px;
-    }
-
-    .content-section,
-    .benefit-section,
-    .process-section {
-      padding: 65px 0;
-    }
-
-    .solution-grid,
-    .benefit-grid,
-    .process-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .intro h2,
-    .section-heading h2 {
-      font-size: 30px;
-    }
-
-    .cta-section {
-      padding-bottom: 65px;
-    }
-
-    .cta-box {
-      padding: 30px 24px;
-    }
-
-    .cta-box h2 {
-      font-size: 28px;
-    }
-
-  }
-
 </style>
