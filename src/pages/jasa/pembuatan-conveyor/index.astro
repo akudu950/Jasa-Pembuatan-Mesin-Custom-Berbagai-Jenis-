@@ -1,34 +1,41 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
-  title="Jasa Pembuatan Conveyor Custom untuk Industri"
-  description="Jasa pembuatan conveyor custom untuk kebutuhan industri, manufaktur, makanan dan minuman, packaging, pergudangan, dan berbagai proses pemindahan material."
+  title="Jasa Pembuatan Conveyor Custom untuk Kebutuhan Industri"
+  description="Jasa pembuatan conveyor custom untuk kebutuhan industri, produksi, manufaktur, makanan dan minuman, packaging, pergudangan, dan pemindahan material."
 >
 
   <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
 
-      <div>
+      <div class="hero-content">
+
         <span class="eyebrow">
-          JASA PEMBUATAN CONVEYOR
+          CONVEYOR CUSTOM
         </span>
 
         <h1>
-          Jasa Pembuatan Conveyor Custom untuk Industri
+          Jasa Pembuatan Conveyor Custom untuk Kebutuhan Industri
         </h1>
 
-        <p class="hero-text">
-          Solusi conveyor custom yang dirancang sesuai kebutuhan proses
-          produksi, jenis material, kapasitas, layout area, dan sistem
-          kerja di lingkungan industri.
+        <p class="hero-description">
+          Perancangan dan pembuatan conveyor sesuai kebutuhan
+          pemindahan produk dan material, mulai dari dimensi,
+          kapasitas, jalur conveyor, hingga kebutuhan integrasi
+          dengan mesin produksi.
         </p>
 
         <div class="hero-actions">
+
           <a
-            href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20pembuatan%20conveyor%20custom."
+            href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+              "Halo, saya ingin konsultasi tentang pembuatan conveyor custom."
+            )}`}
             class="btn btn-primary"
             target="_blank"
             rel="noopener noreferrer"
@@ -36,22 +43,34 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
             Konsultasi Conveyor
           </a>
 
-          <a href="/kontak/" class="btn btn-secondary">
-            Hubungi Kami
+          <a
+            href={`${base}mesin/conveyor/`}
+            class="btn btn-secondary"
+          >
+            Lihat Conveyor
           </a>
+
         </div>
+
       </div>
 
-      <div class="hero-card">
-        <div class="hero-icon">⚙</div>
 
-        <h2>Conveyor Sesuai Kebutuhan</h2>
+      <div class="hero-card">
+
+        <div class="hero-icon">
+          ⇢
+        </div>
+
+        <h2>
+          Conveyor Sesuai Alur Produksi
+        </h2>
 
         <p>
-          Setiap conveyor dapat disesuaikan dengan ukuran produk,
-          kapasitas pemindahan, panjang jalur, ketinggian,
-          kecepatan, dan kebutuhan integrasi dengan mesin lainnya.
+          Conveyor dapat dibuat berdasarkan arah perpindahan,
+          panjang jalur, jenis material, kapasitas, elevasi,
+          dan kebutuhan integrasi dengan mesin lainnya.
         </p>
+
       </div>
 
     </div>
@@ -60,358 +79,740 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 
   <!-- INTRO -->
   <section class="section">
-    <div class="container content-grid">
 
-      <div>
-        <span class="section-label">
-          CONVEYOR CUSTOM
-        </span>
+    <div class="container narrow">
 
-        <h2>
-          Conveyor untuk Mendukung Proses Produksi
-        </h2>
+      <span class="section-label">
+        SOLUSI PEMINDAHAN MATERIAL
+      </span>
 
-        <p>
-          Conveyor merupakan salah satu bagian penting dalam sistem
-          produksi karena membantu memindahkan bahan baku, produk
-          setengah jadi, maupun produk jadi dari satu proses ke proses
-          lainnya.
-        </p>
+      <h2>
+        Apa Itu Conveyor Custom?
+      </h2>
 
-        <p>
-          Pembuatan conveyor custom memungkinkan sistem pemindahan
-          material disesuaikan dengan kondisi nyata di lapangan.
-          Mulai dari panjang conveyor, lebar belt, kapasitas,
-          kemiringan, kecepatan hingga posisi mesin dapat dirancang
-          berdasarkan kebutuhan.
-        </p>
+      <p>
+        Conveyor custom merupakan sistem pemindahan material atau
+        produk yang dirancang berdasarkan kebutuhan tertentu.
+        Ukuran, panjang, lebar belt, kapasitas, kecepatan,
+        serta konfigurasi jalurnya dapat disesuaikan.
+      </p>
 
-        <p>
-          Dengan desain yang tepat, conveyor dapat membantu membuat
-          alur produksi lebih teratur, mengurangi pemindahan material
-          secara manual, dan meningkatkan efisiensi proses kerja.
-        </p>
-      </div>
+      <p>
+        Dalam proses produksi, conveyor sering digunakan untuk
+        menghubungkan satu tahapan kerja dengan tahapan lainnya.
+        Penggunaan conveyor dapat membantu mengurangi pemindahan
+        material secara manual dan membuat alur produksi menjadi
+        lebih teratur.
+      </p>
 
-      <aside class="info-card">
-        <h3>Yang Dapat Disesuaikan</h3>
-
-        <ul>
-          <li>Ukuran dan panjang conveyor</li>
-          <li>Lebar belt atau roller</li>
-          <li>Kapasitas pemindahan material</li>
-          <li>Kecepatan conveyor</li>
-          <li>Ketinggian dan kemiringan</li>
-          <li>Jenis material yang dipindahkan</li>
-          <li>Motor dan sistem penggerak</li>
-          <li>Integrasi dengan mesin produksi</li>
-        </ul>
-      </aside>
+      <p>
+        Conveyor juga dapat dikembangkan sebagai bagian dari
+        sistem otomatisasi industri dan diintegrasikan dengan
+        mesin produksi, filling, packaging, sortasi, maupun
+        proses lainnya.
+      </p>
 
     </div>
+
   </section>
 
 
-  <!-- JENIS CONVEYOR -->
-  <section class="section section-soft">
+  <!-- TYPES -->
+  <section class="section section-light">
+
     <div class="container">
 
       <div class="section-heading">
+
         <span class="section-label">
           JENIS CONVEYOR
         </span>
 
         <h2>
-          Jenis Conveyor yang Dapat Dibuat
+          Jenis Conveyor yang Dapat Dikembangkan
         </h2>
 
         <p>
-          Sistem conveyor dapat dibuat berdasarkan karakteristik
-          produk dan kebutuhan proses produksi.
+          Jenis conveyor dipilih berdasarkan karakter material,
+          kapasitas, jalur perpindahan, dan kondisi proses produksi.
         </p>
+
       </div>
+
 
       <div class="card-grid">
 
-        <article class="card">
-          <div class="card-icon">01</div>
-          <h3>Conveyor Belt</h3>
+        <article class="info-card">
+
+          <div class="card-number">
+            01
+          </div>
+
+          <h3>
+            Belt Conveyor
+          </h3>
+
           <p>
-            Conveyor menggunakan belt untuk memindahkan produk
-            atau material secara kontinu pada jalur produksi.
+            Conveyor menggunakan belt sebagai media pemindahan
+            berbagai jenis produk dan material.
           </p>
+
         </article>
 
-        <article class="card">
-          <div class="card-icon">02</div>
-          <h3>Roller Conveyor</h3>
+
+        <article class="info-card">
+
+          <div class="card-number">
+            02
+          </div>
+
+          <h3>
+            Roller Conveyor
+          </h3>
+
           <p>
-            Cocok untuk pemindahan barang, box, kemasan,
-            pallet, dan berbagai material dengan permukaan yang sesuai.
+            Conveyor menggunakan roller untuk membantu memindahkan
+            produk dengan bentuk dan karakteristik tertentu.
           </p>
+
         </article>
 
-        <article class="card">
-          <div class="card-icon">03</div>
-          <h3>Incline Conveyor</h3>
+
+        <article class="info-card">
+
+          <div class="card-number">
+            03
+          </div>
+
+          <h3>
+            Conveyor Produksi
+          </h3>
+
           <p>
-            Dirancang untuk memindahkan material dari posisi
-            rendah menuju posisi yang lebih tinggi.
+            Sistem conveyor untuk mendukung perpindahan produk
+            antarproses dalam jalur produksi.
           </p>
+
         </article>
 
-        <article class="card">
-          <div class="card-icon">04</div>
-          <h3>Conveyor Packaging</h3>
+
+        <article class="info-card">
+
+          <div class="card-number">
+            04
+          </div>
+
+          <h3>
+            Conveyor Packaging
+          </h3>
+
           <p>
-            Digunakan untuk mendukung proses pengemasan,
-            filling, sealing, sorting, dan proses setelah packaging.
+            Conveyor yang digunakan untuk membantu proses filling,
+            sealing, packaging, counting, dan pengemasan.
           </p>
+
         </article>
 
-        <article class="card">
-          <div class="card-icon">05</div>
-          <h3>Conveyor Produksi</h3>
+
+        <article class="info-card">
+
+          <div class="card-number">
+            05
+          </div>
+
+          <h3>
+            Conveyor Transfer
+          </h3>
+
           <p>
-            Dibuat untuk menghubungkan beberapa tahapan proses
-            produksi agar alur material lebih teratur.
+            Sistem pemindahan produk atau material dari satu titik
+            ke titik lainnya dalam proses produksi.
           </p>
+
         </article>
 
-        <article class="card">
-          <div class="card-icon">06</div>
-          <h3>Conveyor Custom</h3>
+
+        <article class="info-card">
+
+          <div class="card-number">
+            06
+          </div>
+
+          <h3>
+            Conveyor Custom
+          </h3>
+
           <p>
-            Dirancang khusus untuk kebutuhan yang memiliki
-            ukuran, bentuk, kapasitas, atau layout tertentu.
+            Conveyor dengan bentuk dan konfigurasi khusus untuk
+            kebutuhan ruang, proses, atau material tertentu.
           </p>
+
         </article>
 
       </div>
+
     </div>
+
   </section>
 
 
-  <!-- APLIKASI -->
+  <!-- APPLICATIONS -->
   <section class="section">
+
     <div class="container">
 
       <div class="section-heading">
+
         <span class="section-label">
-          APLIKASI
+          PENERAPAN
         </span>
 
         <h2>
           Conveyor untuk Berbagai Kebutuhan Industri
         </h2>
+
+        <p>
+          Conveyor dapat digunakan untuk berbagai proses
+          pemindahan produk dan material di lingkungan industri.
+        </p>
+
       </div>
+
 
       <div class="application-grid">
 
-        <div>
-          <strong>Industri Makanan & Minuman</strong>
-          <p>
-            Pemindahan bahan baku, produk, kemasan, dan hasil produksi.
-          </p>
+        <div class="application-item">
+
+          <strong>
+            Industri Makanan & Minuman
+          </strong>
+
+          <span>
+            Pemindahan bahan, produk, kemasan, dan hasil produksi
+            antarproses.
+          </span>
+
         </div>
 
-        <div>
-          <strong>Industri Packaging</strong>
-          <p>
-            Mendukung proses filling, sealing, labeling,
-            sorting, dan pengemasan.
-          </p>
+
+        <div class="application-item">
+
+          <strong>
+            Industri Manufaktur
+          </strong>
+
+          <span>
+            Pemindahan komponen, material, produk setengah jadi,
+            dan produk jadi.
+          </span>
+
         </div>
 
-        <div>
-          <strong>Manufaktur & Logam</strong>
-          <p>
-            Membantu pemindahan material dan komponen
-            dalam proses manufaktur.
-          </p>
+
+        <div class="application-item">
+
+          <strong>
+            Packaging
+          </strong>
+
+          <span>
+            Menghubungkan proses filling, sealing, labeling,
+            counting, dan pengemasan.
+          </span>
+
         </div>
 
-        <div>
-          <strong>Pergudangan</strong>
-          <p>
-            Membantu proses pemindahan barang dan material
-            pada area produksi maupun gudang.
-          </p>
+
+        <div class="application-item">
+
+          <strong>
+            Gudang & Material Handling
+          </strong>
+
+          <span>
+            Membantu pemindahan barang dan material pada jalur
+            kerja tertentu.
+          </span>
+
+        </div>
+
+
+        <div class="application-item">
+
+          <strong>
+            Pertanian & Agro
+          </strong>
+
+          <span>
+            Pemindahan hasil panen, bahan baku, produk olahan,
+            dan material pertanian.
+          </span>
+
+        </div>
+
+
+        <div class="application-item">
+
+          <strong>
+            Pengolahan Limbah
+          </strong>
+
+          <span>
+            Pemindahan material pada proses pemilahan,
+            pencacahan, dan pengolahan limbah.
+          </span>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
 
-  <!-- KEUNGGULAN -->
-  <section class="section section-soft">
+  <!-- DESIGN FACTORS -->
+  <section class="section section-dark">
+
     <div class="container">
 
-      <div class="section-heading">
+      <div class="section-heading dark">
+
         <span class="section-label">
-          KEUNGGULAN
+          PERANCANGAN
         </span>
 
         <h2>
-          Mengapa Menggunakan Conveyor Custom?
+          Faktor yang Dipertimbangkan dalam Pembuatan Conveyor
         </h2>
+
+        <p>
+          Conveyor perlu dirancang berdasarkan kondisi material
+          dan kebutuhan jalur perpindahan agar dapat bekerja
+          sesuai fungsi yang diharapkan.
+        </p>
+
       </div>
+
 
       <div class="benefit-grid">
 
-        <div class="benefit">
-          <h3>Sesuai Layout Area</h3>
-          <p>
-            Dimensi conveyor dapat disesuaikan dengan ruang
-            dan jalur produksi yang tersedia.
-          </p>
+        <div class="benefit-item">
+
+          <span>01</span>
+
+          <div>
+
+            <h3>
+              Jenis Material
+            </h3>
+
+            <p>
+              Karakteristik produk atau material memengaruhi
+              pemilihan belt, roller, dan mekanisme conveyor.
+            </p>
+
+          </div>
+
         </div>
 
-        <div class="benefit">
-          <h3>Sesuai Kapasitas</h3>
-          <p>
-            Sistem dirancang berdasarkan target kapasitas
-            pemindahan material yang dibutuhkan.
-          </p>
+
+        <div class="benefit-item">
+
+          <span>02</span>
+
+          <div>
+
+            <h3>
+              Kapasitas
+            </h3>
+
+            <p>
+              Kapasitas perpindahan menjadi pertimbangan dalam
+              menentukan ukuran dan sistem penggerak conveyor.
+            </p>
+
+          </div>
+
         </div>
 
-        <div class="benefit">
-          <h3>Mendukung Efisiensi</h3>
-          <p>
-            Pemindahan material dapat dibuat lebih teratur
-            dan mengurangi proses manual.
-          </p>
+
+        <div class="benefit-item">
+
+          <span>03</span>
+
+          <div>
+
+            <h3>
+              Panjang & Dimensi
+            </h3>
+
+            <p>
+              Panjang, lebar, tinggi, dan konfigurasi conveyor
+              disesuaikan dengan area dan jalur produksi.
+            </p>
+
+          </div>
+
         </div>
 
-        <div class="benefit">
-          <h3>Dapat Diintegrasikan</h3>
-          <p>
-            Conveyor dapat dihubungkan dengan mesin produksi,
-            packaging, filling, sorting, maupun otomatisasi.
-          </p>
+
+        <div class="benefit-item">
+
+          <span>04</span>
+
+          <div>
+
+            <h3>
+              Kecepatan
+            </h3>
+
+            <p>
+              Kecepatan perpindahan disesuaikan dengan kebutuhan
+              proses dan karakteristik produk.
+            </p>
+
+          </div>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
 
-  <!-- PROSES -->
+  <!-- PROCESS -->
   <section class="section">
+
     <div class="container">
 
       <div class="section-heading">
+
         <span class="section-label">
-          PROSES PEMBUATAN
+          TAHAPAN PEMBUATAN
         </span>
 
         <h2>
-          Tahapan Pembuatan Conveyor Custom
+          Proses Pembuatan Conveyor Custom
         </h2>
+
       </div>
+
 
       <div class="process-grid">
 
-        <div class="process">
+        <div class="process-card">
+
           <span>01</span>
-          <h3>Konsultasi</h3>
+
+          <h3>
+            Konsultasi
+          </h3>
+
           <p>
-            Membahas fungsi conveyor, material yang dipindahkan,
-            kapasitas, ukuran, dan kondisi area.
+            Membahas kebutuhan jalur, material, kapasitas,
+            dimensi, dan posisi conveyor.
           </p>
+
         </div>
 
-        <div class="process">
+
+        <div class="process-card">
+
           <span>02</span>
-          <h3>Perancangan</h3>
+
+          <h3>
+            Perancangan
+          </h3>
+
           <p>
-            Menentukan desain, dimensi, komponen,
-            sistem penggerak, dan kebutuhan teknis.
+            Menentukan desain rangka, media conveyor,
+            sistem penggerak, dan konfigurasi jalur.
           </p>
+
         </div>
 
-        <div class="process">
+
+        <div class="process-card">
+
           <span>03</span>
-          <h3>Fabrikasi</h3>
+
+          <h3>
+            Fabrikasi
+          </h3>
+
           <p>
-            Proses pembuatan rangka, belt, roller,
-            dudukan motor, dan komponen pendukung.
+            Pembuatan rangka dan komponen conveyor berdasarkan
+            rancangan yang telah ditentukan.
           </p>
+
         </div>
 
-        <div class="process">
+
+        <div class="process-card">
+
           <span>04</span>
-          <h3>Assembly & Testing</h3>
+
+          <h3>
+            Assembly & Testing
+          </h3>
+
           <p>
-            Perakitan dan pengujian dilakukan untuk memastikan
-            conveyor dapat bekerja sesuai kebutuhan.
+            Perakitan dan pengujian untuk memastikan conveyor
+            dapat berjalan sesuai kebutuhan.
           </p>
+
         </div>
 
       </div>
 
     </div>
+
+  </section>
+
+
+  <!-- BENEFITS -->
+  <section class="section section-light">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label">
+          MANFAAT
+        </span>
+
+        <h2>
+          Keuntungan Menggunakan Conveyor Custom
+        </h2>
+
+      </div>
+
+
+      <div class="benefit-light-grid">
+
+        <div class="benefit-light">
+
+          <h3>
+            Sesuai Ruang Produksi
+          </h3>
+
+          <p>
+            Dimensi dan konfigurasi conveyor dapat disesuaikan
+            dengan area pemasangan yang tersedia.
+          </p>
+
+        </div>
+
+
+        <div class="benefit-light">
+
+          <h3>
+            Mendukung Alur Produksi
+          </h3>
+
+          <p>
+            Conveyor dapat dirancang untuk menghubungkan
+            beberapa tahapan proses produksi.
+          </p>
+
+        </div>
+
+
+        <div class="benefit-light">
+
+          <h3>
+            Mengurangi Pemindahan Manual
+          </h3>
+
+          <p>
+            Pemindahan produk atau material dapat dilakukan
+            melalui jalur conveyor yang telah dirancang.
+          </p>
+
+        </div>
+
+
+        <div class="benefit-light">
+
+          <h3>
+            Dapat Diintegrasikan
+          </h3>
+
+          <p>
+            Conveyor dapat dikembangkan sebagai bagian dari
+            sistem otomatisasi dan mesin produksi.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RELATED -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label">
+          LAYANAN TERKAIT
+        </span>
+
+        <h2>
+          Layanan yang Berkaitan dengan Conveyor
+        </h2>
+
+      </div>
+
+
+      <div class="related-grid">
+
+        <a
+          href={`${base}jasa/mesin-custom/`}
+          class="related-card"
+        >
+
+          <strong>
+            Jasa Pembuatan Mesin Custom
+          </strong>
+
+          <span>
+            Pembuatan mesin khusus sesuai kebutuhan industri.
+          </span>
+
+        </a>
+
+
+        <a
+          href={`${base}jasa/mesin-produksi-custom/`}
+          class="related-card"
+        >
+
+          <strong>
+            Mesin Produksi Custom
+          </strong>
+
+          <span>
+            Mesin produksi yang dirancang berdasarkan proses kerja.
+          </span>
+
+        </a>
+
+
+        <a
+          href={`${base}jasa/otomatisasi-industri/`}
+          class="related-card"
+        >
+
+          <strong>
+            Otomatisasi Industri
+          </strong>
+
+          <span>
+            Integrasi conveyor dengan sistem otomatisasi produksi.
+          </span>
+
+        </a>
+
+
+        <a
+          href={`${base}jasa/mesin-packaging/`}
+          class="related-card"
+        >
+
+          <strong>
+            Mesin Packaging
+          </strong>
+
+          <span>
+            Solusi pengemasan yang dapat diintegrasikan dengan conveyor.
+          </span>
+
+        </a>
+
+      </div>
+
+    </div>
+
   </section>
 
 
   <!-- CTA -->
-  <section class="cta">
+  <section class="cta-section">
+
     <div class="container cta-inner">
 
       <div>
+
         <span class="section-label">
-          KONSULTASI
+          KONSULTASI CONVEYOR
         </span>
 
         <h2>
-          Membutuhkan Conveyor Custom?
+          Membutuhkan Conveyor Sesuai Kebutuhan Produksi?
         </h2>
 
         <p>
-          Sampaikan kebutuhan conveyor, ukuran area,
-          jenis material, kapasitas, dan proses produksi
-          yang ingin didukung.
+          Sampaikan jenis material, kapasitas, ukuran,
+          panjang jalur, dan kebutuhan proses untuk
+          mendapatkan konsep conveyor yang sesuai.
         </p>
+
       </div>
 
+
       <a
-        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20pembuatan%20conveyor%20custom."
-        class="btn btn-primary"
+        href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+          "Halo, saya ingin konsultasi tentang pembuatan conveyor custom."
+        )}`}
+        class="btn btn-light"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Konsultasi via WhatsApp
+        Konsultasi Sekarang
       </a>
 
     </div>
+
   </section>
 
 </BaseLayout>
 
 
 <style>
-  .hero {
-    padding: 90px 0;
-    background: linear-gradient(
-      135deg,
-      #f8fafc,
-      #ecfeff
-    );
-  }
-
   .container {
     width: min(1180px, 92%);
     margin: 0 auto;
   }
 
+  .narrow {
+    max-width: 850px;
+  }
+
+  .hero {
+    padding: 90px 0;
+    background:
+      linear-gradient(
+        135deg,
+        #f0fdfa 0%,
+        #ffffff 55%,
+        #f8fafc 100%
+      );
+  }
+
   .hero-grid {
     display: grid;
-    grid-template-columns: 1.4fr 0.8fr;
-    gap: 60px;
+    grid-template-columns: 1.35fr 0.65fr;
     align-items: center;
+    gap: 70px;
   }
 
   .eyebrow,
@@ -425,16 +826,17 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   }
 
   h1 {
-    max-width: 760px;
-    margin: 0 0 22px;
-    font-size: clamp(38px, 5vw, 62px);
+    max-width: 800px;
+    margin: 0;
+    color: #0f172a;
+    font-size: clamp(38px, 5vw, 64px);
     line-height: 1.08;
     letter-spacing: -1.5px;
-    color: #0f172a;
   }
 
-  .hero-text {
+  .hero-description {
     max-width: 720px;
+    margin: 24px 0 0;
     color: #475569;
     font-size: 18px;
     line-height: 1.8;
@@ -444,17 +846,26 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    margin-top: 30px;
+    margin-top: 32px;
   }
 
   .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 22px;
+    min-height: 48px;
+    padding: 0 22px;
     border-radius: 9px;
     text-decoration: none;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 800;
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
   }
 
   .btn-primary {
@@ -473,24 +884,36 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   }
 
   .hero-card {
-    padding: 35px;
+    padding: 34px;
+    background: #ffffff;
     border: 1px solid #dbeafe;
     border-radius: 18px;
-    background: #ffffff;
     box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
   }
 
   .hero-icon {
-    font-size: 48px;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    background: #ccfbf1;
+    color: #0f766e;
+    font-size: 32px;
+    font-weight: 800;
   }
 
   .hero-card h2 {
-    margin: 0 0 12px;
-    font-size: 25px;
+    margin: 0 0 14px;
+    color: #0f172a;
+    font-size: 24px;
+    line-height: 1.3;
   }
 
   .hero-card p {
+    margin: 0;
     color: #64748b;
     line-height: 1.8;
   }
@@ -499,82 +922,74 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     padding: 85px 0;
   }
 
-  .section-soft {
+  .section-light {
     background: #f8fafc;
   }
 
-  .content-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 0.8fr;
-    gap: 60px;
+  .section-dark {
+    background: #0f172a;
+    color: #cbd5e1;
   }
 
-  h2 {
-    margin: 0 0 20px;
-    font-size: clamp(30px, 4vw, 44px);
-    line-height: 1.15;
+  .section-heading {
+    max-width: 780px;
+    margin-bottom: 42px;
+  }
+
+  .section-heading h2,
+  .narrow h2 {
+    margin: 0 0 18px;
     color: #0f172a;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
   }
 
-  .content-grid p {
-    color: #475569;
+  .section-heading p,
+  .narrow p {
+    color: #64748b;
     line-height: 1.8;
+  }
+
+  .section-dark .section-heading h2 {
+    color: #ffffff;
+  }
+
+  .section-dark .section-heading p {
+    color: #cbd5e1;
+  }
+
+  .section-dark .section-label {
+    color: #5eead4;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .info-card {
     padding: 30px;
     background: #ffffff;
     border: 1px solid #e2e8f0;
-    border-radius: 16px;
+    border-radius: 14px;
+  }
+
+  .card-number {
+    margin-bottom: 20px;
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
   }
 
   .info-card h3 {
-    margin-top: 0;
+    margin: 0 0 12px;
+    color: #0f172a;
     font-size: 20px;
   }
 
-  .info-card ul {
-    padding-left: 20px;
-    color: #475569;
-    line-height: 2;
-  }
-
-  .section-heading {
-    max-width: 760px;
-    margin-bottom: 45px;
-  }
-
-  .section-heading p {
-    color: #64748b;
-    font-size: 17px;
-  }
-
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-  }
-
-  .card {
-    padding: 30px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 15px;
-  }
-
-  .card-icon {
-    margin-bottom: 18px;
-    color: #0f766e;
-    font-size: 14px;
-    font-weight: 800;
-  }
-
-  .card h3 {
-    margin: 0 0 10px;
-    font-size: 20px;
-  }
-
-  .card p {
+  .info-card p {
     margin: 0;
     color: #64748b;
     line-height: 1.75;
@@ -583,82 +998,151 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
   .application-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 16px;
   }
 
-  .application-grid > div {
-    padding: 25px;
-    border-left: 4px solid #0f766e;
-    background: #f8fafc;
+  .application-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
   }
 
-  .application-grid strong {
-    font-size: 18px;
+  .application-item strong {
+    color: #0f172a;
   }
 
-  .application-grid p {
-    margin-bottom: 0;
+  .application-item span {
     color: #64748b;
+    line-height: 1.7;
   }
 
   .benefit-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
-  .benefit {
-    padding: 25px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
+  .benefit-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 18px;
+    padding: 26px 0;
+    border-top: 1px solid #334155;
   }
 
-  .benefit h3 {
-    margin-top: 0;
-    font-size: 18px;
+  .benefit-item > span {
+    color: #5eead4;
+    font-size: 13px;
+    font-weight: 800;
   }
 
-  .benefit p {
-    margin-bottom: 0;
-    color: #64748b;
-    line-height: 1.7;
+  .benefit-item h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 19px;
+  }
+
+  .benefit-item p {
+    margin: 0;
+    color: #cbd5e1;
+    line-height: 1.75;
   }
 
   .process-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 18px;
   }
 
-  .process {
-    position: relative;
+  .process-card {
     padding: 28px;
     border: 1px solid #e2e8f0;
     border-radius: 14px;
   }
 
-  .process span {
-    display: inline-flex;
-    margin-bottom: 20px;
+  .process-card > span {
     color: #0f766e;
-    font-size: 13px;
     font-weight: 800;
+    font-size: 13px;
   }
 
-  .process h3 {
-    margin: 0 0 10px;
+  .process-card h3 {
+    margin: 18px 0 10px;
+    color: #0f172a;
+    font-size: 19px;
   }
 
-  .process p {
+  .process-card p {
     margin: 0;
     color: #64748b;
     line-height: 1.7;
   }
 
-  .cta {
-    padding: 75px 0;
-    background: #0f172a;
+  .benefit-light-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .benefit-light {
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+  }
+
+  .benefit-light h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 19px;
+  }
+
+  .benefit-light p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.75;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+
+  .related-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .related-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.08);
+  }
+
+  .related-card strong {
+    color: #0f172a;
+  }
+
+  .related-card span {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .cta-section {
+    padding: 70px 0;
+    background: #0f766e;
   }
 
   .cta-inner {
@@ -668,39 +1152,51 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     gap: 40px;
   }
 
-  .cta h2 {
+  .cta-inner h2 {
+    max-width: 750px;
+    margin: 0 0 14px;
     color: #ffffff;
-    margin-bottom: 15px;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
   }
 
-  .cta p {
-    max-width: 700px;
+  .cta-inner p {
+    max-width: 720px;
     margin: 0;
-    color: #cbd5e1;
+    color: #ccfbf1;
     line-height: 1.8;
   }
 
-  .cta .section-label {
-    color: #5eead4;
+  .cta-inner .section-label {
+    color: #99f6e4;
   }
 
-  @media (max-width: 950px) {
-    .hero-grid,
-    .content-grid {
+  .btn-light {
+    flex-shrink: 0;
+    background: #ffffff;
+    color: #0f766e;
+  }
+
+  @media (max-width: 1000px) {
+
+    .hero-grid {
       grid-template-columns: 1fr;
+      gap: 40px;
     }
 
     .card-grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .benefit-grid,
-    .process-grid {
+    .process-grid,
+    .related-grid {
       grid-template-columns: repeat(2, 1fr);
     }
+
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 700px) {
+
     .hero {
       padding: 65px 0;
     }
@@ -712,7 +1208,9 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
     .card-grid,
     .application-grid,
     .benefit-grid,
-    .process-grid {
+    .benefit-light-grid,
+    .process-grid,
+    .related-grid {
       grid-template-columns: 1fr;
     }
 
@@ -720,5 +1218,10 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
       flex-direction: column;
       align-items: flex-start;
     }
+
+    .hero-description {
+      font-size: 16px;
+    }
+
   }
 </style>
